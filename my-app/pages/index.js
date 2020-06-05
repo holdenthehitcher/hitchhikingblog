@@ -1,9 +1,12 @@
 import Head from "next/head";
 import AboutMe from "../components/AboutMe";
+import NavBar from "../components/Navbar";
 
 export default function Home() {
   return (
+    
     <div className="container">
+      <NavBar />
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

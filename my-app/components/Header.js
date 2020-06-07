@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from "reactstrap";
+import { Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, Collapse } from "reactstrap";
 
 class Header extends Component {
   constructor(props) {
@@ -28,33 +28,31 @@ class Header extends Component {
           <NavbarToggler onClick={this.toggleNav} />
           <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav>
-              <ul className="nav my-auto ml-4">
-                <li className="nav-item active">
-                  <Link href="/">
-                    <a className="nav-link">Home</a>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="/">
-                    <a className="nav-link">Articles</a>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="/">
-                    <a className="nav-link">Shop</a>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="/">
-                    <a className="nav-link">Gear</a>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="/">
-                    <a className="nav-link">Donate</a>
-                  </Link>
-                </li>
-              </ul>
+              <NavItem className="nav-item active">
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
+              </NavItem>
+              <NavItem className="nav-item">
+                <Link href="/">
+                  <a>Articles</a>
+                </Link>
+              </NavItem>
+              <NavItem className="nav-item">
+                <Link href="/">
+                  <a>Shop</a>
+                </Link>
+              </NavItem>
+              <NavItem className="nav-item">
+                <Link href="/">
+                  <a>Gear</a>
+                </Link>
+              </NavItem>
+              <NavItem className="nav-item">
+                <Link href="/">
+                  <a>Donate</a>
+                </Link>
+              </NavItem>
             </Nav>
           </Collapse>
         </div>

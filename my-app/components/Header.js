@@ -19,6 +19,29 @@ class Header extends Component {
   }
 
   render() {
+    const navigation = [
+      {
+        href: "/home",
+        text: "Home",
+      },
+      {
+        href: "/articles",
+        text: "Articles",
+      },
+      {
+        href: "/shop",
+        text: "Shop",
+      },
+      {
+        href: "/gear",
+        text: "Gear",
+      },
+      {
+        href: "/donate",
+        text: "Donate",
+      },
+    ];
+
     return (
       <Navbar sticky="top" expand="md">
         <div className="container">
@@ -28,31 +51,13 @@ class Header extends Component {
           <NavbarToggler onClick={this.toggleNav} />
           <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav>
-              <NavItem className="nav-item active">
-                <Link href="/home">
-                  <a>Home</a>
-                </Link>
-              </NavItem>
-              <NavItem className="nav-item">
-                <Link href="/articles">
-                  <a>Articles</a>
-                </Link>
-              </NavItem>
-              <NavItem className="nav-item">
-                <Link href="/shop">
-                  <a>Shop</a>
-                </Link>
-              </NavItem>
-              <NavItem className="nav-item">
-                <Link href="/gear">
-                  <a>Gear</a>
-                </Link>
-              </NavItem>
-              <NavItem className="nav-item">
-                <Link href="/donate">
-                  <a>Donate</a>
-                </Link>
-              </NavItem>
+              {navigation.map(({ href, text }, i) => (
+                <NavItem key={i} className="nav-item">
+                  <Link href={href}>
+                    <a>{text}</a>
+                  </Link>
+                </NavItem>
+              ))}
             </Nav>
           </Collapse>
         </div>

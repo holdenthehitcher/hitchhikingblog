@@ -29,27 +29,27 @@ class Header extends Component {
           <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav>
               <NavItem className="nav-item active">
-                <Link href="/">
+                <Link href="/home">
                   <a>Home</a>
                 </Link>
               </NavItem>
               <NavItem className="nav-item">
-                <Link href="/">
+                <Link href="/articles">
                   <a>Articles</a>
                 </Link>
               </NavItem>
               <NavItem className="nav-item">
-                <Link href="/">
+                <Link href="/shop">
                   <a>Shop</a>
                 </Link>
               </NavItem>
               <NavItem className="nav-item">
-                <Link href="/">
+                <Link href="/gear">
                   <a>Gear</a>
                 </Link>
               </NavItem>
               <NavItem className="nav-item">
-                <Link href="/">
+                <Link href="/donate">
                   <a>Donate</a>
                 </Link>
               </NavItem>

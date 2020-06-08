@@ -6,20 +6,17 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-      
       <Head>
         <title>Hitch-Hike with Holden</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-      <Header />
+        <Header />
         <AboutMe />
-
 
         <Footer />
       </main>
-      
     </>
   );
 }

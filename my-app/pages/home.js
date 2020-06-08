@@ -3,6 +3,7 @@ import AboutMe from "../components/AboutMe";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PopularPosts from "../components/PopularPosts";
+import InspirationalQuote from "../components/InspirationalQuote";
 
 export default function Home() {
   return (
@@ -13,10 +14,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header />
-        <AboutMe />
-        <PopularPosts />
-        {/* Inspirational Quote */}
+        <div className="container">
+          <Header />
+          <AboutMe />
+          <PopularPosts />
+          <InspirationalQuote />
+          {/* Articles Cards */}
+        </div>
 
         <Footer />
       </main>

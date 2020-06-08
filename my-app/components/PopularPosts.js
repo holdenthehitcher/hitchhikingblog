@@ -34,20 +34,24 @@ export default function PopularPosts() {
 
   return (
     <>
-      <h2>Popular Articles</h2>
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-        {carouselSlides.map(({ image, alt, heading, text }, i) => (
-          <Carousel.Item key={i}>
-            <Card className="carouselCard">
-              <Card.Img top src={image} alt={alt} />
-            </Card>
-            <Carousel.Caption>
-              <h3>{heading}</h3>
-              <p>{text}</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      <div className="row">
+        <h2>Popular Articles</h2>
+      </div>
+      <div className="row">
+        <Carousel activeIndex={index} onSelect={handleSelect}>
+          {carouselSlides.map(({ image, alt, heading, text }, i) => (
+            <Carousel.Item key={i}>
+              <Card className="carouselCard">
+                <Card.Img top src={image} alt={alt} />
+              </Card>
+              <Carousel.Caption>
+                <h3>{heading}</h3>
+                <p>{text}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
     </>
   );
 }

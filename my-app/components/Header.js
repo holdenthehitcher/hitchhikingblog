@@ -1,24 +1,10 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, Collapse } from "reactstrap";
 
-class Header extends Component {
-  constructor(props) {
-    super(props);
+const Header = () => {
 
-    this.toggleNav = this.toggleNav.bind(this);
-    this.state = {
-      isNavOpen: false,
-    };
-  }
-
-  toggleNav() {
-    this.setState({
-      isNavOpen: !this.state.isNavOpen,
-    });
-  }
-
-  render() {
+  const [isNavOpen, toggleNav] = useState(false);
     const navigation = [
       {
         href: "/home",
@@ -48,8 +34,8 @@ class Header extends Component {
           <NavbarBrand href="/">
             <h5>Holden's Catering Company</h5>
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggleNav} />
-          <Collapse isOpen={this.state.isNavOpen} navbar>
+          <NavbarToggler onClick={() => toggleNav} />
+          <Collapse isOpen={!isNavOpen} navbar>
             <Nav>
               {navigation.map(({ href, text }, i) => (
                 <NavItem key={i} className="nav-item">
@@ -64,6 +50,6 @@ class Header extends Component {
       </Navbar>
     );
   }
-}
+
 
 export default Header;

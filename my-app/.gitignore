@@ -3,6 +3,7 @@
 # dependencies
 /supplemental
 /node_modules
+/BlogMaterials
 /.pnp
 .pnp.js
 

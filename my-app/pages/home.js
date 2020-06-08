@@ -14,7 +14,9 @@ export default function Home() {
       <main>
         <Header />
         <AboutMe />
-
+        {/* Carousel Component: Popular articles */}
+        {/* Inspirational Quote */}
+        
         <Footer />
       </main>
     </>

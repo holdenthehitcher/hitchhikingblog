@@ -42,7 +42,7 @@ export default function PopularPosts() {
           {carouselSlides.map(({ image, alt, heading, text }, i) => (
             <Carousel.Item key={i}>
               <Card className="carouselCard">
-                <Card.Img top src={image} alt={alt} />
+                <Card.Img src={image} alt={alt} />
               </Card>
               <Carousel.Caption>
                 <h3>{heading}</h3>

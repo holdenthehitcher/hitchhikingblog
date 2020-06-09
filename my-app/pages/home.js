@@ -1,7 +1,8 @@
-import Head from "next/head";
-import AboutMe from "../components/AboutMe";
-import Header from "../components/Header";
+import Title from "../components/Title";
+import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+
+import AboutMe from "../components/AboutMe";
 import PopularPosts from "../components/PopularPosts";
 import InspirationalQuote from "../components/InspirationalQuote";
 import ArticleCategories from "../components/ArticleCategories";
@@ -11,14 +12,10 @@ import GearReviews from "../components/GearReviews";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Hitch-Hike with Holden</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      <Title />
       <main>
         <div className="container">
-          <Header />
+          <Navigation />
           <AboutMe />
           <PopularPosts />
           <InspirationalQuote />
@@ -26,7 +23,6 @@ export default function Home() {
           <Map />
           <GearReviews />
         </div>
-
         <Footer />
       </main>
     </>

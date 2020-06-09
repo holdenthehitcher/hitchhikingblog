@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, Collapse } from "reactstrap";
+import { Nav, NavbarBrand, NavDropdown, NavbarToggler, NavItem, Collapse } from "reactstrap";
+import Navbar from "react-bootstrap/Navbar";
 
-export default function Navigation() {
+const Navigation = () => {
+  const [isNavOpen, toggleNav] = useState(false);
+
   const navigation = [
     {
       href: "/home",
@@ -23,30 +26,30 @@ export default function Navigation() {
     {
       href: "/donate",
       text: "Donate",
-    }
+    },
   ];
 
   return (
     <>
-      
-      <Navbar sticky="top">
+      <Navbar sticky="top" expand="md">
         <div className="row">
-          <NavbarBrand href="/">
-            <h5>Hitch Hike with Holden</h5>
-          </NavbarBrand>
-          <Nav>
-            {navigation.map(({ href, text }, i) => (
-              <NavItem key={i} className="nav-item">
-                <Link href={href}>
-                  <a>{text}</a>
-                </Link>
-              </NavItem>
-            ))}
-          </Nav>
+          <NavbarBrand href="/">Hitch Hike with Holden</NavbarBrand>
+          <NavbarToggler onClick={() => toggleNav(!isNavOpen)} />
+          <Collapse isOpen={isNavOpen} navbar>
+            <Nav>
+              {navigation.map(({ href, text }, i) => (
+                <NavItem key={i} className="nav-item">
+                  <Link href={href}>
+                    <a>{text}</a>
+                  </Link>
+                </NavItem>
+              ))}
+            </Nav>
+          </Collapse>
         </div>
       </Navbar>
     </>
   );
-};
+}
 
-
+export default Navigation;

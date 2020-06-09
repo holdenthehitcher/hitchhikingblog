@@ -6,6 +6,7 @@ import PopularPosts from "../components/PopularPosts";
 import InspirationalQuote from "../components/InspirationalQuote";
 import ArticleCategories from "../components/ArticleCategories";
 import Map from "../components/Map";
+import GearReviews from "../components/GearReviews";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
           <InspirationalQuote />
           <ArticleCategories />
           <Map />
-          {/* Articles Cards */}
+          <GearReviews />
         </div>
 
         <Footer />

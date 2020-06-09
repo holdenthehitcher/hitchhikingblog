@@ -30,7 +30,7 @@ const Header = () => {
     <Navbar sticky="top">
       <div className="row">
         <NavbarBrand href="/">
-          <h5>Holden's Catering Company</h5>
+          <h5>Hitch Hike with Holden</h5>
         </NavbarBrand>
         <Nav>
           {navigation.map(({ href, text }, i) => (

@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PopularPosts from "../components/PopularPosts";
 import InspirationalQuote from "../components/InspirationalQuote";
+import ArticleCategories from "../components/ArticleCategories";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <AboutMe />
           <PopularPosts />
           <InspirationalQuote />
+          <ArticleCategories />
           {/* Articles Cards */}
         </div>
 

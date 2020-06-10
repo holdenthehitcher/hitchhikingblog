@@ -13,7 +13,7 @@ const Navigation = () => {
     },
     {
       href: "/articles",
-      text: "Articles",
+      text: "Featured Articles",
     },
     {
       href: "/shop",
@@ -33,7 +33,9 @@ const Navigation = () => {
     <>
       <Navbar sticky="top" expand="md">
         <div className="row">
-          <NavbarBrand href="/">Hitch Hike with Holden</NavbarBrand>
+          <NavbarBrand href="/">
+            <a>Hitch Hike with Holden</a>
+            </NavbarBrand>
           <NavbarToggler onClick={() => toggleNav(!isNavOpen)} />
           <Collapse isOpen={isNavOpen} navbar>
             <Nav>

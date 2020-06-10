@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import AboutMe from "../components/AboutMe";
 import PopularPosts from "../components/PopularPosts";
 import InspirationalQuote from "../components/InspirationalQuote";
-import ArticleCategories from "../components/ArticleCategories";
+import ArticlesCategories from "../components/ArticlesCategories";
 import Map from "../components/Map";
 import GearReviews from "../components/GearReviews";
 
@@ -14,12 +14,12 @@ export default function Home() {
     <>
       <Title />
       <main>
+        <Navigation />
         <div className="container">
-          <Navigation />
           <AboutMe />
           <PopularPosts />
           <InspirationalQuote />
-          <ArticleCategories />
+          <ArticlesCategories />
           <Map />
           <GearReviews />
         </div>

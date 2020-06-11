@@ -14,7 +14,7 @@ export default function ArticlesFeatured() {
     {
       header: "Culinary",
       image: "blogmaterials/categories/culinary_category.jpg",
-    },
+    }
   ];
 
   return (

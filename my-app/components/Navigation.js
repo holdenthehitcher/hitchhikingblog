@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { Nav, NavbarBrand, NavDropdown, NavbarToggler, NavItem, Collapse } from "reactstrap";
 import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Navigation = () => {
   const [isNavOpen, toggleNav] = useState(false);
@@ -14,10 +15,6 @@ const Navigation = () => {
     {
       href: "/articles",
       text: "Featured Articles",
-    },
-    {
-      href: "/shop",
-      text: "Shop",
     },
     {
       href: "/gear",
@@ -33,25 +30,40 @@ const Navigation = () => {
     <>
       <Navbar sticky="top" expand="md">
         <div className="row">
-          <NavbarBrand href="/">
+          <Navbar.Brand href="/">
             <a>Hitch Hike with Holden</a>
-            </NavbarBrand>
-          <NavbarToggler onClick={() => toggleNav(!isNavOpen)} />
-          <Collapse isOpen={isNavOpen} navbar>
+          </Navbar.Brand>
+          <Navbar.Toggle onClick={() => toggleNav(!isNavOpen)} />
+          <Navbar.Collapse isopen={isNavOpen} navbar>
             <Nav>
-              {navigation.map(({ href, text }, i) => (
-                <NavItem key={i} className="nav-item">
-                  <Link href={href}>
-                    <a>{text}</a>
-                  </Link>
-                </NavItem>
-              ))}
+              <Nav.Item key="1" className="nav-item">
+                <Link href="/home">
+                  <a> Home </a>
+                </Link>
+              </Nav.Item>
+              <NavDropdown title="Articles" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/articles">Articles - Home Page</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/">Hitchhiking</NavDropdown.Item>
+                <NavDropdown.Item href="/">Volunteering</NavDropdown.Item>
+                <NavDropdown.Item href="/">Culinary</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Item key="3" className="nav-item">
+                <Link href="/gear">
+                  <a> Gear </a>
+                </Link>
+              </Nav.Item>
+              <Nav.Item key="4" className="nav-item">
+                <Link href="/donate">
+                  <a> Donate </a>
+                </Link>
+              </Nav.Item>
             </Nav>
-          </Collapse>
+          </Navbar.Collapse>
         </div>
       </Navbar>
     </>
   );
-}
+};
 
 export default Navigation;

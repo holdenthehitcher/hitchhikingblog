@@ -19,11 +19,10 @@ export default class Articles extends Component {
         <Title />
         <main>
         <Navigation />
-          <div className="container">
             
             <CategoryTemplate />
             <Footer />
-          </div>
+         
         </main>
       </>
     );

@@ -11,8 +11,10 @@ const Navigation = () => {
     <>
       <Navbar sticky="top" expand="sm">
         <div className="row">
-          <Navbar.Brand href="/">
-            <a>Holden the Hitcher</a>
+          <Navbar.Brand>
+            <Link href="/home">
+              <a>Holden the Hitcher</a>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle onClick={() => toggleNav(!isNavOpen)} />
           <Navbar.Collapse isopen={isNavOpen} navbar>
@@ -23,11 +25,35 @@ const Navigation = () => {
                 </Link>
               </Nav.Link>
               <NavDropdown title="Articles" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/articles">Articles - Home Page</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Nav.Link>
+                    <Link href="/articles">
+                      <a>Articles - Home Page</a>
+                    </Link>
+                  </Nav.Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/">Hitchhiking</NavDropdown.Item>
-                <NavDropdown.Item href="/">Volunteering</NavDropdown.Item>
-                <NavDropdown.Item href="/">Culinary</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Nav.Link>
+                    <Link href="/articles">
+                      <a>Hitchhiking</a>
+                    </Link>
+                  </Nav.Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Nav.Link>
+                    <Link href="/articles">
+                      <a>Volunteering</a>
+                    </Link>
+                  </Nav.Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Nav.Link>
+                    <Link href="/articles">
+                      <a>Culinary</a>
+                    </Link>
+                  </Nav.Link>
+                </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link>
                 <Link href="/gear">

@@ -6,15 +6,6 @@ body {
   margin: 0;
 }
 
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 main {
   padding: 5rem 0;
   flex: 1;
@@ -23,7 +14,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 
 #aboutImg {
   width: 100%;
@@ -36,20 +26,30 @@ main {
 
 a {
   color: inherit;
-  text-decoration: none;
 }
 
 .categoryBackground {
   height: 500px;
   width: 100%;
+  padding: 0px;
+  margin: 0px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.centered {
+  position: relative;
+  h2 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 300%);
+  }
+}
+
 #gearBackground {
   background-image: url("/blogmaterials/gear/gear_category.jpg");
 }
-
 
 //enter new style above

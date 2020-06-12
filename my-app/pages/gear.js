@@ -10,6 +10,7 @@ export default class Articles extends Component {
 
     this.state = {
       backgroundId: "gearBackground",
+      heading: "Gear Reviews"
     };
   }
 
@@ -18,11 +19,11 @@ export default class Articles extends Component {
       <>
         <Title />
         <main>
-        <Navigation />
+          <Navigation />
             
-            <CategoryTemplate />
-            <Footer />
-         
+            <CategoryTemplate heading={this.state.heading}/>
+            
+          <Footer />
         </main>
       </>
     );

@@ -10,7 +10,8 @@ export default class Articles extends Component {
 
     this.state = {
       backgroundId: "gearBackground",
-      heading: "Gear Reviews"
+      heading: "Gear",
+      description: "Trekking, and camping in all-four seasons in rural and urban environments that highlight some of the tools and equipment I used during two years on foot"
     };
   }
 
@@ -21,7 +22,7 @@ export default class Articles extends Component {
         <main>
           <Navigation />
             
-            <CategoryTemplate heading={this.state.heading}/>
+            <CategoryTemplate heading={this.state.heading} description={this.state.description}/>
             
           <Footer />
         </main>

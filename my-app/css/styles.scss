@@ -44,7 +44,19 @@ a {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, 300%);
+    transform: translate(-50%, 70%);
+    font-size: 100px;
+    color: white;
+  }
+  span {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    font-size: x-large;
+    color: white;
+    width: 65vh;
+    
   }
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CategoryTemplate(props) {
+export default function CategoryBackground(props) {
   return (
     <>
       <div className="categoryBackground" id="gearBackground" fullwidth>

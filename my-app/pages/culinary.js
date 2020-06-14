@@ -12,9 +12,9 @@ export default class Articles extends Component {
 
     this.state = {
       backgroundId: "culinaryBackground",
-      heading: "A Culinary Journey",
+      heading: "Food & Culture",
       description:
-        "Trekking, and camping in all-four seasons in rural and urban environments that highlight some of the tools and equipment I used during two years on foot",
+        "A culinary journey starts with a single bite. From seed to plate, the food displays the pride peoplde have of their ingredients and preparation methods passed down from past generations",
       blogposts: CULINARYPOSTS,
     };
   }

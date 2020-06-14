@@ -14,7 +14,7 @@ export default class Articles extends Component {
       backgroundId: "hitchhikingBackground",
       heading: "Hitchhiking",
       description:
-        "Walking through uncharted territories, making signs, putting yourself out there, and perservering until you reach your goal: that's what embodies the persona of a hitchhiking traveler. The reward? Ending up in a new place with new friends",
+        "Walking through uncharted territories, crafting signs, putting yourself out there, and perservering until you reach your goal: that's what embodies the persona of a hitchhiking traveler. The reward? Ending up in a new place with new friends",
       blogposts: HITCHHIKINGPOSTS,
     };
   }
@@ -25,7 +25,11 @@ export default class Articles extends Component {
         <Title />
         <main>
           <Navigation />
-          <CategoryBackground heading={this.state.heading} description={this.state.description} backgroundId={this.state.backgroundId} />
+          <CategoryBackground
+            heading={this.state.heading}
+            description={this.state.description}
+            backgroundId={this.state.backgroundId}
+          />
           <CategoryHighlightedCards blogposts={this.state.blogposts} />
           <Footer />
         </main>

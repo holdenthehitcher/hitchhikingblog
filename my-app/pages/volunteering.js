@@ -14,7 +14,7 @@ export default class Articles extends Component {
       backgroundId: "volunteerBackground",
       heading: "Volunteering",
       description:
-        "Trekking, and camping in all-four seasons in rural and urban environments that highlight some of the tools and equipment I used during two years on foot",
+        "Exchanging a few hours a day for room and board working on farms, in homes and hostels provide real-world experience in understanding how others make a living",
       blogposts: VOLUNTEERPOSTS,
     };
   }

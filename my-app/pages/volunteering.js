@@ -12,7 +12,7 @@ export default class Articles extends Component {
 
     this.state = {
       backgroundId: "volunteerBackground",
-      heading: "Volunteering Abroad",
+      heading: "Volunteering",
       description:
         "Trekking, and camping in all-four seasons in rural and urban environments that highlight some of the tools and equipment I used during two years on foot",
       blogposts: VOLUNTEERPOSTS,

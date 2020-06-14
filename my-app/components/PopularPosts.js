@@ -34,10 +34,10 @@ export default function PopularPosts() {
 
   return (
     <>
-      <div className="row">
+      <div className="row d-flex justify-content-center">
         <h2>Popular Articles</h2>
       </div>
-      <div className="row">
+      <div className="row d-flex justify-content-center">
         <Carousel activeIndex={index} onSelect={handleSelect}>
           {carouselSlides.map(({ image, alt, heading, text }, i) => (
             <Carousel.Item key={i}>

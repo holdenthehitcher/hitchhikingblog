@@ -35,7 +35,7 @@ const Navigation = () => {
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
                   <Nav.Link>
-                    <Link href="/articles">
+                    <Link href="/hitchhiking">
                       <a>Hitchhiking</a>
                     </Link>
                   </Nav.Link>

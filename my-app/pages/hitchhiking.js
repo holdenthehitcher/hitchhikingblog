@@ -4,30 +4,29 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import CategoryBackground from "../components/CategoryBackground";
 import CategoryHighlightedCards from "../components/CategoryHighlightedCards";
-import { GEARPOSTS } from "../shared/GEARPOSTS";
+import { HITCHHIKINGPOSTS } from "../shared/HITCHHIKINGPOSTS";
 
 export default class Articles extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      backgroundId: "gearBackground",
-      heading: "Gear",
+      backgroundId: "hitchhikingBackground",
+      heading: "Hitchhiking",
       description:
-        "Trekking, and camping in all-four seasons in rural and urban environments that highlight some of the tools and equipment I used during two years on foot",
-      blogposts: GEARPOSTS
+        "Walking through uncharted territories, making signs, putting yourself out there, and perservering until you reach your goal: that's what embodies the persona of a hitchhiking traveler. The reward? Ending up in a new place with new friends",
+      blogposts: HITCHHIKINGPOSTS,
     };
   }
 
   render() {
-
     return (
       <>
         <Title />
         <main>
           <Navigation />
           <CategoryBackground heading={this.state.heading} description={this.state.description} backgroundId={this.state.backgroundId} />
-          <CategoryHighlightedCards blogposts={this.state.blogposts}/>
+          <CategoryHighlightedCards blogposts={this.state.blogposts} />
           <Footer />
         </main>
       </>

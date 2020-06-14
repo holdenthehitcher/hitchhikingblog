@@ -1,4 +1,4 @@
-export const BLOGPOSTS = [
+export const HITCHHIKINGPOSTS = [
   {
     name: "Kelty two-person tent",
     type: "Standalone, two poles",

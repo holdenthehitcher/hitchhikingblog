@@ -1,24 +1,25 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+import Media from "react-bootstrap/Media";
 
 export default function InspirationalQuote() {
   return (
     <div className="row">
       <div className="col-6">
-        <Card>
-          <Card.Body>
-            <h2>Inspirational Quote</h2>
-            "If you Love what you do, You'll never work a day in your life."<br />
+        <Media>
+          <Media.Body>
+            <h5>Inspirational Quote</h5>
+            <p>"If you Love what you do, You'll never work a day in your life."</p>
+            <br />
             <strong>- Mark Anthony</strong>
-          </Card.Body>
-        </Card>
+          </Media.Body>
+        </Media>
       </div>
       <div className="col">
-        <Card>
-          <Card.Body>
-              <Card.Img src="/blogmaterials/firsthitchhike/inspiration.jpg" />
-          </Card.Body>
-        </Card>
+        <Media>
+          <Media.Body>
+            <img width={210} height={170} src="/blogmaterials/firsthitchhike/inspiration.jpg" />
+          </Media.Body>
+        </Media>
       </div>
     </div>
   );

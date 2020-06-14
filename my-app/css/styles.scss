@@ -38,29 +38,35 @@ a {
   background-size: cover;
 }
 
-.centered {
+.background-text {
   position: relative;
   h2 {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, 70%);
+    transform: translate(-50%, 30%);
     font-size: 100px;
     color: white;
   }
-  span {
+
+  p {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, 150%);
-    font-size: x-large;
+    transform: translate(-50%, 105%);
+    font-size: 24px;
     color: white;
     width: 65vh;
-    
+    margin: 0;
+    padding: 0;
   }
 }
 
 #gearBackground {
+  background-image: url("/blogmaterials/gear/gear_category.jpg");
+}
+
+#hitchhikingBackground {
   background-image: url("/blogmaterials/gear/gear_category.jpg");
 }
 

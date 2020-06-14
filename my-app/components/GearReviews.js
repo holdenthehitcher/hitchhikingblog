@@ -5,13 +5,11 @@ import Media from "react-bootstrap/Media";
 export default function GearReviews() {
   return (
     <>
-      <div className="row">
-        <Card>
-          <Media>
-            <div className="col-5">
-              <img width={210} height={170} src="/blogmaterials/gear/gear_category.jpg" />
-            </div>
-            <div className="col">
+      <div className="row d-flex justify-content-center">
+        <div className="col-10">
+          <Card>
+            <Media>
+              <img width={210} height={170} className="mr-4" src="/blogmaterials/gear/gear_category.jpg" />
               <Media.Body>
                 <h3>Gear Reviews</h3>
                 <p>
@@ -20,9 +18,9 @@ export default function GearReviews() {
                   Here are some of the sleeping, cooking, and recreational tools I used daily throughout my journey.
                 </p>
               </Media.Body>
-            </div>
-          </Media>
-        </Card>
+            </Media>
+          </Card>
+        </div>
       </div>
     </>
   );

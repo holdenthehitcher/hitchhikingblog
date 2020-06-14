@@ -14,7 +14,7 @@ export default class Articles extends Component {
       backgroundId: "culinaryBackground",
       heading: "Food & Culture",
       description:
-        "A culinary journey starts with a single bite. From seed to plate, the food displays the pride peoplde have of their ingredients and preparation methods passed down from past generations",
+        "A culinary journey starts with a single bite. From seed to plate, the food displays the pride people have of their ingredients and preparation methods passed down from past generations",
       blogposts: CULINARYPOSTS,
     };
   }

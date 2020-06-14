@@ -42,14 +42,14 @@ const Navigation = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Item>
                   <Nav.Link>
-                    <Link href="/articles">
+                    <Link href="/volunteering">
                       <a>Volunteering</a>
                     </Link>
                   </Nav.Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
                   <Nav.Link>
-                    <Link href="/articles">
+                    <Link href="/culinary">
                       <a>Culinary</a>
                     </Link>
                   </Nav.Link>

@@ -1,41 +1,40 @@
 export const HITCHHIKINGPOSTS = [
   {
-    name: "Kelty two-person tent",
-    type: "Standalone, two poles",
+    name: "Portugal Gas",
+    location: "Portugal",
     thumbnail: {
-      title: "Camping Tent",
-      description: "A tent feels like a second home when it's set up and lived in correctly",
-      image: "/blogmaterials/gear/gear_category.jpg",
+      title: "Gas Checkers in Portugal",
+      description:
+        "While waiting in the pouring rain, a worker checking gas levels offered a ride from an unlikely source",
+      image: "/blogmaterials/hitching/portugal_gas.jpg",
     },
   },
   {
-    name: "Wine holder",
-    type: "Fake skin",
+    name: "Boatride",
+    location: "England",
     thumbnail: {
-      title: "Wine Holder",
+      title: "Catching a Boatride",
       description:
-        "When you want to travel like an OG, wine holders are the way to go. Just make sure not to sit on it...",
-      image: "/blogmaterials/gear/winesatchel.jpg",
+        "Sometimes, the fastest way to get to the other side is to cut straight through... even if on water is the only option",
+      image: "/blogmaterials/hitching/boatride.jpg",
     },
   },
   {
-    name: "Cooking Camping",
-    type: "Burner stove, aluminum cup, wooden spoon",
+    name: "Coastal Trail",
+    location: "England",
     thumbnail: {
-      title: "Cooking Setups",
-      description:
-        "Night camping means a hot meal twice a day: Setting yourself up for delciousness at a moments notice can be convenient if planned properly",
-      image: "/blogmaterials/gear/cookingcamping.jpg",
+      title: "Hiking on Coastal Trails",
+      description: "Hiking is in the name, and more of it is done than you might expect",
+      image: "/blogmaterials/hitching/coastaltrail.jpg",
     },
   },
   {
-    name: "Hammock",
-    type: "hammock",
+    name: "Cool Dad",
+    location: "England",
     thumbnail: {
-      title: "Hammocks",
-      description:
-        "Superlight, with definite downfalls, hammocks are a fun way to float in your dreams, as long as two 'trees' are within reach",
-      image: "/blogmaterials/gear/hammock.jpg",
+      title: "When families offer rides",
+      description: "Some parents might not pick up hitchhikers, but the ones that do are usually like this",
+      image: "/blogmaterials/hitching/cooldad.jpg",
     },
   },
 ];

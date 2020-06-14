@@ -10,6 +10,7 @@ export default function Articles() {
     <>
       <Title />
       <main>
+        <h1>Featured Articles</h1>
         <Navigation />
         <div className="container">
           <ArticlesFeatured />

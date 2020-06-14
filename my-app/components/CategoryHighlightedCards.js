@@ -2,7 +2,6 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 
 export default function CategoryHighlightedCards(props) {
-
   return (
     <>
       <div className="row">

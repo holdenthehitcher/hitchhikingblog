@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PostVideoTemplate({video}) {
+export default function PostVideoTemplate({ video }) {
   return (
     <div className="row d-flex justify-content-center">
       <iframe

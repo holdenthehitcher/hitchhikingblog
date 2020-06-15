@@ -12,11 +12,10 @@ export const HITCHHIKINGPOSTS = [
       "/blogmaterials/hitching/portugal_gas.jpg",
       "/blogmaterials/hitching/boatride.jpg",
       "/blogmaterials/hitching/coastaltrail.jpg",
-      "/blogmaterials/hitching/cooldad.jpg"
+      "/blogmaterials/hitching/cooldad.jpg",
     ],
-    videos: [
-      "https://www.youtube.com/embed/QCeaF8ou6vc"
-    ]
+    videos: ["https://www.youtube.com/embed/QCeaF8ou6vc"],
+    paragraphs: ["This is a paragraph about the times I hitchhiked in Portugal."],
   },
   {
     name: "Boatride",

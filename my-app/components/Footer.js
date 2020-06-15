@@ -56,7 +56,7 @@ export default function Footer() {
           <ul className="list-unstyled">
             {navLinks.map(({ to, text }, i) => (
               <li key={i}>
-                <Link href={to}>{text}</Link>
+                <Link href={to}><a>{text}</a></Link>
               </li>
             ))}
           </ul>

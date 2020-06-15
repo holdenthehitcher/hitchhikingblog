@@ -12,11 +12,11 @@ export default function GearReviews() {
               <img width={210} height={170} className="mr-4" src="/blogmaterials/gear/gear_category.jpg" />
               <Media.Body>
                 <h3>Gear Reviews</h3>
-                <p>
-                  Putting survival equipment to the test is what wild-camping is all about.
-                  <hr />
+                <span>Putting survival equipment to the test is what wild-camping is all about.</span>
+                <hr />
+                <span>
                   Here are some of the sleeping, cooking, and recreational tools I used daily throughout my journey.
-                </p>
+                </span>
               </Media.Body>
             </Media>
           </Card>

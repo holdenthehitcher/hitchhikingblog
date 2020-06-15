@@ -15,19 +15,25 @@ export default class Articles extends Component {
       heading: "Gear",
       description:
         "Trekking, and camping in all-four seasons in rural and urban environments that highlight some of the tools and equipment I used during two years on foot",
-      blogposts: GEARPOSTS
     };
   }
 
   render() {
+    const blogposts = GEARPOSTS;
 
     return (
       <>
         <Title />
         <main>
           <Navigation />
-          <CategoryBackground heading={this.state.heading} description={this.state.description} backgroundId={this.state.backgroundId} />
-          <CategoryHighlightedCards blogposts={this.state.blogposts}/>
+          <CategoryBackground
+            heading={this.state.heading}
+            description={this.state.description}
+            backgroundId={this.state.backgroundId}
+          />
+          <div className="row">
+            <CategoryHighlightedCards blogposts={blogposts} />
+          </div>
           <Footer />
         </main>
       </>

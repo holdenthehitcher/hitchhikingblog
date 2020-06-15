@@ -19,8 +19,7 @@ export default class Articles extends Component {
   }
 
   render() {
-
-const blogposts = CULINARYPOSTS;
+    const blogposts = CULINARYPOSTS;
 
     return (
       <>
@@ -32,7 +31,9 @@ const blogposts = CULINARYPOSTS;
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <CategoryHighlightedCards blogposts={blogposts} />
+          <div className="row">
+            <CategoryHighlightedCards blogposts={blogposts} />
+          </div>
           <Footer />
         </main>
       </>

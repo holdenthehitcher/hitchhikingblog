@@ -20,7 +20,6 @@ export default class Articles extends Component {
   }
 
   render() {
-
     const blogposts = VOLUNTEERPOSTS;
 
     return (
@@ -33,7 +32,9 @@ export default class Articles extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <CategoryHighlightedCards blogposts={blogposts} />
+          <div className="row">
+            <CategoryHighlightedCards blogposts={blogposts} />
+          </div>
           <Footer />
         </main>
       </>

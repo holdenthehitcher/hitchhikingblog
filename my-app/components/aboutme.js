@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
 
 export default function AboutMe() {
   return (
@@ -14,19 +16,38 @@ export default function AboutMe() {
           experiences can now take on a life of their own. You won’t believe the amount of adventure that can fit within
           two years; nor will you see better examples the giving nature of people to those who find themself in a less
           than ideal situation.
-          <br />
-          Disclaimer: This is not your Average ‘travel blog’!
-          <br />
+        </p>
+
+        <Disclaimer />
+
+        <p>
           This follows my journey through 20 countries in Europe with nothing but a backpack and intentions, learning
           about different cultures, the people embodying them, and myself in the process. Stories also include
           volunteering on farms, homes, and hostels, along with some culinary facts and insights that may be foreign… or
           really hit close home with you. There is a favorite gear page for some of the tools I used with wild and urban
           camping when I wanted a place to sleep in more novel locations. My site aims to be ADA compliant using
-          keyboard functions only. Please refer to
-          <u>this</u> to see which keys you need to use to access all the content on this site. Thanks for stopping by
-          and I hope you learn something new today in an interesting way, from the experiences I’ve lived through.
+          keyboard functions only. Please refer to <u>this</u> to see which keys you need to use to access all the
+          content on this site. Thanks for stopping by and I hope you learn something new today in an interesting way,
+          from the experiences I’ve lived through.
         </p>
       </div>
     </div>
   );
 }
+
+const Disclaimer = () => {
+  const [show, setShow] = useState(true);
+
+  return (
+    <>
+      <Alert show={show} variant="danger">
+        <Alert.Heading>Disclaimer: This is not your Average ‘travel blog’! </Alert.Heading>
+        <div className="d-flex justify-content-start">
+          <Button onClick={() => setShow(false)} variant="success">
+            Close me
+          </Button>
+        </div>
+      </Alert>
+    </>
+  );
+};

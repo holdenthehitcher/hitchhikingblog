@@ -3,13 +3,13 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import ArticlesFeatured from "../components/ArticlesFeatured";
 import RandomArticle from "../components/RandomArticle";
+import AllArticles from "../components/AllArticles";
 
 import { ALLPOSTS } from "../shared/ALLPOSTS";
 
 export default function Articles() {
 
 const blogposts = ALLPOSTS;
-console.log(blogposts);
 
   return (
     <>
@@ -21,7 +21,7 @@ console.log(blogposts);
           <ArticlesFeatured />
           <RandomArticle />
           {/* Sort buttons 1.Location 2.Category 3.Date */}
-          {/* Cards of every post */}
+          <AllArticles blogposts={blogposts}/>
           {/* Pagination */}
         </div>
         <Footer />

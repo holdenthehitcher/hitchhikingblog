@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import CategoryBackground from "../components/CategoryBackground";
 import CategoryHighlightedCards from "../components/CategoryHighlightedCards";
+
 import { VOLUNTEERPOSTS } from "../shared/VOLUNTEERPOSTS";
 
 export default class Articles extends Component {

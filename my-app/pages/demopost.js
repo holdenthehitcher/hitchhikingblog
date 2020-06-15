@@ -3,6 +3,7 @@ import Title from "../components/Title";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import PostImageTemplate from "../components/PostImageTemplate";
+import PostVideoTemplate from "../components/PostVideoTemplate";
 
 import { HITCHHIKINGPOSTS } from "../shared/HITCHHIKINGPOSTS";
 
@@ -26,9 +27,9 @@ export class templatePost extends Component {
         <main>
           <Navigation />
           <h1>Headline for Article</h1>
-
             <PostImageTemplate image={images[0]} /> 
-            {/* PostVideoTemplate */}
+            <PostVideoTemplate />
+            {/*  */}
         
           <Footer />
         </main>

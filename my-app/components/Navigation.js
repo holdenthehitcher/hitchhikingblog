@@ -60,11 +60,6 @@ const Navigation = () => {
                   <a>Gear</a>
                 </Link>
               </Nav.Link>
-              <Nav.Link>
-                <Link href="/donate">
-                  <a>Donate</a>
-                </Link>
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>

@@ -8,6 +8,12 @@ export const HITCHHIKINGPOSTS = [
         "While waiting in the pouring rain, a worker checking gas levels offered a ride from an unlikely source",
       image: "/blogmaterials/hitching/portugal_gas.jpg",
     },
+    images: [
+      "/blogmaterials/hitching/portugal_gas.jpg",
+      "/blogmaterials/hitching/boatride.jpg",
+      "/blogmaterials/hitching/coastaltrail.jpg",
+      "/blogmaterials/hitching/cooldad.jpg"
+    ],
   },
   {
     name: "Boatride",

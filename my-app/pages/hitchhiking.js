@@ -16,7 +16,6 @@ export default class Articles extends Component {
       heading: "Hitchhiking",
       description:
         "Walking through uncharted territories, crafting signs, putting yourself out there, and perservering until you reach your goal: that's what embodies the persona of a hitchhiking traveler. The reward? Ending up in a new place with new friends",
-      customClass: "col-4"
     };
   }
 

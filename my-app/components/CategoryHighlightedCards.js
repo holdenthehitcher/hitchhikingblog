@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 
-export default function CategoryHighlightedCards({blogposts}, props) {
+export default function CategoryHighlightedCards({blogposts}) {
   return (
    <>
-      {blogposts.map(({ thumbnail}, props, i) => (
-        <div className={props.customClass} >
-          <Card key={i}>
+      {blogposts.map(({ thumbnail}, i) => (
+        <div className={thumbnail.customClass} key={i}>
+          <Card>
             <Card.Header>{thumbnail.title}</Card.Header>
             <Card.Body>
               <Card.Img src={thumbnail.image} />

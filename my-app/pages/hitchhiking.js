@@ -16,11 +16,13 @@ export default class Articles extends Component {
       heading: "Hitchhiking",
       description:
         "Walking through uncharted territories, crafting signs, putting yourself out there, and perservering until you reach your goal: that's what embodies the persona of a hitchhiking traveler. The reward? Ending up in a new place with new friends",
-      blogposts: HITCHHIKINGPOSTS,
+      customClass: "col-4"
     };
   }
 
   render() {
+    const blogposts = HITCHHIKINGPOSTS;
+
     return (
       <>
         <Title />
@@ -31,7 +33,9 @@ export default class Articles extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <CategoryHighlightedCards blogposts={this.state.blogposts} />
+          <div className="row">
+            <CategoryHighlightedCards blogposts={blogposts} customClass={this.state.customClass} />
+          </div>
           <Footer />
         </main>
       </>

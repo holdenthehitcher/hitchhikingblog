@@ -15,11 +15,13 @@ export default class Articles extends Component {
       heading: "Food & Culture",
       description:
         "A culinary journey starts with a single bite. From seed to plate, the food displays the pride people have of their ingredients and preparation methods passed down from past generations",
-      blogposts: CULINARYPOSTS,
     };
   }
 
   render() {
+
+const blogposts = CULINARYPOSTS;
+
     return (
       <>
         <Title />
@@ -30,7 +32,7 @@ export default class Articles extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <CategoryHighlightedCards blogposts={this.state.blogposts} />
+          <CategoryHighlightedCards blogposts={blogposts} />
           <Footer />
         </main>
       </>

@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Media from "react-bootstrap/Media";
 import Link from "next/link";
 
-export default function GearReviews() {
+export default function HomeGearReviews() {
   return (
     <>
       <div className="row d-flex justify-content-center">

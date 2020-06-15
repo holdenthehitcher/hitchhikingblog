@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 import AboutMe from "../components/AboutMe";
 import PopularPosts from "../components/PopularPosts";
 import InspirationalQuote from "../components/InspirationalQuote";
-import ArticlesCategories from "../components/ArticlesCategories";
+import HomeArticlesCategories from "../components/HomeArticlesCategories";
 import Map from "../components/Map";
-import GearReviews from "../components/GearReviews";
+import HomeGearReviews from "../components/HomeGearReviews";
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
           <AboutMe />
           <PopularPosts />
           <InspirationalQuote />
-          <ArticlesCategories />
+          <HomeArticlesCategories />
           <Map />
-          <GearReviews />
+          <HomeGearReviews />
         </div>
         <Footer />
       </main>

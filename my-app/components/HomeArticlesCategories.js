@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Link from "next/link";
 
-export default function ArticlesCategories() {
+export default function HomeArticlesCategories() {
   const articleCategories = [
     {
       heading: "Hitchhiking",

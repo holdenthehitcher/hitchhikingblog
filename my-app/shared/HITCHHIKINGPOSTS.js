@@ -14,6 +14,9 @@ export const HITCHHIKINGPOSTS = [
       "/blogmaterials/hitching/coastaltrail.jpg",
       "/blogmaterials/hitching/cooldad.jpg"
     ],
+    videos: [
+      "https://www.youtube.com/embed/QCeaF8ou6vc"
+    ]
   },
   {
     name: "Boatride",

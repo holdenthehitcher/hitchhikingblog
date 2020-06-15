@@ -12,14 +12,13 @@ export class templatePost extends Component {
     super(props);
 
     this.state = {
-        blogposts: HITCHHIKINGPOSTS,
+      blogposts: HITCHHIKINGPOSTS,
     };
   }
-  
-  render() {
 
+  render() {
     const postInfo = this.state.blogposts[0];
-    const {images} = postInfo
+    const { images, videos } = postInfo;
 
     return (
       <>
@@ -27,10 +26,10 @@ export class templatePost extends Component {
         <main>
           <Navigation />
           <h1>Headline for Article</h1>
-            <PostImageTemplate image={images[0]} /> 
-            <PostVideoTemplate />
-            {/*  */}
-        
+          <PostImageTemplate image={images[0]} />
+          <PostVideoTemplate video={videos[0]} />
+          {/*  */}
+
           <Footer />
         </main>
       </>

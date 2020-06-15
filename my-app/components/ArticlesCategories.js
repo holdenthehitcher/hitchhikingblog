@@ -28,7 +28,7 @@ export default function ArticlesCategories() {
     <div className="row">
       {articleCategories.map(({ heading, image, description, link }, i) => (
         <div key={i} className="col">
-          <Card key={i}>
+          <Card>
             <Card.Header>{heading}</Card.Header>
             <Card.Body>
               <Link href={link}>

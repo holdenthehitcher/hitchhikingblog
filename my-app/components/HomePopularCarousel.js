@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 
+import styled from "styled-components";
+
 export default function HomePopularCarousel() {
   const [index, setIndex] = useState(0);
 
@@ -32,13 +34,25 @@ export default function HomePopularCarousel() {
     },
   ];
 
+  const LargeHeading = styled.h1`
+    font-size: 100px;
+    text-align: center;
+    color: palevioletred;
+  `;
+
   return (
     <>
       <div className="row d-flex justify-content-center">
-        <h2>Popular Articles</h2>
+        <LargeHeading>Popular Articles</LargeHeading>
       </div>
       <div className="row d-flex justify-content-center">
-        <Carousel className="carouselFade" id="popularCarousel" interval="8000" activeIndex={index} onSelect={handleSelect}>
+        <Carousel
+          className="carouselFade"
+          id="popularCarousel"
+          interval="8000"
+          activeIndex={index}
+          onSelect={handleSelect}
+        >
           {carouselSlides.map(({ image, alt, heading, text }, i) => (
             <Carousel.Item className="carouselItem" key={i}>
               <Card className="carouselCard">

@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 import AboutMe from "../components/AboutMe";
-import PopularPosts from "../components/PopularPosts";
+import HomePopularCarousel from "../components/HomePopularCarousel";
 import InspirationalQuote from "../components/InspirationalQuote";
 import HomeArticlesCategories from "../components/HomeArticlesCategories";
 import Map from "../components/Map";
@@ -22,7 +22,7 @@ export default function Home() {
             </div>
           </div>
           <AboutMe />
-          <PopularPosts />
+          <HomePopularCarousel />
           <InspirationalQuote />
           <HomeArticlesCategories />
           <Map />

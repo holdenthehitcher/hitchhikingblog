@@ -19,9 +19,13 @@ main {
   width: 100%;
 }
 
+
 .carouselCard {
-  width: 500px;
-  height: 300px;
+  width: 650px;
+  height: 450px;
+  .active {
+    opacity: 1;
+  }
 }
 
 a {

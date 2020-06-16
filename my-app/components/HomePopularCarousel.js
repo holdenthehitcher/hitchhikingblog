@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 
-export default function PopularPosts() {
+export default function HomePopularCarousel() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -38,9 +38,9 @@ export default function PopularPosts() {
         <h2>Popular Articles</h2>
       </div>
       <div className="row d-flex justify-content-center">
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel className="carouselFade" id="popularCarousel" interval="8000" activeIndex={index} onSelect={handleSelect}>
           {carouselSlides.map(({ image, alt, heading, text }, i) => (
-            <Carousel.Item key={i}>
+            <Carousel.Item className="carouselItem" key={i}>
               <Card className="carouselCard">
                 <Card.Img src={image} alt={alt} />
               </Card>

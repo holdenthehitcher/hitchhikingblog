@@ -16,6 +16,11 @@ export default function Home() {
       <main>
         <Navigation />
         <div className="container">
+          <div className="row">
+            <div className="col">
+              <h3 className="d-flex justify-content-center">About Holden the Hitcher</h3>
+            </div>
+          </div>
           <AboutMe />
           <PopularPosts />
           <InspirationalQuote />

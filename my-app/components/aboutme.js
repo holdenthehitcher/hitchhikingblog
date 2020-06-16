@@ -1,34 +1,48 @@
 import React, { useState } from "react";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
+import Link from "next/link";
 
 export default function AboutMe() {
+
   return (
     <div className="row">
       <div className="col-3">
         <img src="blogmaterials/about/about.JPG" id="aboutImg"></img>
       </div>
       <div className="col-9">
-        <h3>About Holden the Hitcher</h3>
         <p>
-          Three years following my return to the States… I spent time making blog posts about my travels… without real
-          intent to implement them professionally. Now, after increasing my knowledge of website development, my
-          experiences can now take on a life of their own. You won’t believe the amount of adventure that can fit within
-          two years; nor will you see better examples the giving nature of people to those who find themself in a less
-          than ideal situation.
+          Three years following my return to the States… I spent time making blog posts about my travels{" "}
+          <Link href="/hitchhiking">
+            <a>hitchhiking</a>
+          </Link>
+          ,{" "}
+          <Link href="/volunteering">
+            <a>volunteering</a>
+          </Link>
+          , and getting in and out of sticky situations.
         </p>
 
-        <Disclaimer />
+        <div className="col-8">
+          <Disclaimer />
+        </div>
 
         <p>
-          This follows my journey through 20 countries in Europe with nothing but a backpack and intentions, learning
-          about different cultures, the people embodying them, and myself in the process. Stories also include
-          volunteering on farms, homes, and hostels, along with some culinary facts and insights that may be foreign… or
-          really hit close home with you. There is a favorite gear page for some of the tools I used with wild and urban
-          camping when I wanted a place to sleep in more novel locations. My site aims to be ADA compliant using
-          keyboard functions only. Please refer to <u>this</u> to see which keys you need to use to access all the
-          content on this site. Thanks for stopping by and I hope you learn something new today in an interesting way,
-          from the experiences I’ve lived through.
+          This follows a two year journey through 20 countries in Europe with nothing but a backpack and intentions,
+          learning about different cultures, those embodying them, and myself in the process. See about unbelievable
+          volunteering experiences on farms, homes, and hostels, and feast your eyes on{" "}
+          <Link href="culinary">
+            <a>culinary</a>
+          </Link>{" "}
+          delights… some delectable and others: foregin.
+        </p>
+        <p>
+          Planning on venturing out yourself? Visit the{" "}
+          <Link href="/gear">
+            <a>gear</a>
+          </Link>{" "}
+          page for some of the tools I used with wild and urban camping. You'll never know what situations you may find
+          yourself in. One thing I learned during this experience: Preparation is key!
         </p>
       </div>
     </div>
@@ -41,8 +55,8 @@ const Disclaimer = () => {
   return (
     <>
       <Alert show={show} variant="danger">
-        <Alert.Heading>Disclaimer: This is not your Average ‘travel blog’! </Alert.Heading>
-        <div className="d-flex justify-content-start">
+        <Alert.Heading>Disclaimer: This is not your average ‘Travel Blog’! </Alert.Heading>
+        <div className="d-flex justify-content-center">
           <Button onClick={() => setShow(false)} variant="success">
             Close me
           </Button>

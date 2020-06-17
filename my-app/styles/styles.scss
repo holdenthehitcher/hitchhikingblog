@@ -40,11 +40,14 @@ main {
 
 .carouselCard {
   width: 650px;
-  height: 450px;
-  .active {
-    opacity: 1;
+  height: 470px;
+  .card-img {
+    width: 648px;
+    height: 468px;
   }
 }
+
+
 
 a {
   color: inherit;

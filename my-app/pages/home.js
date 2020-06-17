@@ -9,7 +9,15 @@ import HomeArticlesCategories from "../components/HomeArticlesCategories";
 import Map from "../components/Map";
 import HomeGearReviews from "../components/HomeGearReviews";
 
+import styled from "styled-components";
+
 export default function Home() {
+  const StyledHeading = styled.h3`
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 50px;
+  `;
   return (
     <>
       <Title />
@@ -18,7 +26,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h3 className="d-flex justify-content-center">About Holden the Hitcher</h3>
+              <StyledHeading className="d-flex justify-content-center">About Holden the Hitcher</StyledHeading>
             </div>
           </div>
           <AboutMe />

@@ -1,5 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import CardDeck from "react-bootstrap/CardDeck";
+
+import styled from "styled-components";
+
 import Link from "next/link";
 
 export default function HomeArticlesCategories() {
@@ -24,23 +28,40 @@ export default function HomeArticlesCategories() {
     },
   ];
 
+  const Title = styled.h1`
+  font-size: 40px,
+  font-color: blue,
+  `;
+
+  const styleHeader = {
+    fontSize: "30px",
+    color: "silver",
+  };
+
   return (
-    <div className="row">
-      {articleCategories.map(({ heading, image, description, link }, i) => (
-        <div key={i} className="col">
-          <Card>
-            <Card.Header>{heading}</Card.Header>
-            <Card.Body>
-              <Link href={link}>
-                <a>
-                  <Card.Img src={image} />
-                </a>
-              </Link>
-              <Card.Text>{description}</Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="row mt-4 d-flext justify-content-center">
+        <Title>Story Categories</Title>
+      </div>
+      <div className="row mb-4">
+        <CardDeck>
+          {articleCategories.map(({ heading, image, description, link }, i) => (
+            <Card key={i}>
+              <Card.Header className="d-flex justify-content-center" style={styleHeader}>
+                {heading}
+              </Card.Header>
+              <Card.Body>
+                <Link href={link}>
+                  <a>
+                    <Card.Img src={image} />
+                  </a>
+                </Link>
+                <Card.Text className="mt-1">{description}</Card.Text>
+              </Card.Body>
+            </Card>
+          ))}
+        </CardDeck>
+      </div>
+    </>
   );
 }

@@ -34,12 +34,14 @@ export default function HomePopularCarousel() {
     },
   ];
 
+//styles
   const LargeHeading = styled.h1`
     font-size: 100px;
     text-align: center;
     color: palevioletred;
   `;
 
+//
   return (
     <>
       <div className="row d-flex justify-content-center">

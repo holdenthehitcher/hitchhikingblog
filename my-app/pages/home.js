@@ -25,8 +25,8 @@ export default function Home() {
           <HomePopularCarousel />
           <InspirationalQuote />
           <HomeArticlesCategories />
-          <Map />
           <HomeGearReviews />
+          <Map />
         </div>
         <Footer />
       </main>

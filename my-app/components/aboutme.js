@@ -4,13 +4,12 @@ import Button from "react-bootstrap/Button";
 import Link from "next/link";
 
 export default function AboutMe() {
-
   return (
     <div className="row">
       <div className="col-3">
         <img src="blogmaterials/about/about.JPG" id="aboutImg"></img>
       </div>
-      <div className="col-9">
+      <div className="col-8">
         <p>
           Three years following my return to the States… I spent time making blog posts about my travels{" "}
           <Link href="/hitchhiking">
@@ -23,7 +22,7 @@ export default function AboutMe() {
           , and getting in and out of sticky situations.
         </p>
 
-        <div className="col-8">
+        <div className="col col-md-8 col-xl-7">
           <Disclaimer />
         </div>
 
@@ -55,10 +54,10 @@ const Disclaimer = () => {
   return (
     <>
       <Alert show={show} variant="danger">
-        <Alert.Heading>Disclaimer: This is not your average ‘Travel Blog’! </Alert.Heading>
+        <Alert.Heading>Disclaimer: This is not your 'Average Travel Blog’! </Alert.Heading>
         <div className="d-flex justify-content-center">
           <Button onClick={() => setShow(false)} variant="success">
-            Close me
+            Got it!
           </Button>
         </div>
       </Alert>

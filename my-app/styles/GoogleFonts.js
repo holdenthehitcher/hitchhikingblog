@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Fonts() {
+export default function GoogleFonts() {
   return (
     <div id="links">
       <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"></link>;

@@ -3,57 +3,46 @@ import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
 
-import styled from "styled-components";
 
 export default function AboutMe() {
-  const TextWhite = styled.span`
-    color: white;
-  `;
-
   return (
     <div className="row">
       <div className="col-3">
         <img src="blogmaterials/about/about.JPG" id="aboutImg"></img>
       </div>
       <div className="col-8">
-        <p>
-          <TextWhite>
-            Three years following my return to the States… I spent time making blog posts about my travels{" "}
-            <Link href="/hitchhiking">
-              <a>hitchhiking</a>
-            </Link>
-            ,{" "}
-            <Link href="/volunteering">
-              <a>volunteering</a>
-            </Link>
-            , and getting in and out of sticky situations.
-          </TextWhite>
+        <p className="textWhite">
+          Three years following my return to the States… I spent time making blog posts about my travels{" "}
+          <Link href="/hitchhiking">
+            <a>hitchhiking</a>
+          </Link>
+          ,{" "}
+          <Link href="/volunteering">
+            <a>volunteering</a>
+          </Link>
+          , and getting in and out of sticky situations.
         </p>
 
         <div className="col col-md-8 col-xl-7">
           <Disclaimer />
         </div>
 
-        <p>
-          <TextWhite>
-            This follows a two year journey through 20 countries in Europe with nothing but a backpack and intentions,
-            learning about different cultures, those embodying them, and myself in the process. See about unbelievable
-            volunteering experiences on farms, homes, and hostels, and feast your eyes on{" "}
-            <Link href="culinary">
-              <a>culinary</a>
-            </Link>{" "}
-            delights… some delectable and others: foreign.
-          </TextWhite>
+        <p className="textWhite">
+          This follows a two year journey through 20 countries in Europe with nothing but a backpack and intentions,
+          learning about different cultures, those embodying them, and myself in the process. See about unbelievable
+          volunteering experiences on farms, homes, and hostels, and feast your eyes on{" "}
+          <Link href="culinary">
+            <a>culinary</a>
+          </Link>{" "}
+          delights… some delectable and others: foreign.
         </p>
-        <p>
-          <TextWhite>
-            Planning on venturing out yourself? Visit the{" "}
-            <Link href="/gear">
-              <a>gear</a>
-            </Link>{" "}
-            page for some of the tools I used with wild and urban camping. You'll never know what situations you may
-            find yourself in. One thing I learned during this experience: Preparation is key!
-          </TextWhite>
+        <p className="textWhite">
+          Planning on venturing out yourself? Visit the{" "}
+          <Link href="/gear">
+            <a>gear</a>
+          </Link>{" "}
+          page for some of the tools I used with wild and urban camping. You'll never know what situations you may find
+          yourself in. One thing I learned during this experience: Preparation is key!
         </p>
       </div>
     </div>

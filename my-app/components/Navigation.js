@@ -8,7 +8,14 @@ import styled from "styled-components";
 const Navigation = () => {
   const BrandStyled = styled.a`
     font-family: "Indie Flower", cursive;
+    font-size: 35px;
   `;
+
+  const NavLinkStyled = styled.a`
+  font-family: "Bellota", cursive;
+  font-size: 25px;
+  `;
+
   return (
     <>
       <Navbar sticky="top" expand="sm">
@@ -22,33 +29,37 @@ const Navigation = () => {
           <Navbar.Collapse>
             <Nav>
               <Link href="/home" passHref>
-                <Nav.Link>Home</Nav.Link>
+                <Nav.Link>
+                  <NavLinkStyled>Home</NavLinkStyled>
+                </Nav.Link>
               </Link>
-              <NavDropdown title="Articles" id="basic-nav-dropdown">
+              <NavDropdown title="Articles" id="basic-nav-dropdown" className="navLinkStyled">
                 <NavDropdown.Item>
                   <Link href="/articles">
-                    <a>Articles - Home Page</a>
+                    <NavLinkStyled>Articles - Home Page</NavLinkStyled>
                   </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
                   <Link href="/hitchhiking">
-                    <a>Hitchhiking</a>
+                    <NavLinkStyled>Hitchhiking</NavLinkStyled>
                   </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
                   <Link href="/volunteering">
-                    <a>Volunteering</a>
+                    <NavLinkStyled>Volunteering</NavLinkStyled>
                   </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
                   <Link href="/culinary">
-                    <a>Culinary</a>
+                    <NavLinkStyled>Culinary</NavLinkStyled>
                   </Link>
                 </NavDropdown.Item>
               </NavDropdown>
               <Link href="/gear" passHref>
-                <Nav.Link>Gear</Nav.Link>
+                <Nav.Link>
+                  <NavLinkStyled>Gear</NavLinkStyled>
+                </Nav.Link>
               </Link>
             </Nav>
           </Navbar.Collapse>

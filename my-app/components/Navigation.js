@@ -1,23 +1,25 @@
-import React, { useState } from "react";
 import Link from "next/link";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-const Navigation = () => {
-  
+import styled from "styled-components";
 
+const Navigation = () => {
+  const BrandStyled = styled.a`
+    font-family: "Indie Flower", cursive;
+  `;
   return (
     <>
       <Navbar sticky="top" expand="sm">
         <div className="row">
           <Navbar.Brand>
             <Link href="/home" passHref>
-              <a>Holden the Hitcher</a>
+              <BrandStyled>Holden the Hitcher</BrandStyled>
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav"  />
-          <Navbar.Collapse >
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse>
             <Nav>
               <Link href="/home" passHref>
                 <Nav.Link>Home</Nav.Link>

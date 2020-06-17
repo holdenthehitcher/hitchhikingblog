@@ -40,10 +40,10 @@ export default function HomeArticlesCategories() {
 
   return (
     <>
-      <div className="row mt-4 d-flext justify-content-center">
+      <div className="row my-4 d-flext justify-content-center">
         <Title>Story Categories</Title>
       </div>
-      <div className="row mb-4">
+      <div className="row mb-5">
         <CardDeck>
           {articleCategories.map(({ heading, image, description, link }, i) => (
             <Card key={i}>

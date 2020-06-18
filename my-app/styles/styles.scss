@@ -16,7 +16,11 @@ main {
   align-items: center;
 }
 
-///
+a {
+  color: inherit;
+}
+
+///Navbar
 .navbar {
   background-color: rgb(34, 39, 42);
   width: 100%;
@@ -180,12 +184,45 @@ main {
   width: 80%;
 }
 
+.footerHeaders {
+  font-family: "Gochi Hand", cursive;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
 
+.footerLinksList {
+  text-align: center;
+}
+
+.footerLinks {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.socialAlignCenter {
+  justify-content: center;
+  display: flex;
+}
+
+.socialAlign {
+  float: left;
+}
+
+.socialSize {
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+}
+
+.socialLogos {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 
 /////
-a {
-  color: inherit;
-}
 
 .categoryBackground {
   height: 530px;

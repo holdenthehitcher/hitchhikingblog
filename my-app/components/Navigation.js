@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Navigation = () => {
-
   return (
     <Navbar sticky="top" expand="md">
       <Navbar.Brand>

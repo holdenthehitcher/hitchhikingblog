@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Button from "react-bootstrap/Button";
 
 const navLinks = [
   {
@@ -11,16 +12,8 @@ const navLinks = [
     text: "Articles",
   },
   {
-    to: "/shop",
-    text: "Shop",
-  },
-  {
     to: "/gear",
     text: "Gear",
-  },
-  {
-    to: "/donate",
-    text: "Donate",
   },
 ];
 
@@ -50,20 +43,22 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="site-footer">
-      <div className="row">
-        <div className="col-4 col-sm-2 offset-1">
+      <div className="row d-flex justify-content-center">
+        <div className="col-3">
           <h5>Links</h5>
           <ul className="list-unstyled">
             {navLinks.map(({ to, text }, i) => (
               <li key={i}>
-                <Link href={to}><a>{text}</a></Link>
+                <Link href={to}>
+                  <a>{text}</a>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
-        <div className="col-6 col-sm-3 text-center">
+        <div className="col-3">
           <h5>Social</h5>
-          <ul className="list-unstyled list-horizontal">
+          <ul className="list-unstyled">
             {socialLinks.map(({ href, linkClass, iconClass }, i) => (
               <li key={i}>
                 <a className={`btn btn-social-icon ${linkClass}`} href={href}>
@@ -73,14 +68,16 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div className="col-sm-4 text-center">
-          <a role="button" className="btn btn-link" href="tel:+12065551234">
-            <i className="fa fa-phone" /> 1-206-555-1234
-          </a>
+        <div className="col-3">
           <br />
-          <a role="button" className="btn btn-link" href="mailto:notreal@notreal.co">
-            <i className="fa fa-envelope-o" /> campsites@nucamp.co
-          </a>
+          <h5>Leave a Message</h5>
+          <Button type="modal" className="btn btn-lg btn-primary">
+            Contact
+          </Button>
+        </div>
+        <div className="col-3">
+          <h5>Sign-Up</h5>
+          <input type="text"/>
         </div>
       </div>
     </footer>

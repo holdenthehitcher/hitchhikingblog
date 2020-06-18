@@ -11,19 +11,19 @@ export default function HomeGearReviews() {
   return (
     <>
       <div className="row d-flex justify-content-center my-5">
-        <div className="col-10">
-          <Card>
+        <div className="col-md-10">
+          <Card id="homeGearBody">
             <Media style={boxSize}>
               <Link href="/gear">
                 <a>
-                  <img width={210} height={170} className="mr-4" src="/blogmaterials/gear/gear_category.jpg" />
+                  <img width={250} height={200} className="mr-4" src="/blogmaterials/gear/gear_category.jpg" />
                 </a>
               </Link>
               <Media.Body>
-                <h3>Gear Reviews</h3>
-                <span>Putting survival equipment to the test is what wild-camping is all about.</span>
+                <h3 id="homeGearHead">Gear Reviews</h3>
+                <span className="homeGearText">Putting survival equipment to the test is what wild-camping is all about.</span>
                 <hr />
-                <span>
+                <span className="homeGearText">
                   Here are some of the sleeping, cooking, and recreational tools I used daily throughout my journey.
                 </span>
               </Media.Body>

@@ -28,35 +28,26 @@ export default function HomeArticlesCategories() {
     },
   ];
 
-  const Title = styled.h1`
-  font-size: 40px,
-  font-color: blue,
-  `;
-
-  const styleHeader = {
-    fontSize: "30px",
-    color: "silver",
-  };
 
   return (
     <>
-      <div className="row my-4 d-flext justify-content-center">
-        <Title>Story Categories</Title>
+      <div className="row my-4 d-flex justify-content-center">
+        <h1 id="homeCatHeader">Story Categories</h1>
       </div>
       <div className="row mb-5">
         <CardDeck>
           {articleCategories.map(({ heading, image, description, link }, i) => (
             <Card key={i}>
-              <Card.Header className="d-flex justify-content-center" style={styleHeader}>
+              <Card.Header className="d-flex justify-content-center catCardHeader">
                 {heading}
               </Card.Header>
-              <Card.Body>
+              <Card.Body className="catCardBody">
                 <Link href={link}>
                   <a>
                     <Card.Img src={image} />
                   </a>
                 </Link>
-                <Card.Text className="mt-1">{description}</Card.Text>
+                <Card.Text className="mt-1 catCardText">{description}</Card.Text>
               </Card.Body>
             </Card>
           ))}

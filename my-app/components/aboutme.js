@@ -3,12 +3,11 @@ import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
 
-
 export default function AboutMe() {
   return (
     <div className="row">
       <div className="col-3">
-        <img src="blogmaterials/about/about.JPG" id="aboutImg"></img>
+        <img src="blogmaterials/about/about.JPG" className="rounded" id="aboutImg"></img>
       </div>
       <div className="col-8">
         <p className="textWhite">
@@ -23,7 +22,7 @@ export default function AboutMe() {
           , and getting in and out of sticky situations.
         </p>
 
-        <div className="col col-md-8 col-xl-7">
+        <div className="col col-lg-8">
           <Disclaimer />
         </div>
 
@@ -55,7 +54,9 @@ const Disclaimer = () => {
   return (
     <>
       <Alert show={show} variant="danger">
-        <Alert.Heading>Disclaimer: This is not your 'Average Travel Blog’! </Alert.Heading>
+        <Alert.Heading style={{ textAlign: "center" }}>
+          Disclaimer: This is not your 'Average Travel Blog’!{" "}
+        </Alert.Heading>
         <div className="d-flex justify-content-center">
           <Button onClick={() => setShow(false)} variant="success">
             Got it!

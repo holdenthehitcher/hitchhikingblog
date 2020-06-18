@@ -34,18 +34,11 @@ export default function HomePopularCarousel() {
     },
   ];
 
-//styles
-  const LargeHeading = styled.h1`
-    font-size: 100px;
-    text-align: center;
-    color: palevioletred;
-  `;
 
-//
   return (
     <>
       <div className="row d-flex justify-content-center">
-        <LargeHeading>Popular Articles</LargeHeading>
+        <h1 className="popularHeading">Popular Articles</h1>
       </div>
       <div className="row d-flex justify-content-center">
         <Carousel
@@ -61,8 +54,8 @@ export default function HomePopularCarousel() {
                 <Card.Img src={image} alt={alt} />
               </Card>
               <Carousel.Caption>
-                <h3>{heading}</h3>
-                <p>{text}</p>
+                <h3 className="carouselCaptionHeading">{heading}</h3>
+                <p className="carouselCaptionText">{text}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}

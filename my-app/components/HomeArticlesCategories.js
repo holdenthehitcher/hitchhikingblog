@@ -2,8 +2,6 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 
-import styled from "styled-components";
-
 import Link from "next/link";
 
 export default function HomeArticlesCategories() {

@@ -21,9 +21,10 @@ export default function Articles() {
       <main>
         <Navigation />
         <div className="container">
-          <h1>Featured Articles</h1>
+          <h1 className="carouselCaptionHeading" style={{textAlign: "center"}}>Featured Articles</h1>
           <ArticlesFeatured />
           <RandomArticle />
+          <h1 className="carouselCaptionHeading" style={{textAlign: "center"}}>All Stories</h1>
           <SortingButtons />
           <CardColumns>
             <AllArticlesCards blogposts={blogposts} />

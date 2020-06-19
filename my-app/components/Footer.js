@@ -75,8 +75,10 @@ export default function Footer() {
           </Button>
         </div>
         <div className="col-3">
-          <h5 className="footerHeaders">Sign-Up</h5>
+          <h5 className="footerHeaders">Letters</h5>
           <input type="text" className="socialAlignCenter" />
+          <br/>
+          <Button type="submit">Sign-up</Button>
         </div>
       </div>
     </footer>

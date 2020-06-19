@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import CardDeck from "react-bootstrap/CardDeck";
+
 import Link from "next/link";
 
 export default function ArticlesFeatured() {
@@ -23,19 +25,23 @@ export default function ArticlesFeatured() {
 
   return (
     <div className="row">
-      {articles.map(({ header, image, link }, i) => (
-        <div className="col" key={i}>
-          <Card>
-            <Card.Header>{header}</Card.Header>
-            <Link href={link}>
-              <a>
-                <Card.Img src={image} />
-              </a>
-            </Link>
-            <Card.Body></Card.Body>
-          </Card>
-        </div>
-      ))}
+      <CardDeck>
+        {articles.map(({ header, image, link }, i) => (
+          <div className="col-lg-4 mb-2">
+            <Card key={i}>
+              <Card.Header className="catCardHeader" style={{ textAlign: "center" }}>
+                {header}
+              </Card.Header>
+              <Link href={link}>
+                <a>
+                  <Card.Img src={image} />
+                </a>
+              </Link>
+              <Card.Body></Card.Body>
+            </Card>
+          </div>
+        ))}
+      </CardDeck>
     </div>
   );
 }

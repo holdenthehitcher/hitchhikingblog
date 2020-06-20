@@ -1,5 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 
+/////global////
+
 html,
 body {
   padding: 0;
@@ -20,7 +22,7 @@ a {
   color: inherit;
 }
 
-///Navbar
+///Navbar///
 .navbar {
   background-color: rgb(34, 39, 42);
   width: 100%;
@@ -233,6 +235,32 @@ a {
   margin-bottom: 10px;
 }
 
+///////////////////////
+//////Blog Posts///////
+//////////////////////
+
+.postHeader {
+  font-family: "Neucha", cursive;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
+.postTextcol {
+  width: 100vh;
+}
+
+.postText {
+  color: white;
+  font-size: 22px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+  line-break: auto;
+}
+
+/////////////////////
 
 .categoryBackground {
   height: 530px;

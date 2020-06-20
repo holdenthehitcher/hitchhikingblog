@@ -26,7 +26,7 @@ export class templatePost extends Component {
         <Title />
         <main>
           <Navigation />
-          <h1>Headline for Article</h1>
+          <h1 className="postHeader">Headline for Article</h1>
           <PostImageTemplate image={images[0]} />
           <PostVideoTemplate video={videos[0]} />
           <PostParagraphTemplate paragraph={paragraphs[0]} />

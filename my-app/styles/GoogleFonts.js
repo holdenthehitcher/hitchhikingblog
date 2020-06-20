@@ -11,6 +11,8 @@ export default function GoogleFonts() {
       <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"></link>
     </div>
   );
 }

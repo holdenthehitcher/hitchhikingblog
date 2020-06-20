@@ -29,15 +29,15 @@ export default function ArticlesFeatured() {
         {articles.map(({ header, image, link }, i) => (
           <div className="col-lg-4 mb-2" key={i}>
             <Card>
-              <Card.Header className="catCardHeader" style={{ textAlign: "center" }}>
-                {header}
-              </Card.Header>
               <Link href={link}>
                 <a>
+                  <Card.Header className="catCardHeader" style={{ textAlign: "center" }}>
+                    {header}
+                  </Card.Header>
                   <Card.Img src={image} />
+                  <Card.Body></Card.Body>
                 </a>
               </Link>
-              <Card.Body></Card.Body>
             </Card>
           </div>
         ))}

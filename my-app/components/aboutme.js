@@ -7,7 +7,11 @@ export default function AboutMe() {
   return (
     <div className="row">
       <div className="col-3">
-        <img src="blogmaterials/about/about.JPG" className="rounded" id="aboutImg"></img>
+        <Link href="/Stories/AboutHTH">
+          <a>
+            <img src="blogmaterials/about/about.JPG" className="rounded" id="aboutImg"></img>
+          </a>
+        </Link>
       </div>
       <div className="col-8">
         <p className="textWhite">

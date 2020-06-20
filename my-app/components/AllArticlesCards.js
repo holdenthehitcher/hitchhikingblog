@@ -5,9 +5,9 @@ import Link from 'next/link'
 export default function AllArticlesCards({ blogposts }) {
   return (
     <>
-      {blogposts.map(({ thumbnail, page = "/" }, i) => (
+      {blogposts.map(({ thumbnail, pageLink = "/articles" }, i) => (
         <Card key={i}>
-          <Link href={page}>
+          <Link href={pageLink}>
             <a>
               <Card.Title className="quoteAuthor" style={{ textAlign: "center" }}>
                 {thumbnail.title}

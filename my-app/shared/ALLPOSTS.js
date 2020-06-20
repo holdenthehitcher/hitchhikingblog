@@ -74,7 +74,7 @@ export const ABOUTPOST = [
 
       "Admittedly, the past few nights here in Torquay have been more than interesting. Late night parties with cavement costumes (a masculine idea if I’ve ever heard one), getting free hand-therapy (get your head out of the gutter) from an occupational therapist on my stiff thumbs, and making friends that I can’t imagine not meeting at all in my life. My name is Holden, I this may be the beginning of my journey... one about risking it all to make memories and gain insight into the world, living vicariously through each other.",
     ],
-    page: "/Stories/AboutHTH"
+    pageLink: "/Stories/AboutHTH"
   },
 ];
 

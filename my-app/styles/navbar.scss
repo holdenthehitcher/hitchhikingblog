@@ -1,0 +1,46 @@
+.navbar {
+    background-color: rgb(34, 39, 42);
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .navbar-collapse {
+    justify-content: center;
+  }
+  .navbar-brand {
+    justify-content: center;
+  }
+  
+  .brandLogo {
+    font-family: "Indie Flower", cursive;
+    font-size: 60px;
+    margin-right: 5px;
+    margin-left: 25px;
+    color: white;
+  }
+  
+  .navLinkStyled {
+    font-family: "Bellota", cursive;
+    font-size: 35px;
+    color: white;
+    margin-left: 9px;
+    margin-right: 10px;
+    position: relative;
+    top: 14px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  #basic-nav-dropdown {
+    font-family: "Bellota", cursive;
+    font-size: 35px;
+    color: white;
+    position: relative;
+    top: -7px;
+  }
+  
+  .dropdownLinkStyled {
+    font-family: "Bellota", cursive;
+    font-size: 25px;
+  }

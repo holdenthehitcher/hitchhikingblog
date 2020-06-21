@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Title from "../../components/Title";
+import TitleName from "../../components/TitleName";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import PostImageTemplate from "../../components/PostImageTemplate";
@@ -23,7 +23,7 @@ export class AboutPost extends Component {
 
     return (
       <>
-        <Title />
+        <TitleName />
         <main>
           <Navigation />
           <div className="container">
@@ -31,13 +31,10 @@ export class AboutPost extends Component {
             <PostImageTemplate image={images.theLightsBelow} />
             <PostParagraphTemplate paragraph={paragraphs[0]} />
             <PostImageTemplate image={images.overcastTorquay} />
-
             <PostParagraphTemplate paragraph={paragraphs[1]} />
             <PostImageTemplate image={images.cavemen} />
-
             <PostParagraphTemplate paragraph={paragraphs[2]} />
             <PostImageTemplate image={images.camp} />
-
             <PostParagraphTemplate paragraph={paragraphs[3]} />
             <PostVideoTemplate video={videos[0]} />
           </div>

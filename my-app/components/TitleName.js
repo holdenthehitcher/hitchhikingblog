@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-export default function Title() {
+export default function TitleName() {
   return (
     <Head>
       <title>Hitch-Hike with Holden</title>

@@ -1,7 +1,7 @@
 import React from "react";
 import CardColumns from "react-bootstrap/CardColumns";
 
-import Title from "../components/Title";
+import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import ArticlesFeatured from "../components/ArticlesFeatured";
@@ -17,14 +17,18 @@ export default function Articles() {
 
   return (
     <>
-      <Title />
+      <TitleName />
       <main>
         <Navigation />
         <div className="container">
-          <h1 className="carouselCaptionHeading" style={{textAlign: "center"}}>Featured Articles</h1>
+          <h1 className="carouselCaptionHeading" style={{ textAlign: "center" }}>
+            Featured Stories
+          </h1>
           <ArticlesFeatured />
           <RandomArticle />
-          <h1 className="carouselCaptionHeading" style={{textAlign: "center"}}>All Stories</h1>
+          <h1 className="carouselCaptionHeading" style={{ textAlign: "center" }}>
+            All Stories
+          </h1>
           <SortingButtons />
           <CardColumns>
             <AllArticlesCards blogposts={blogposts} />

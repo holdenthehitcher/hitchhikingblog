@@ -5,7 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Navigation = () => {
   return (
-    <Navbar sticky="top" expand="md">
+    <Navbar sticky="top" expand="lg">
       <Navbar.Brand>
         <Link href="/home" passHref>
           <a className="brandLogo">Holden the Hitcher</a>
@@ -17,13 +17,10 @@ const Navigation = () => {
           <Link href="/home" passHref>
             <a className="navLinkStyled">Home</a>
           </Link>
-          <NavDropdown title="Articles" id="basic-nav-dropdown" className="navLinkStyled">
-            <NavDropdown.Item>
-              <Link href="/articles">
-                <a className="dropdownLinkStyled">Articles - Home Page</a>
-              </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
+          <Link href="/allstories" passHref>
+            <a className="navLinkStyled">Stories</a>
+          </Link>
+          <NavDropdown title="Categories" id="basic-nav-dropdown" className="navLinkStyled">
             <NavDropdown.Item>
               <Link href="/hitchhiking">
                 <a className="dropdownLinkStyled">Hitchhiking</a>
@@ -39,10 +36,12 @@ const Navigation = () => {
                 <a className="dropdownLinkStyled">Culinary</a>
               </Link>
             </NavDropdown.Item>
+            <NavDropdown.Item>
+              <Link href="/gear" passHref>
+                <a className="dropdownLinkStyled">Gear</a>
+              </Link>
+            </NavDropdown.Item>
           </NavDropdown>
-          <Link href="/gear" passHref>
-            <a className="navLinkStyled">Gear</a>
-          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

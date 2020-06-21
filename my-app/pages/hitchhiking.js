@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Title from "../components/Title";
+import TitleName from "../components/TitleNameName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import CategoryBackground from "../components/CategoryBackground";
@@ -24,7 +24,7 @@ export default class Articles extends Component {
 
     return (
       <>
-        <Title />
+        <TitleName />
         <main>
           <Navigation />
           <CategoryBackground

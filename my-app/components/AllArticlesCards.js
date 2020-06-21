@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function AllArticlesCards({ blogposts }) {
   return (
     <>
-      {blogposts.map(({ thumbnail, pageLink = "/articles" }, i) => (
+      {blogposts.map(({ thumbnail, pageLink = "/allstories" }, i) => (
         <Card key={i}>
           <Link href={pageLink}>
             <a>

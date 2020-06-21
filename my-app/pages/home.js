@@ -1,4 +1,4 @@
-import Title from "../components/Title";
+import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
@@ -13,7 +13,7 @@ export default function Home() {
  
   return (
     <>
-      <Title />
+      <TitleName />
       <main>
         <Navigation />
         <div className="container">

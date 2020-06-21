@@ -1,0 +1,49 @@
+.categoryBackground {
+  height: 530px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-text {
+  position: relative;
+  h2 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    font-size: 100px;
+    color: white;
+  }
+
+  p {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 105%);
+    font-size: 24px;
+    color: white;
+    width: 65vh;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#gearBackground {
+  background-image: url("/blogmaterials/gear/gear_category.jpg");
+}
+
+#hitchhikingBackground {
+  background-image: url("/blogmaterials/hitching/stawful.jpg");
+}
+
+#volunteerBackground {
+  background-image: url("/blogmaterials/volunteering/foodtruck.jpg");
+}
+
+#culinaryBackground {
+  background-image: url("/blogmaterials/culinary/chocolatemountain.jpg");
+}

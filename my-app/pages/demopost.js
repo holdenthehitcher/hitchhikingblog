@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Title from "../components/Title";
+import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import PostImageTemplate from "../components/PostImageTemplate";
@@ -23,7 +23,7 @@ export class templatePost extends Component {
 
     return (
       <>
-        <Title />
+        <TitleName />
         <main>
           <Navigation />
           <h1 className="postHeader">Headline for Article</h1>

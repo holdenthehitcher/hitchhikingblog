@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Title from "../components/Title";
+import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import CategoryBackground from "../components/CategoryBackground";
 import CategoryHighlightedCards from "../components/CategoryHighlightedCards";
 import { CULINARYPOSTS } from "../shared/CULINARYPOSTS";
 
-export default class Articles extends Component {
+export default class Culinary extends Component {
   constructor(props) {
     super(props);
 
@@ -23,7 +23,7 @@ export default class Articles extends Component {
 
     return (
       <>
-        <Title />
+        <TitleName />
         <main>
           <Navigation />
           <CategoryBackground

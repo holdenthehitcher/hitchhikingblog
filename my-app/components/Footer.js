@@ -8,8 +8,8 @@ const navLinks = [
     text: "Home",
   },
   {
-    to: "/articles",
-    text: "Articles",
+    to: "/allstories",
+    text: "Stories",
   },
   {
     to: "/gear",

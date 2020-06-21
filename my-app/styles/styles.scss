@@ -1,6 +1,16 @@
 @import "~bootstrap/scss/bootstrap";
+@import "navbar.scss";
+@import "AboutMe.scss";
+@import "PopularPostCarousel.scss";
+@import "InspirationalQuote.scss";
+@import "HomeStoriesCategory.scss";
+@import "HomeGearCategory.scss";
+@import "Footer.scss";
+@import "SortButtons.scss";
+@import "BlogStyles.scss";
+@import "categoryBackgrounds.scss";
 
-/////global////
+///// global ////
 
 html,
 body {
@@ -22,294 +32,19 @@ a {
   color: inherit;
 }
 
-///Navbar///
-.navbar {
-  background-color: rgb(34, 39, 42);
-  width: 100%;
+////// Media Queries ////////
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
 }
 
-.brandLogo {
-  font-family: "Indie Flower", cursive;
-  font-size: 60px;
-  margin-right: 20px;
-  margin-left: 25px;
-  color: white;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
 }
 
-.navLinkStyled {
-  font-family: "Bellota", cursive;
-  font-size: 35px;
-  color: white;
-  margin-left: 5px;
-  margin-right: 5px;
-  position: relative;
-  top: 8px;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
 }
 
-#basic-nav-dropdown {
-  font-family: "Bellota", cursive;
-  font-size: 35px;
-  color: white;
-  position: relative;
-  top: -7px;
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
-
-.dropdownLinkStyled {
-  font-family: "Bellota", cursive;
-  font-size: 25px;
-}
-
-///AboutMe
-.styled-heading {
-  font-family: "Prompt", sans-serif;
-  color: rgb(221, 221, 216);
-  font-size: 45px;
-}
-
-#aboutImg {
-  width: 100%;
-}
-
-.textWhite {
-  color: white;
-  font-size: 18px;
-}
-
-////PopularPostCarousel
-.popularHeading {
-  font-family: "Acme", sans-serif;
-  font-size: 100px;
-  text-align: center;
-  color: palevioletred;
-}
-
-.carouselCard {
-  width: 650px;
-  height: 470px;
-  .card-img {
-    width: 648px;
-    height: 468px;
-  }
-}
-
-.carouselCaptionHeading {
-  font-family: "Acme", sans-serif;
-  font-size: 70px;
-  color: rgba(236, 230, 230, 0.795);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  text-shadow: 0px 4px 4px #282828;
-}
-
-.carouselCaptionText {
-  font-size: 24px;
-  font-weight: 400;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(247, 226, 211);
-  text-shadow: 0px 4px 4px #282828;
-  color: rgb(22, 15, 10);
-}
-
-////Inspirational Quote - Fonts practice
-.quoteDiv {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.quoteHeading {
-  font-family: "Itim", cursive;
-  font-size: 50px;
-}
-
-.quoteText {
-  font-family: "Quicksand", sans-serif;
-  font-size: 25px;
-}
-
-.quoteAuthor {
-  font-family: "Yellowtail", cursive;
-  font-size: 30px;
-}
-
-.quoteImage {
-  opacity: 0.9;
-}
-
-/////Home Story Categories - Text Outline and linear Gradient practice
-
-#homeCatHeader {
-  font-size: 80px;
-  color: rgb(0, 204, 255);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(247, 226, 211);
-  text-shadow: 0px 4px 4px #282828;
-  text-align: center;
-}
-
-.catCardHeader {
-  font-size: 40px;
-  color: rgb(95, 180, 15);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(47, 133, 7);
-  text-shadow: 0px 3px 2px #282828;
-}
-
-.catCardBody {
-  background-image: linear-gradient(to bottom right, rgb(168, 100, 100), rgb(123, 207, 54), rgb(165, 163, 158));
-}
-
-.catCardText {
-  font-size: 22px;
-  font-weight: 400;
-  text-align: center;
-  color: rgb(54, 36, 36);
-  text-shadow: 0px 1px 2px #282828;
-}
-
-///// Home Gear Category
-
-#homeGearBody {
-  background-image: linear-gradient(to top right, rgb(168, 100, 100), rgb(123, 207, 54), rgb(165, 163, 158));
-}
-
-#homeGearHead {
-  font-family: "Yellowtail", cursive;
-  font-size: 50px;
-}
-
-.homeGearText {
-  font-size: 21px;
-}
-
-//// Footer
-.site-footer {
-  width: 80%;
-}
-
-.footerHeaders {
-  font-family: "Gochi Hand", cursive;
-  color: white;
-  font-size: 35px;
-  text-align: center;
-}
-
-.footerLinksList {
-  text-align: center;
-}
-
-.footerLinks {
-  font-size: 20px;
-  color: white;
-  text-align: center;
-}
-
-.socialAlignCenter {
-  justify-content: center;
-  display: flex;
-}
-
-.socialAlign {
-  float: left;
-}
-
-.socialSize {
-  font-size: 28px;
-  width: 60px;
-  height: 60px;
-}
-
-.socialLogos {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
-
-///////////////////////
-//////articles page////////
-//////////////////////
-
-///Sort Buttons
-.sortButtons {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-}
-
-///////////////////////
-//////Blog Posts///////
-//////////////////////
-
-.postHeader {
-  font-family: "Neucha", cursive;
-  font-size: 60px;
-  color: white;
-  text-align: center;
-}
-
-.postTextcol {
-  width: 100vh;
-}
-
-.postText {
-  color: white;
-  font-size: 22px;
-  font-family: "Source Sans Pro", sans-serif;
-  text-align: center;
-  overflow-wrap: break-word;
-  white-space: pre-line;
-  line-break: auto;
-}
-
-/////////////////////
-
-.categoryBackground {
-  height: 530px;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.background-text {
-  position: relative;
-  h2 {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, 30%);
-    font-size: 100px;
-    color: white;
-  }
-
-  p {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, 105%);
-    font-size: 24px;
-    color: white;
-    width: 65vh;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-#gearBackground {
-  background-image: url("/blogmaterials/gear/gear_category.jpg");
-}
-
-#hitchhikingBackground {
-  background-image: url("/blogmaterials/hitching/stawful.jpg");
-}
-
-#volunteerBackground {
-  background-image: url("/blogmaterials/volunteering/foodtruck.jpg");
-}
-
-#culinaryBackground {
-  background-image: url("/blogmaterials/culinary/chocolatemountain.jpg");
-}
-
-//enter new style above

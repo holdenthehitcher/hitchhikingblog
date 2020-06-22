@@ -1,3 +1,8 @@
+.catHeader {
+  font-size: 50px;
+  margin-top: 30px;
+}
+
 .catCardDeck {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -18,6 +23,18 @@
   }
 }
 
+@media (min-width: 560px) and (max-width: 768px) {
+  .catCardDeck {
+    display: block;
+    .catCard {
+      display: block;
+      .catCardHeader {
+        font-size: 33px;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .catCardDeck {
     padding-top: 15px;
@@ -27,11 +44,11 @@
       margin-left: 10px;
       margin-right: 10px;
       .catCardHeader {
-        font-size: 30px;
+        font-size: 25px;
       }
       .catCardBody {
         .catCardText {
-          font-size: 18px;
+          font-size: 17px;
         }
       }
     }

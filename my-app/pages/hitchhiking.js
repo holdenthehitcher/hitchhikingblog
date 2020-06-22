@@ -32,7 +32,7 @@ export default class Articles extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-            <CategoryHighlightedCards blogposts={blogposts} customClass={this.state.customClass} />
+            <CategoryHighlightedCards blogposts={blogposts} heading={this.state.heading} />
           <Footer />
         </main>
       </>

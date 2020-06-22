@@ -1,0 +1,39 @@
+.catCardDeck {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  .catCard {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .catCardHeader {
+      font-size: 40px;
+    }
+    .catCardBody {
+      .catCardText {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .catCardDeck {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    .catCard {
+      margin-left: 10px;
+      margin-right: 10px;
+      .catCardHeader {
+        font-size: 30px;
+      }
+      .catCardBody {
+        .catCardText {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -31,7 +31,7 @@ export default function ArticlesFeatured() {
             <Card>
               <Link href={link}>
                 <a>
-                  <Card.Header className="catCardHeader" style={{ textAlign: "center" }}>
+                  <Card.Header className="Header" style={{ textAlign: "center" }}>
                     {header}
                   </Card.Header>
                   <Card.Img src={image} />

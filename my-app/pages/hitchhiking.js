@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TitleName from "../components/TitleNameName";
+import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import CategoryBackground from "../components/CategoryBackground";
@@ -32,9 +32,7 @@ export default class Articles extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <div className="row">
             <CategoryHighlightedCards blogposts={blogposts} customClass={this.state.customClass} />
-          </div>
           <Footer />
         </main>
       </>

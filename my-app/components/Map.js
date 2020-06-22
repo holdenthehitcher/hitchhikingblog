@@ -4,7 +4,7 @@ export default function Map() {
   return (
     <>
       <div className="row d-flex justify-content-center mt-4">
-        <h3>Hitchhiking and Volunteer Locations</h3>
+        <h3 className="mapHeading">Hitchhiking and Volunteer Locations</h3>
       </div>
       <div className="row d-flex justify-content-center mb-4">
         <iframe

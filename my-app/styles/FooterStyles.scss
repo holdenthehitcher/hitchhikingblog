@@ -22,12 +22,7 @@
 
 .socialAlignCenter {
   justify-content: center;
-  display: flex;
   margin: 0px;
-}
-
-.socialAlign {
-  float: left;
 }
 
 .socialSize {
@@ -40,4 +35,71 @@
   justify-content: center;
   display: flex;
   align-items: center;
+}
+
+.stackingCol {
+  display:block;
+}
+
+/////sm viewp.
+@media (min-width: 576px) {
+
+
+  .footerWrapCenter {
+    text-align: center;
+  }
+
+  .footerLinks {
+    font-size: 18px;
+  }
+
+
+  .socialSize {
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .socialLogos {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/////md and up viewp.
+@media (min-width: 768px) {
+  .footerHeaders {
+    font-size: 35px;
+  }
+
+  .footerWrapCenter {
+    text-align: center;
+  }
+
+  .footerLinks {
+    font-size: 20px;
+  }
+
+  .socialAlignCenter {
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+  }
+
+  .socialAlign {
+    float: left;
+  }
+
+  .socialSize {
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .socialLogos {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
 }

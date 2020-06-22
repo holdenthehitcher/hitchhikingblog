@@ -44,7 +44,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="row">
-        <div className="col-2">
+        <div className="col-3 col-md-4">
           <h5 className="footerHeaders">Links</h5>
           <ul className="list-unstyled footerWrapCenter">
             {navLinks.map(({ to, text }, i) => (
@@ -56,7 +56,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div className="col col-sm-4">
+        <div className="col-4 footerWrapCenter">
           <h5 className="footerHeaders">Social</h5>
           <ul className="list-unstyled socialAlignCenter">
             {socialLinks.map(({ href, linkClass, iconClass }, i) => (
@@ -68,21 +68,23 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div className="col-3">
-          <h5 className="footerHeaders">Message</h5>
-          <div className="d-flex justify-content-center">
-            <Button type="modal" className="btn btn-lg btn-primary ">
-              Contact
-            </Button>
-          </div>
-        </div>
-        <div className="col-3">
-          <h5 className="footerHeaders">Letters</h5>
-          <div className="d-flex justify-content-center">
-            <input type="text" />
-          </div>
-          <div className="d-flex justify-content-center mt-2">
-            <Button type="submit">Sign-up</Button>
+        <div className="col-5 col-md-4">
+            <div className="col">
+              <h5 className="footerHeaders">Message</h5>
+              <div className="d-flex justify-content-center">
+                <Button type="modal" className="btn btn-lg btn-primary ">
+                  Contact
+                </Button>
+              </div>
+            <div className="col mt-4">
+              <h5 className="footerHeaders">Letters</h5>
+              <div className="d-flex justify-content-center">
+                <input type="text" />
+              </div>
+              <div className="d-flex justify-content-center mt-2">
+                <Button type="submit">Sign-up</Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

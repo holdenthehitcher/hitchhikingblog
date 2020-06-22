@@ -33,9 +33,9 @@ export default function HomeStoriesCategories() {
         <h1 id="homeCatHeader">Story Categories</h1>
       </div>
       <div className="row mb-5">
-        <CardDeck>
+        <CardDeck className="homeCategoryDeck">
           {articleCategories.map(({ heading, image, description, link }, i) => (
-            <Card key={i} className="mt-4">
+            <Card key={i} className="homeCategoryCard mt-4">
               <Card.Header className="d-flex justify-content-center catCardHeader">
                 {heading}
               </Card.Header>

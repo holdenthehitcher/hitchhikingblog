@@ -34,13 +34,12 @@ export default function HomePopularCarousel() {
     },
   ];
 
-
   return (
     <>
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center my-2">
         <h1 className="popularHeading">Popular Articles</h1>
       </div>
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center my-4">
         <Carousel
           className="carouselFade"
           id="popularCarousel"

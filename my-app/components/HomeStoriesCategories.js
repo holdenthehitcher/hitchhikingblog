@@ -4,7 +4,7 @@ import CardDeck from "react-bootstrap/CardDeck";
 
 import Link from "next/link";
 
-export default function HomeArticlesCategories() {
+export default function HomeStoriesCategories() {
   const articleCategories = [
     {
       heading: "Hitchhiking",
@@ -35,7 +35,7 @@ export default function HomeArticlesCategories() {
       <div className="row mb-5">
         <CardDeck>
           {articleCategories.map(({ heading, image, description, link }, i) => (
-            <Card key={i}>
+            <Card key={i} className="mt-4">
               <Card.Header className="d-flex justify-content-center catCardHeader">
                 {heading}
               </Card.Header>

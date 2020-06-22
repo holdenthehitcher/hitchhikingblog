@@ -1,0 +1,35 @@
+.popularHeading {
+  font-size: 80px;
+  color: rgb(0, 204, 255);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(247, 226, 211);
+  text-shadow: 0px 4px 4px #282828;
+  text-align: center;
+}
+
+.carouselCard {
+  width: 650px;
+  height: 510px;
+  .card-img {
+    width: 648px;
+    height: 508px;
+  }
+}
+
+.carouselCaptionHeading {
+  font-family: "Acme", sans-serif;
+  font-size: 60px;
+  color: rgba(216, 52, 52, 0.795);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0px 4px 4px #282828;
+}
+
+.carouselCaptionText {
+  font-size: 26px;
+  font-weight: 400;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(248, 245, 242);
+  text-shadow: 0px 2px 2px #282828;
+  color: rgb(206, 176, 6);
+}

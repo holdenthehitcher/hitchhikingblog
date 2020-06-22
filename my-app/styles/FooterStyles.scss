@@ -1,5 +1,6 @@
 .site-footer {
   width: 80%;
+  padding-top: 22px;
 }
 
 .footerHeaders {
@@ -9,7 +10,7 @@
   text-align: center;
 }
 
-.footerLinksList {
+.footerWrapCenter {
   text-align: center;
 }
 
@@ -22,6 +23,7 @@
 .socialAlignCenter {
   justify-content: center;
   display: flex;
+  margin: 0px;
 }
 
 .socialAlign {

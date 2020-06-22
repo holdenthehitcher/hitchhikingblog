@@ -5,7 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Navigation = () => {
   return (
-    <Navbar sticky="top" expand="lg">
+    <Navbar sticky="top" expand="md">
       <Navbar.Brand>
         <Link href="/home" passHref>
           <a className="brandLogo">Holden the Hitcher</a>

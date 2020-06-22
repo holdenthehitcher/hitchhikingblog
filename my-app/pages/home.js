@@ -18,9 +18,7 @@ export default function Home() {
         <Navigation />
         <div className="container">
           <div className="row">
-            <div className="col">
-              <h3 className="d-flex justify-content-center styled-heading">About Holden the Hitcher</h3>
-            </div>
+            
           </div>
           <AboutMe />
           <HomePopularCarousel />

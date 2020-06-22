@@ -1,14 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
-@import "navbar.scss";
+@import "NavbarStyles.scss";
 @import "AboutMe.scss";
 @import "PopularPostCarousel.scss";
 @import "InspirationalQuote.scss";
 @import "HomeStoriesCategory.scss";
 @import "HomeGearCategory.scss";
-@import "Footer.scss";
+@import "FooterStyles.scss";
 @import "SortButtons.scss";
 @import "BlogStyles.scss";
 @import "categoryBackgrounds.scss";
+@import "Fonts.scss";
 
 ///// global ////
 
@@ -17,6 +18,7 @@ body {
   padding: 0;
   margin: 0;
   background-image: linear-gradient(to bottom, rgb(36, 30, 30), rgb(137, 138, 130), rgb(52, 49, 42));
+  width: 100%;
 }
 
 main {

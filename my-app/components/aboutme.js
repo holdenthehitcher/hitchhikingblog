@@ -4,8 +4,15 @@ import Button from "react-bootstrap/Button";
 import Link from "next/link";
 
 export default function AboutMe() {
+  const links = [
+    { name: "hitchhiking", href: "/hitchhiking" },
+    { name: "volunteering", href: "/volunteering" },
+    { name: "culinary", href: "/culinary" },
+    { name: "gear", href: "/gear" },
+  ];
+
   return (
-    <div className="row">
+    <div className="row py-4">
       <div className="col-3">
         <Link href="/Stories/AboutHTH">
           <a>
@@ -14,6 +21,9 @@ export default function AboutMe() {
         </Link>
       </div>
       <div className="col-8">
+        <div className="col d-flex justify-content-center">
+          <h3 className="styled-heading">About Holden the Hitcher</h3>
+        </div>
         <p className="textWhite">
           Three years following my return to the States… I spent time making blog posts about my travels{" "}
           <Link href="/hitchhiking">
@@ -23,30 +33,17 @@ export default function AboutMe() {
           <Link href="/volunteering">
             <a>volunteering</a>
           </Link>
-          , and getting in and out of sticky situations.
-        </p>
-
-        <div className="col col-lg-8">
-          <Disclaimer />
-        </div>
-
-        <p className="textWhite">
-          This follows a two year journey through 20 countries in Europe with nothing but a backpack and intentions,
-          learning about different cultures, those embodying them, and myself in the process. See about unbelievable
-          volunteering experiences on farms, homes, and hostels, and feast your eyes on{" "}
+          , and getting in and out of sticky situations. Feast your eyes on{" "}
           <Link href="culinary">
             <a>culinary</a>
           </Link>{" "}
-          delights… some delectable and others: foreign.
-        </p>
-        <p className="textWhite">
-          Planning on venturing out yourself? Visit the{" "}
+          delights tracked through two year journey through 20 countries in Europe with nothing but a backpack and the{" "}
           <Link href="/gear">
             <a>gear</a>
           </Link>{" "}
-          page for some of the tools I used with wild and urban camping. You'll never know what situations you may find
-          yourself in. One thing I learned during this experience: Preparation is key!
+          I can carry.
         </p>
+        <Disclaimer />
       </div>
     </div>
   );
@@ -56,7 +53,7 @@ const Disclaimer = () => {
   const [show, setShow] = useState(true);
 
   return (
-    <>
+    <div className="col pt-4 d-flex justify-content-center">
       <Alert show={show} variant="danger">
         <Alert.Heading style={{ textAlign: "center" }}>
           Disclaimer: This is not your 'Average Travel Blog’!{" "}
@@ -67,6 +64,6 @@ const Disclaimer = () => {
           </Button>
         </div>
       </Alert>
-    </>
+    </div>
   );
 };

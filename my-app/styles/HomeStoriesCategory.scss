@@ -28,13 +28,22 @@
   }
 }
 
-@media (min-width: 560px) and (max-width: 770px) {
+@media (min-width: 560px) and (max-width: 768px) {
   .homeCategoryDeck {
     display: block;
     .homeCategoryCard {
       display: block;
       .catCardHeader {
         font-size: 33px;
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 990px) {
+  .homeCategoryDeck {
+    .homeCategoryCard {
+      .catCardHeader {
+        font-size: 30px;
       }
     }
   }

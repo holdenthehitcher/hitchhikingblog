@@ -26,7 +26,6 @@ export default function HomeCategoryCards() {
     },
   ];
 
-
   return (
     <>
       <div className="row my-4 d-flex justify-content-center">

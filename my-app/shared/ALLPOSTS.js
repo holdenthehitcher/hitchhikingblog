@@ -5,6 +5,7 @@ import { VOLUNTEERPOSTS } from "./VOLUNTEERPOSTS";
 
 export const ABOUTPOST = [
   {
+    className: "aboutPostCard",
     name: "The Beginning of a Journey",
     location: "England",
     date: "30/03/16",
@@ -77,4 +78,9 @@ export const ABOUTPOST = [
   },
 ];
 
-export const ALLPOSTS = [...ABOUTPOST, ...CULINARYPOSTS, ...GEARPOSTS, ...HITCHHIKINGPOSTS, ...VOLUNTEERPOSTS];
+const culinaryPosts = CULINARYPOSTS.map((post) => ({ ...post, className: "culinaryCard" }));
+const gearPosts = GEARPOSTS.map((post) => ({ ...post, className: "gearCard" }));
+const hitchhikingPosts = HITCHHIKINGPOSTS.map((post) => ({ ...post, className: "hitchhikingCard" }));
+const volunteerPosts = VOLUNTEERPOSTS.map((post) => ({ ...post, className: "volunteerCard" }));
+
+export const ALLPOSTS = [...ABOUTPOST, ...culinaryPosts, ...gearPosts, ...hitchhikingPosts, ...volunteerPosts];

@@ -16,5 +16,6 @@ export default function CategoryBackground(props) {
         </div>
       </div>
     </>
+    
   );
 }

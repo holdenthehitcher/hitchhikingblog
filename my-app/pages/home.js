@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import AboutMe from "../components/AboutMe";
 import HomePopularCarousel from "../components/HomePopularCarousel";
 import InspirationalQuote from "../components/InspirationalQuote";
-import HomeStoriesCategories from "../components/HomeStoriesCategories";
+import HomeCategoryCards from "../components/HomeCategoryCards";
 import Map from "../components/Map";
 import HomeGearReviews from "../components/HomeGearReviews";
 
@@ -20,7 +20,7 @@ export default function Home() {
           <AboutMe />
           <HomePopularCarousel />
           <InspirationalQuote />
-          <HomeStoriesCategories />
+          <HomeCategoryCards />
           <HomeGearReviews />
           <Map />
         </div>

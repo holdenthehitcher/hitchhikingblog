@@ -3,7 +3,7 @@ import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import CategoryBackground from "../components/CategoryBackground";
-import CategoryHighlightedCards from "../components/CategoryHighlightedCards";
+import CategoryCards from "../components/CategoryCards";
 import { CULINARYPOSTS } from "../shared/CULINARYPOSTS";
 
 export default class Culinary extends Component {
@@ -32,7 +32,7 @@ export default class Culinary extends Component {
             backgroundId={this.state.backgroundId}
           />
           <div className="row">
-            <CategoryHighlightedCards blogposts={blogposts} />
+            <CategoryCards blogposts={blogposts} heading={this.state.heading} />
           </div>
           <Footer />
         </main>

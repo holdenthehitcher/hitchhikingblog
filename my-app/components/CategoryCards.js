@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 
-export default function CategoryHighlightedCards({ blogposts, heading }) {
+export default function CategoryCards({ blogposts, heading }) {
   return (
     <>
       <h1 className="catHeader">Featured {heading} Articles</h1>

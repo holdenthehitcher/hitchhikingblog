@@ -4,7 +4,7 @@ import CardDeck from "react-bootstrap/CardDeck";
 
 import Link from "next/link";
 
-export default function HomeStoriesCategories() {
+export default function HomeCategoryCards() {
   const articleCategories = [
     {
       heading: "Hitchhiking",

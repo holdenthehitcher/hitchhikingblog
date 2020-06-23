@@ -1,6 +1,12 @@
 .catHeader {
-  font-size: 50px;
-  margin-top: 30px;
+  font-size: 55px;
+  padding-top: 45px;
+  font-family: "Sriracha", cursive;
+  color: rgb(175, 9, 9);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(4, 8, 2);
+  text-shadow: 0px 3px 2px #282828;
+  text-align: center;
 }
 
 .catCardDeck {
@@ -13,17 +19,24 @@
     margin-top: 30px;
     margin-bottom: 30px;
     .catCardHeader {
-      font-size: 40px;
+      font-size: 45px;
+      font-family: "Marko One", serif;
     }
     .catCardBody {
       .catCardText {
-        font-size: 18px;
+        font-size: 23px;
+        font-family: "Pangolin", cursive;
+        text-align: center;
+        margin-top: 10px;
       }
     }
   }
 }
 
 @media (min-width: 560px) and (max-width: 768px) {
+  .catHeader {
+    font-size: 55px;
+  }
   .catCardDeck {
     display: block;
     .catCard {
@@ -31,24 +44,59 @@
       .catCardHeader {
         font-size: 33px;
       }
+      .catCardBody {
+        .catCardText {
+          font-size: 24px;
+        }
+      }
     }
   }
 }
 
 @media (min-width: 768px) {
   .catCardDeck {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
     .catCard {
       margin-left: 10px;
       margin-right: 10px;
       .catCardHeader {
-        font-size: 25px;
+        font-size: 20px;
       }
       .catCardBody {
         .catCardText {
           font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .catHeader {
+    font-size: 70px;
+  }
+  .catCardDeck {
+    .catCard {
+      .catCardHeader {
+        font-size: 24px;
+      }
+      .catCardBody {
+        .catCardText {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .catCardDeck {
+    .catCard {
+      .catCardHeader {
+        font-size: 26px;
+      }
+      .catCardBody {
+        .catCardText {
+          font-size: 21px;
         }
       }
     }

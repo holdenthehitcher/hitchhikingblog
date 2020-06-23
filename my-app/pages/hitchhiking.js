@@ -3,7 +3,7 @@ import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import CategoryBackground from "../components/CategoryBackground";
-import CategoryHighlightedCards from "../components/CategoryHighlightedCards";
+import CategoryCards from "../components/CategoryCards";
 
 import { HITCHHIKINGPOSTS } from "../shared/HITCHHIKINGPOSTS";
 
@@ -32,7 +32,7 @@ export default class Articles extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-            <CategoryHighlightedCards blogposts={blogposts} heading={this.state.heading} />
+            <CategoryCards blogposts={blogposts} heading={this.state.heading} />
           <Footer />
         </main>
       </>

@@ -41,7 +41,7 @@ export default function HomePopularCarousel() {
       </div>
       <div className="row d-flex justify-content-center my-4">
         <Carousel
-          className="carouselFade"
+          className="carouselFade carousel-fade "
           id="popularCarousel"
           interval="8000"
           activeIndex={index}

@@ -4,12 +4,6 @@ import Button from "react-bootstrap/Button";
 import Link from "next/link";
 
 export default function AboutMe() {
-  const links = [
-    { name: "hitchhiking", href: "/hitchhiking" },
-    { name: "volunteering", href: "/volunteering" },
-    { name: "culinary", href: "/culinary" },
-    { name: "gear", href: "/gear" },
-  ];
 
   return (
     <div className="row py-4">

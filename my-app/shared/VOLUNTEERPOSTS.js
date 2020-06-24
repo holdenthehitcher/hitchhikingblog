@@ -3,6 +3,7 @@ export const VOLUNTEERPOSTS = [
     name: "Picking Beans",
     location: "France",
     type: "Farming",
+    date: "07 / 01 / 16",
     thumbnail: {
       title: "Picking Beans",
       description:
@@ -14,6 +15,7 @@ export const VOLUNTEERPOSTS = [
     name: "Glasonbury Farm",
     location: "England",
     type: "Farming",
+    date: "04 / 02 / 16",
     thumbnail: {
       title: "Lending hands on a British Farm",
       description: "Where sheep and gypsy caravans come together",
@@ -24,6 +26,7 @@ export const VOLUNTEERPOSTS = [
     name: "Portugal Pickup",
     location: "Portugal",
     type: "Quick Stop",
+    date: "02 / 22 / 16",
     thumbnail: {
       title: "Staying the Night Off-the-Grid",
       description:
@@ -35,6 +38,7 @@ export const VOLUNTEERPOSTS = [
     name: "Bees",
     location: "Croatia",
     type: "Homestay",
+    date: "07 / 30 / 16",
     thumbnail: {
       title: "The Last Untamed Beasts",
       description: "Bee-keeping is an artful form of nature that has its own risks and delicious rewards",

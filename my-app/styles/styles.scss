@@ -37,6 +37,11 @@ a {
   color: inherit;
 }
 
+a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
 ////// Media Queries ////////
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {

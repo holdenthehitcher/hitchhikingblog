@@ -3,6 +3,8 @@ import Card from "react-bootstrap/Card";
 import Link from "next/link";
 
 export default function AllArticlesCards({ blogposts }) {
+
+
   return (
     <>
       {blogposts.map(({ thumbnail, pageLink = "/allstories", className }, i) => (

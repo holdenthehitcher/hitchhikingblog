@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CardColumns from "react-bootstrap/CardColumns";
+import Button from "react-bootstrap/Button";
 
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
@@ -15,6 +16,24 @@ import { ALLPOSTS } from "../shared/ALLPOSTS";
 export default function Articles() {
   const blogposts = ALLPOSTS;
 
+  /*  const [type, setSortType] = useState([...blogposts]);
+
+  useEffect(() => {
+    <AllArticlesCards blogposts = {sortType} />
+  }, [sortType]);
+
+  const sortArray = (type) => {
+    const types = {
+      location: "location",
+      date: "date",
+      category: "className",
+    };
+    const blogposts = types[type];
+    const sorted = [...blogposts].sort((a, b) => b.location - a.location);
+  };
+  sortArray(sortType);
+*/
+
   return (
     <>
       <TitleName />
@@ -26,10 +45,35 @@ export default function Articles() {
           </h1>
           <ArticlesFeatured />
           <RandomArticle />
-          <h1 className="carouselCaptionHeading" style={{ textAlign: "center" }}>
+          <h1 className="postHeader" style={{ textAlign: "center" }}>
             All Stories
           </h1>
-          <SortingButtons />
+          {/*<div className="row d-flex justify-content-center">
+            <Button
+              disabled={sortType === "category"}
+              onClick={() => setSortType("category")}
+              className="sortButtons"
+              type="button"
+            >
+              Sort by Category
+            </Button>
+            <Button
+              disabled={sortType === "location"}
+              onClick={() => setSortType("location")}
+              className="sortButtons"
+              type="button"
+            >
+              Sort by Location
+            </Button>
+            <Button
+              disabled={sortType === "date"}
+              onClick={() => setSortType("date")}
+              className="sortButtons"
+              type="button"
+            >
+              Sort by Date
+            </Button>
+  </div>*/}
           <CardColumns>
             <AllArticlesCards blogposts={blogposts} />
           </CardColumns>

@@ -3,7 +3,7 @@ import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
 
-export default function AboutMe() {
+export default function AboutMeSecton() {
   return (
     <div className="row py-4">
       <div className="col-3">

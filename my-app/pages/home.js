@@ -2,7 +2,7 @@ import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
-import AboutMe from "../components/AboutMe";
+import AboutMeSection from "../components/AboutMeSection";
 import HomePopularCarousel from "../components/HomePopularCarousel";
 import InspirationalQuote from "../components/InspirationalQuote";
 import HomeCategoryCards from "../components/HomeCategoryCards";
@@ -17,7 +17,7 @@ export default function Home() {
         <Navigation />
         <div className="container">
           <div className="row"></div>
-          <AboutMe />
+          <AboutMeSection />
           <HomePopularCarousel />
           <InspirationalQuote />
           <HomeCategoryCards />

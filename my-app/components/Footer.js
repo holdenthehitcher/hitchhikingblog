@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Button from "react-bootstrap/Button";
+import Newsletter from "./Newsletter";
 
 const navLinks = [
   {
@@ -69,21 +70,19 @@ export default function Footer() {
           </ul>
         </div>
         <div className="col-5 col-md-4">
-            <div className="col">
-              <h5 className="footerHeaders">Message</h5>
-              <div className="d-flex justify-content-center">
-                <Button type="modal" className="btn btn-lg btn-primary ">
-                  Contact
-                </Button>
-              </div>
+          <div className="col">
+            <h5 className="footerHeaders">Message</h5>
+            <div className="d-flex justify-content-center">
+              <Button type="modal" className="btn btn-lg btn-primary ">
+                Contact
+              </Button>
+            </div>
             <div className="col mt-4">
               <h5 className="footerHeaders">Letters</h5>
-              <div className="d-flex justify-content-center">
-                <input type="text" />
-              </div>
               <div className="d-flex justify-content-center mt-2">
                 <Button type="submit">Sign-up</Button>
               </div>
+              <Newsletter />
             </div>
           </div>
         </div>

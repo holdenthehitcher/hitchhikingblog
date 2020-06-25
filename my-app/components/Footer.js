@@ -79,9 +79,6 @@ export default function Footer() {
             </div>
             <div className="col mt-4">
               <h5 className="footerHeaders">Letters</h5>
-              <div className="d-flex justify-content-center mt-2">
-                <Button type="submit">Sign-up</Button>
-              </div>
               <Newsletter />
             </div>
           </div>

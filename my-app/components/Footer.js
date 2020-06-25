@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Button from "react-bootstrap/Button";
+import ContactModal from "./ContactModal";
 import Newsletter from "./Newsletter";
 
 const navLinks = [
@@ -72,11 +72,7 @@ export default function Footer() {
         <div className="col-5 col-md-4">
           <div className="col">
             <h5 className="footerHeaders">Message</h5>
-            <div className="d-flex justify-content-center">
-              <Button type="modal" className="btn btn-lg btn-primary ">
-                Contact
-              </Button>
-            </div>
+            <ContactModal />
             <div className="col mt-4">
               <h5 className="footerHeaders">Letters</h5>
               <Newsletter />

@@ -12,9 +12,9 @@ export default class Culinary extends Component {
 
     this.state = {
       backgroundId: "culinaryBackground",
-      heading: "Food & Culture",
+      heading: "Culinary",
       description:
-        "A culinary journey starts with a single bite. From seed to plate, the food displays the pride people have of their ingredients and preparation methods passed down from past generations",
+        "Embarking on a journey of food culture begins with a single bite. From seed to plate, the food displays the pride people have of their ingredients and preparation methods passed down from past generations",
     };
   }
 
@@ -31,9 +31,7 @@ export default class Culinary extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <div className="row">
-            <CategoryCards blogposts={blogposts} heading={this.state.heading} />
-          </div>
+          <CategoryCards blogposts={blogposts} heading={this.state.heading} />
           <Footer />
         </main>
       </>

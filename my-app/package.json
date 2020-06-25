@@ -20,6 +20,7 @@
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.8",
     "react-is": "^16.8",
+    "react-transition-group": "^4.4.1",
     "sass": "^1.26.8",
     "styled-components": "^5.0.0",
     "yup": "^0.29.1"

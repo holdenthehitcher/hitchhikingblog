@@ -32,9 +32,7 @@ export default class Articles extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <div className="row">
-            <CategoryCards blogposts={blogposts} heading={this.state.heading} />
-          </div>
+          <CategoryCards blogposts={blogposts} heading={this.state.heading} />
           <Footer />
         </main>
       </>

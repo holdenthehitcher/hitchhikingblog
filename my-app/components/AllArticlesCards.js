@@ -2,9 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Link from "next/link";
 
-export default function AllArticlesCards({ blogposts }) {
-
-
+const AllArticlesCards = ({ blogposts }) => {
   return (
     <>
       {blogposts.map(({ thumbnail, pageLink = "/allstories", className }, i) => (
@@ -24,4 +22,5 @@ export default function AllArticlesCards({ blogposts }) {
       ))}
     </>
   );
-}
+};
+export default AllArticlesCards;

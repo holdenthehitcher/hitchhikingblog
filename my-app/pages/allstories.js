@@ -14,8 +14,6 @@ import ArticlesPaginate from "../components/ArticlesPaginate";
 import { ALLPOSTS } from "../shared/ALLPOSTS";
 
 export default function Articles() {
-  const blogposts = ALLPOSTS;
-
   /*  const [type, setSortType] = useState([...blogposts]);
 
   useEffect(() => {
@@ -33,6 +31,20 @@ export default function Articles() {
   };
   sortArray(sortType);
 */
+
+  const blogposts = ALLPOSTS;
+  const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  ///state sets how many posts on each page
+  const [postsPerPage] = useState(7);
+
+  // Get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = blogposts.slice(indexOfFirstPost, indexOfLastPost);
+
+  //Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <>
@@ -75,9 +87,9 @@ export default function Articles() {
             </Button>
   </div>*/}
           <CardColumns>
-            <AllArticlesCards blogposts={blogposts} />
+            <AllArticlesCards blogposts={currentPosts} />
           </CardColumns>
-          <ArticlesPaginate />
+          <ArticlesPaginate postsPerPage={postsPerPage} totalPosts={blogposts.length} paginate={paginate} />
         </div>
         <Footer />
       </main>

@@ -14,57 +14,33 @@ import ArticlesPaginate from "../components/ArticlesPaginate";
 import { ALLPOSTS } from "../shared/ALLPOSTS";
 
 export default function Articles() {
-  /*  const [type, setSortType] = useState([...blogposts]);
-
-  useEffect(() => {
-    <AllArticlesCards blogposts = {sortType} />
-  }, [sortType]);
-
-  const sortArray = (type) => {
-    const types = {
-      location: "location",
-      date: "date",
-      category: "className",
-    };
-    const blogposts = types[type];
-    const sorted = [...blogposts].sort((a, b) => b.location - a.location);
-  };
-  sortArray(sortType);
-*/
   const blogposts = ALLPOSTS;
+  ///// SORTING BUTTONS /////
+  //// state for sorttype thats changed by the type setsorttype
+  const [sortType, setSortType] = useState("date");
+  const sorted = blogposts.sort((a, b) => { 
+    const first = a[sortType].toUpperCase();
+    const second = b[sortType].toUpperCase();
+    if (first < second) {
+      return -1;
+    }
+    if (first > second) {
+      return 1;
+    }
+    return 0;
+  });
 
   //// PAGINATION /////
-  const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   ///state sets how many posts on each page
   const [postsPerPage] = useState(7);
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = blogposts.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = sorted.slice(indexOfFirstPost, indexOfLastPost);
   //Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
-  ///// SORTING BUTTONS /////
-  //// state for sorttype thats changed by the type setsorttype
-  const [sortType, setSortType] = useState("date");
-  //// sort the posts by date
-  const sortByDate = [...blogposts].sort((a, b) => (b.date - a.date));
-  /// add callback for onclick to sort
-  // Tried with switch statment //
-  /* switch (sortType) {
-      case "date":
-        return a > b;
-      case "category":
-        return a > b;
-      case "location":
-        return a > b;
-      default:
-        return;
-    }
-  });
-  */
-  console.log(sortByDate);
+  console.log(sortType, currentPosts);
   return (
     <>
       <TitleName />
@@ -81,8 +57,8 @@ export default function Articles() {
           </h1>
           <div className="row d-flex justify-content-center">
             <Button
-              disabled={sortType === "category"}
-              onClick={() => setSortType("category")}
+              disabled={sortType === "className"}
+              onClick={() => setSortType("className")}
               className="sortButtons"
               type="button"
             >
@@ -96,7 +72,12 @@ export default function Articles() {
             >
               Sort by Location
             </Button>
-            <Button onClick={() => sortByDate} className="sortButtons" type="button">
+            <Button
+              disabled={sortType === "date"}
+              onClick={() => setSortType("date")}
+              className="sortButtons"
+              type="button"
+            >
               Sort by Date
             </Button>
           </div>

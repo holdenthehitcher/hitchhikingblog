@@ -1,6 +1,6 @@
 .categoryBackground {
   height: 530px;
-  width: 100%;
+  width: 94%;
   padding: 0px;
   margin: 0px;
   background-position: center;
@@ -14,28 +14,88 @@
         top: 100%;
         left: 50%;
         transform: translate(-50%, 30%);
-        font-size: 100px;
+        font-size: 50px;
         color: white;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: black;
         text-shadow: 0px 4px 4px #282828;
         font-family: "Permanent Marker", cursive;
       }
-
       p {
         position: absolute;
         top: 100%;
-        left: 50%;
-        transform: translate(-50%, 105%);
-        font-size: 25px;
+        left: 51%;
+        transform: translate(-50%, 100%);
+        font-size: 20px;
         color: rgb(51, 153, 111);
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
         text-shadow: 0px 1px 2px #282828;
         font-family: "Chelsea Market", cursive;
-        width: 75vh;
+        width: 92%;
         margin: 0;
         padding: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 447px) {
+  .categoryBackground {
+    .row {
+      .background-text {
+        h2 {
+          font-size: 50px;
+        }
+        p {
+          font-size: 20px;
+          width: 92%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .categoryBackground {
+    .row {
+      .background-text {
+        h2 {
+          font-size: 65px;
+        }
+        p {
+          font-size: 22px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .categoryBackground {
+    .row {
+      .background-text {
+        h2 {
+          font-size: 100px;
+        }
+        p {
+          font-size: 25px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .categoryBackground {
+    .row {
+      .background-text {
+        p {
+          font-size: 25px;
+          width: 70%;
+        }
       }
     }
   }

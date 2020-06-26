@@ -38,13 +38,11 @@
 }
 
 .stackingCol {
-  display:block;
+  display: block;
 }
 
 /////sm viewp.
 @media (min-width: 576px) {
-
-
   .footerWrapCenter {
     text-align: center;
   }
@@ -52,7 +50,6 @@
   .footerLinks {
     font-size: 18px;
   }
-
 
   .socialSize {
     font-size: 28px;
@@ -70,7 +67,7 @@
 /////md and up viewp.
 @media (min-width: 768px) {
   .footerHeaders {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .footerWrapCenter {

@@ -48,7 +48,7 @@ export default function Articles() {
   //// PAGINATION /////
   const [currentPage, setCurrentPage] = useState(1);
   ///state sets how many posts on each page
-  const [postsPerPage] = useState(9);
+  const [postsPerPage] = useState(3);
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -73,6 +73,7 @@ export default function Articles() {
             <Button
               onClick={() => {
                 if (sortType === "date") {
+                  ``;
                   setSortDir(sortDir === "asc" ? "dsc" : "asc");
                   setArrowDir(arrowDir === "fa-arrow-up" ? "fa-arrow-down" : "fa-arrow-up");
                 } else {
@@ -120,7 +121,13 @@ export default function Articles() {
           <CardColumns>
             <AllArticlesCards blogposts={currentPosts} />
           </CardColumns>
-          <ArticlesPaginate postsPerPage={postsPerPage} totalPosts={blogposts.length} paginate={paginate} />
+          <ArticlesPaginate
+            postsPerPage={postsPerPage}
+            totalPosts={blogposts.length}
+            paginate={paginate}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
         </div>
         <Footer />
       </main>

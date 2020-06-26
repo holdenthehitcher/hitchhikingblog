@@ -54,6 +54,10 @@
   transition: opacity 700ms ease-in;
 }
 
+.currentPageHighlight {
+  opacity: 0.7;
+}
+
 @media (min-width: 992px) {
   .featuredCardHeader {
     font-size: 33px;

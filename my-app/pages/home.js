@@ -18,8 +18,8 @@ export default function Home() {
         <div className="container">
           <div className="row"></div>
           <AboutMeSection />
-          <HomePopularCarousel />
           <InspirationalQuote />
+          <HomePopularCarousel />
           <HomeCategoryCards />
           <HomeGearReviews />
           <Map />

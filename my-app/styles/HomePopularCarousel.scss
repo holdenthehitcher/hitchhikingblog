@@ -7,14 +7,16 @@
   text-align: center;
 }
 
-.carouselCard {
+#popularCarousel {
   width: 650px;
   height: 510px;
+}
+  
   .card-img {
     width: 648px;
     height: 508px;
   }
-}
+
 
 .carouselCaptionHeading {
   font-family: "Acme", sans-serif;
@@ -34,28 +36,3 @@
   color: rgb(206, 176, 6);
 }
 
-/////
-
-.carousel-fade .carousel-inner .item {
-    -webkit-transition: -webkit-transform 1.2s ease-in-out !important;
-    -o-transition: -o-transform 1.2s ease-in-out !important;
-    transition: transform 1.2s ease-in-out !important;
-}
-
-
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-control {
-  z-index: 3;
-}

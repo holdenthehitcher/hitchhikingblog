@@ -7,7 +7,7 @@ export const GEARPOSTS = [
     thumbnail: {
       title: "Camping Tent",
       description: "A tent feels like a second home when it's set up and lived in correctly",
-      image: "/blogmaterials/gear/gear_category.jpg",
+      image: "/blogmaterials/gear/gear_category.JPG",
     },
   },
   {
@@ -19,7 +19,7 @@ export const GEARPOSTS = [
       title: "Wine Holder",
       description:
         "When you want to travel like an OG, wine holders are the way to go. Just make sure not to sit on it...",
-      image: "/blogmaterials/gear/winesatchel.jpg",
+      image: "/blogmaterials/gear/winesatchel.JPG",
     },
   },
   {
@@ -31,7 +31,7 @@ export const GEARPOSTS = [
       title: "Cooking Setups",
       description:
         "Night camping means a hot meal twice a day: Setting yourself up for delciousness at a moments notice can be convenient if planned properly",
-      image: "/blogmaterials/gear/cookingcamping.jpg",
+      image: "/blogmaterials/gear/cookingcamping.JPG",
     },
   },
   {
@@ -43,7 +43,7 @@ export const GEARPOSTS = [
       title: "Hammocks",
       description:
         "Superlight, with definite downfalls, hammocks are a fun way to float in your dreams, as long as two 'trees' are within reach",
-      image: "/blogmaterials/gear/hammock.jpg",
+      image: "/blogmaterials/gear/hammock.JPG",
     },
   },
 ];

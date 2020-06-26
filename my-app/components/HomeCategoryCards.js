@@ -8,24 +8,23 @@ export default function HomeCategoryCards() {
   const articleCategories = [
     {
       heading: "Hitchhiking",
-      image: "blogmaterials/categories/hitchhiking_category.jpg",
+      image: "blogmaterials/categories/hitchhiking_category.JPG",
       description: "Check out examples of altruism from people around the world.",
       link: "/hitchhiking",
     },
     {
       heading: "Volunteering",
-      image: "blogmaterials/categories/volunteering_category.jpg",
+      image: "blogmaterials/categories/volunteering_category.JPG",
       description: "How other people live says a lot about how people adapt to different factors in life",
       link: "/volunteering",
     },
     {
       heading: "Culinary",
-      image: "blogmaterials/categories/culinary_category.jpg",
+      image: "blogmaterials/categories/culinary_category.JPG",
       description: "Food, Friends, and Fun: a reflection of culture from seed to plate",
       link: "/culinary",
     },
   ];
-
 
   return (
     <>
@@ -36,9 +35,7 @@ export default function HomeCategoryCards() {
         <CardDeck className="homeCategoryDeck">
           {articleCategories.map(({ heading, image, description, link }, i) => (
             <Card key={i} className="homeCategoryCard mt-4">
-              <Card.Header className="d-flex justify-content-center catCardHeader">
-                {heading}
-              </Card.Header>
+              <Card.Header className="d-flex justify-content-center catCardHeader">{heading}</Card.Header>
               <Card.Body className="catCardBody">
                 <Link href={link}>
                   <a>

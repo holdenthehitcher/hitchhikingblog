@@ -7,7 +7,7 @@ export const CULINARYPOSTS = [
     thumbnail: {
       title: "Pastel de Nata",
       description: "A Portuguese delicacy from Belem has a line out the door at all times",
-      image: "/blogmaterials/culinary/pasteldenata.jpg",
+      image: "/blogmaterials/culinary/pasteldenata.JPG",
     },
   },
   {
@@ -18,7 +18,7 @@ export const CULINARYPOSTS = [
     thumbnail: {
       title: "Hand-crafted Cutting Board",
       description: "Finished with a shiny oil, this tool was made by the hands of a true artist",
-      image: "/blogmaterials/culinary/cuttingboard.jpg",
+      image: "/blogmaterials/culinary/cuttingboard.JPG",
     },
   },
   {
@@ -29,7 +29,7 @@ export const CULINARYPOSTS = [
     thumbnail: {
       title: "Cream Tea",
       description: "A food with controversial preparations that is creamy and satisfying",
-      image: "/blogmaterials/culinary/creamtea.jpg",
+      image: "/blogmaterials/culinary/creamtea.JPG",
     },
   },
   {
@@ -40,7 +40,7 @@ export const CULINARYPOSTS = [
     thumbnail: {
       title: "Camping Stove Cooking",
       description: "Relying on your own gear to cook saves money and can be a real treat",
-      image: "/blogmaterials/culinary/campingegg.jpg",
+      image: "/blogmaterials/culinary/campingegg.JPG",
     },
   },
 ];

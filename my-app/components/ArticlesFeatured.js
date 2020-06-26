@@ -8,17 +8,17 @@ export default function ArticlesFeatured() {
   const articles = [
     {
       header: "Hitchhiking",
-      image: "blogmaterials/categories/hitchhiking_category.jpg",
+      image: "blogmaterials/categories/hitchhiking_category.JPG",
       link: "/hitchhiking",
     },
     {
       header: "Volunteering",
-      image: "blogmaterials/categories/volunteering_category.jpg",
+      image: "blogmaterials/categories/volunteering_category.JPG",
       link: "/volunteering",
     },
     {
       header: "Culinary",
-      image: "blogmaterials/categories/culinary_category.jpg",
+      image: "blogmaterials/categories/culinary_category.JPG",
       link: "/culinary",
     },
   ];
@@ -31,9 +31,7 @@ export default function ArticlesFeatured() {
             <Card>
               <Link href={link}>
                 <a>
-                  <Card.Header className="featuredCardHeader">
-                    {header}
-                  </Card.Header>
+                  <Card.Header className="featuredCardHeader">{header}</Card.Header>
                   <Card.Img src={image} />
                   <Card.Body></Card.Body>
                 </a>

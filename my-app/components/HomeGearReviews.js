@@ -16,7 +16,7 @@ export default function HomeGearReviews() {
             <Media style={boxSize}>
               <Link href="/gear">
                 <a>
-                  <img width={250} height={200} className="mr-4" src="/blogmaterials/gear/gear_category.jpg" />
+                  <img width={250} height={200} className="mr-4" src="/blogmaterials/gear/gear_category.JPG" />
                 </a>
               </Link>
               <Media.Body>

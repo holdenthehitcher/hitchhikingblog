@@ -12,55 +12,55 @@ export const ABOUTPOST = [
     thumbnail: {
       title: "Why I started Hitchhiking",
       description: "Embarking on an adventure is a risk. Reflecting: a process",
-      image: "/blogmaterials/about/AboutPost/londonEye.jpg",
+      image: "/blogmaterials/about/AboutPost/londonEye.JPG",
     },
     images: {
       bridge: {
-        photo: "/blogmaterials/about/AboutPost/torquayBridge.jpg",
+        photo: "/blogmaterials/about/AboutPost/torquayBridge.JPG",
         description: "",
       },
       harbor: {
-        photo: "/blogmaterials/about/AboutPost/torquayHarbor.jpg",
+        photo: "/blogmaterials/about/AboutPost/torquayHarbor.JPG",
         description: "",
       },
       camp: {
-        photo: "/blogmaterials/about/AboutPost/campTorquay.jpg",
+        photo: "/blogmaterials/about/AboutPost/campTorquay.JPG",
         description: "Freedom is never knowing where you'll end up",
       },
       cavemen: {
-        photo: "/blogmaterials/about/AboutPost/cavemen.jpg",
+        photo: "/blogmaterials/about/AboutPost/cavemen.JPG",
         description: "Who invited Fred and Barney?",
       },
       londonEye: {
-        photo: "/blogmaterials/about/AboutPost/londonEye.jpg",
+        photo: "/blogmaterials/about/AboutPost/londonEye.JPG",
         description: "",
       },
       nuts: {
-        photo: "/blogmaterials/about/AboutPost/nuts.jpg",
+        photo: "/blogmaterials/about/AboutPost/nuts.JPG",
         description: "",
       },
       overcastTorquay: {
-        photo: "/blogmaterials/about/AboutPost/overcastTorquay.jpg",
+        photo: "/blogmaterials/about/AboutPost/overcastTorquay.JPG",
         description: "Typical weather in a not-so-average town",
       },
       theLightsBelow: {
-        photo: "/blogmaterials/about/AboutPost/theLightsBelow.jpg",
+        photo: "/blogmaterials/about/AboutPost/theLightsBelow.JPG",
         description: "The calmness of the British ocean",
       },
       torquayFriends: {
-        photo: "/blogmaterials/about/AboutPost/torquayFriends.jpg",
+        photo: "/blogmaterials/about/AboutPost/torquayFriends.JPG",
         description: "",
       },
       torquayFriends2: {
-        photo: "/blogmaterials/about/AboutPost/torquayFriends2.jpg",
+        photo: "/blogmaterials/about/AboutPost/torquayFriends2.JPG",
         description: "",
       },
       harborDay: {
-        photo: "/blogmaterials/about/AboutPost/torquayHarborday.jpg",
+        photo: "/blogmaterials/about/AboutPost/torquayHarborday.JPG",
         description: "",
       },
       moon: {
-        photo: "/blogmaterials/about/AboutPost/torquayMoon.jpg",
+        photo: "/blogmaterials/about/AboutPost/torquayMoon.JPG",
         description: "",
       },
     },

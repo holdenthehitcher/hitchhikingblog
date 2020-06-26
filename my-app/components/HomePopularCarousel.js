@@ -19,14 +19,14 @@ export default function HomePopularCarousel() {
       text: "There's a first time for everything... by the way it happened, no one would believe it!",
     },
     {
-      image: "blogmaterials/ibiza_trip/ibizaart.jpg",
+      image: "blogmaterials/ibiza_trip/ibizaart.JPG",
       alt: "art",
       heading: "Art in Ibiza",
       text:
         "Known solely for its beautiful beaches and world-renowned nightlife, this small Spanish island has more to offer.",
     },
     {
-      image: "blogmaterials/ibiza_trip/cavestairs.jpg",
+      image: "blogmaterials/ibiza_trip/cavestairs.JPG",
       alt: "ocean",
       heading: "Right Directions from Wrong Turns",
       text:
@@ -41,7 +41,7 @@ export default function HomePopularCarousel() {
       </div>
       <div className="row d-flex justify-content-center my-4">
         <Carousel
-          className="carouselFade carousel-fade "
+          className="carouselFade carousel-fade"
           id="popularCarousel"
           interval="8000"
           activeIndex={index}
@@ -50,12 +50,13 @@ export default function HomePopularCarousel() {
           {carouselSlides.map(({ image, alt, heading, text }, i) => (
             <Carousel.Item className="carouselItem" key={i}>
               <Card className="carouselCard">
-                <Card.Img src={image} alt={alt} />
+                <img src={image} alt={alt} />
+
+                <Carousel.Caption>
+                  <h3 className="carouselCaptionHeading">{heading}</h3>
+                  <p className="carouselCaptionText">{text}</p>
+                </Carousel.Caption>
               </Card>
-              <Carousel.Caption>
-                <h3 className="carouselCaptionHeading">{heading}</h3>
-                <p className="carouselCaptionText">{text}</p>
-              </Carousel.Caption>
             </Carousel.Item>
           ))}
         </Carousel>

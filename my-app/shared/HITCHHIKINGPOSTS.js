@@ -7,13 +7,13 @@ export const HITCHHIKINGPOSTS = [
       title: "Gas Checkers in Portugal",
       description:
         "While waiting in the pouring rain, a worker checking gas levels offered a ride from an unlikely source",
-      image: "/blogmaterials/hitching/portugal_gas.jpg",
+      image: "/blogmaterials/hitching/portugal_gas.JPG",
     },
     images: [
-      "/blogmaterials/hitching/portugal_gas.jpg",
-      "/blogmaterials/hitching/boatride.jpg",
-      "/blogmaterials/hitching/coastaltrail.jpg",
-      "/blogmaterials/hitching/cooldad.jpg",
+      "/blogmaterials/hitching/portugal_gas.JPG",
+      "/blogmaterials/hitching/boatride.JPG",
+      "/blogmaterials/hitching/coastaltrail.JPG",
+      "/blogmaterials/hitching/cooldad.JPG",
     ],
     videos: ["https://www.youtube.com/embed/QCeaF8ou6vc"],
     paragraphs: ["This is a paragraph about the times I hitchhiked in Portugal."],
@@ -26,7 +26,7 @@ export const HITCHHIKINGPOSTS = [
       title: "Catching a Boatride",
       description:
         "Sometimes, the fastest way to get to the other side is to cut straight through... even if on water is the only option",
-      image: "/blogmaterials/hitching/boatride.jpg",
+      image: "/blogmaterials/hitching/boatride.JPG",
     },
   },
   {
@@ -36,7 +36,7 @@ export const HITCHHIKINGPOSTS = [
     thumbnail: {
       title: "Hiking on Coastal Trails",
       description: "Hiking is in the name, and more of it is done than you might expect",
-      image: "/blogmaterials/hitching/coastaltrail.jpg",
+      image: "/blogmaterials/hitching/coastaltrail.JPG",
     },
   },
   {
@@ -46,7 +46,7 @@ export const HITCHHIKINGPOSTS = [
     thumbnail: {
       title: "When families offer rides",
       description: "Some parents might not pick up hitchhikers, but the ones that do are usually like this",
-      image: "/blogmaterials/hitching/cooldad.jpg",
+      image: "/blogmaterials/hitching/cooldad.JPG",
     },
   },
 ];

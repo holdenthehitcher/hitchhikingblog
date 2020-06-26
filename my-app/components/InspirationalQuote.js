@@ -19,7 +19,7 @@ export default function InspirationalQuote() {
             width={210}
             height={170}
             className="ml-4 quoteImage rounded"
-            src="/blogmaterials/firsthitchhike/inspiration.jpg"
+            src="/blogmaterials/firsthitchhike/inspiration.JPG"
           />
         </Media.Body>
       </Media>

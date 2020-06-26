@@ -43,7 +43,8 @@ export default function Articles() {
 
   /// Button Arrows
 
-  const [arrowDir, setArrowDir] = useState("fa-arrow-up");
+  const [arrowDate, setArrowDate] = useState("fa-arrow-up");
+  const [arrowLocation, setArrowLocation] = useState("fa-arrow-up");
 
   //// PAGINATION /////
   const [currentPage, setCurrentPage] = useState(1);
@@ -75,7 +76,7 @@ export default function Articles() {
                 if (sortType === "date") {
                   ``;
                   setSortDir(sortDir === "asc" ? "dsc" : "asc");
-                  setArrowDir(arrowDir === "fa-arrow-up" ? "fa-arrow-down" : "fa-arrow-up");
+                  setArrowDate(arrowDate === "fa-arrow-up" ? "fa-arrow-down" : "fa-arrow-up");
                 } else {
                   setSortType("date");
                 }
@@ -83,7 +84,7 @@ export default function Articles() {
               className="sortButtons"
               type="button"
             >
-              Sort by Date <i className={`fa ${arrowDir}`}></i>
+              Sort by Date <i className={`fa ${arrowDate}`}></i>
             </Button>
             <Button
               onClick={() => {
@@ -106,7 +107,7 @@ export default function Articles() {
                   // if the sortType is "location"
                   setSortDir(sortDir === "asc" ? "dsc" : "asc");
                   // change sortDir from asc to dsc, or if not asc, to asc
-                  setArrowDir(arrowDir === "fa-arrow-up" ? "fa-arrow-down" : "fa-arrow-up");
+                  setArrowLocation(arrowLocation === "fa-arrow-up" ? "fa-arrow-down" : "fa-arrow-up");
                 } else {
                   setSortType("location");
                   // set sortType state to location
@@ -115,7 +116,7 @@ export default function Articles() {
               className="sortButtons"
               type="button"
             >
-              Sort by Location <i className={`fa ${arrowDir}`}></i>
+              Sort by Location <i className={`fa ${arrowLocation}`}></i>
             </Button>
           </div>
           <CardColumns>

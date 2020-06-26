@@ -6,7 +6,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 const AllArticlesCards = ({ blogposts }) => {
   return (
     <>
-      <TransitionGroup transitionName="slide-up" transitionAppear={true}>
+      <TransitionGroup>
         {blogposts.map(({ thumbnail, pageLink = "/allstories", className }, i) => (
           <CSSTransition key={i} timeout={600} classNames="item">
             <Card className={`${className}`}>

@@ -13,8 +13,20 @@ const navLinks = [
     text: "Stories",
   },
   {
-    to: "/Stories/AboutHTH",
-    text: "About H.T.H.",
+    to: "/hitchhiking",
+    text: "Hitchhiking",
+  },
+  {
+    to: "/volunteering",
+    text: "Volunteering",
+  },
+  {
+    to: "/culinary",
+    text: "Culinary",
+  },
+  {
+    to: "/gear",
+    text: "Gear",
   },
 ];
 

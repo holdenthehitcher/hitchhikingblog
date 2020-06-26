@@ -25,21 +25,7 @@ export default function ArticlesFeatured() {
 
   return (
     <div className="row">
-      <CardDeck>
-        {articles.map(({ header, image, link }, i) => (
-          <div className="col-lg-4 mb-2" key={i}>
-            <Card>
-              <Link href={link}>
-                <a>
-                  <Card.Header className="featuredCardHeader">{header}</Card.Header>
-                  <Card.Img src={image} />
-                  <Card.Body></Card.Body>
-                </a>
-              </Link>
-            </Card>
-          </div>
-        ))}
-      </CardDeck>
+      
     </div>
   );
 }

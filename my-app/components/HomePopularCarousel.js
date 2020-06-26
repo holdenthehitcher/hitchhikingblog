@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 
-import styled from "styled-components";
-
 export default function HomePopularCarousel() {
   const [index, setIndex] = useState(0);
 
@@ -41,7 +39,7 @@ export default function HomePopularCarousel() {
       </div>
       <div className="row d-flex justify-content-center my-4">
         <Carousel
-          className="carouselFade carousel-fade"
+          className="carouselFade carousel-fade "
           id="popularCarousel"
           interval="8000"
           activeIndex={index}
@@ -50,13 +48,12 @@ export default function HomePopularCarousel() {
           {carouselSlides.map(({ image, alt, heading, text }, i) => (
             <Carousel.Item className="carouselItem" key={i}>
               <Card className="carouselCard">
-                <img src={image} alt={alt} />
-
-                <Carousel.Caption>
-                  <h3 className="carouselCaptionHeading">{heading}</h3>
-                  <p className="carouselCaptionText">{text}</p>
-                </Carousel.Caption>
+                <Card.Img src={image} alt={alt} />
               </Card>
+              <Carousel.Caption>
+                <h3 className="carouselCaptionHeading">{heading}</h3>
+                <p className="carouselCaptionText">{text}</p>
+              </Carousel.Caption>
             </Carousel.Item>
           ))}
         </Carousel>

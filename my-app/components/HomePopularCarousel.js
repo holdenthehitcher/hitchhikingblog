@@ -47,7 +47,7 @@ export default function HomePopularCarousel() {
         >
           {carouselSlides.map(({ image, alt, heading, text }, i) => (
             <Carousel.Item className="carouselItem" key={i}>
-              <Card.Img src={image} alt={alt} />
+              <Card.Img className="carouselImg" src={image} alt={alt} />
               <Carousel.Caption>
                 <h3 className="carouselCaptionHeading">{heading}</h3>
                 <p className="carouselCaptionText">{text}</p>

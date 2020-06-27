@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Link from "next/link";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-const AllArticlesCards = ({ blogposts }) => {
+const AllArticlesCards = ({ blogposts, transition, setTransition }) => {
+
+
+
   return (
     <>
       <TransitionGroup>
         {blogposts.map(({ thumbnail, pageLink = "/allstories", className }, i) => (
-          <CSSTransition key={i} timeout={600} classNames="item">
+          <CSSTransition timeout={350} classNames="favorite" appear unmountOnExit key={i}>
             <Card className={`${className}`}>
               <Link href={pageLink}>
                 <a>

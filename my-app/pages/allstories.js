@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import CardColumns from "react-bootstrap/CardColumns";
 import Button from "react-bootstrap/Button";
+import { CSSTransition } from "react-transition-group";
 
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
@@ -55,6 +56,10 @@ export default function Articles() {
   const currentPosts = sorted.slice(indexOfFirstPost, indexOfLastPost);
   //Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  //Transition
+  const [transition, setTransition] = useState("false");
+
   return (
     <>
       <TitleName />
@@ -119,7 +124,7 @@ export default function Articles() {
             </Button>
           </div>
           <CardColumns>
-            <AllArticlesCards blogposts={currentPosts} />
+            <AllArticlesCards blogposts={currentPosts} transition={transition} setTransition={setTransition} />
           </CardColumns>
           <ArticlesPaginate
             postsPerPage={postsPerPage}
@@ -127,6 +132,8 @@ export default function Articles() {
             paginate={paginate}
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
+            transition={transition}
+            setTransition={setTransition}
           />
         </div>
         <Footer />

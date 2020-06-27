@@ -1,7 +1,7 @@
 import React from "react";
 import Pagination from "react-bootstrap/Pagination";
 
-export const ArticlesPaginate = ({ postsPerPage, totalPosts, paginate, currentPage, setCurrentPage, transition, setTransition }) => {
+export const ArticlesPaginate = ({ postsPerPage, totalPosts, paginate, currentPage, setCurrentPage}) => {
   const pageNumbers = [];
   const totalPages = Math.ceil(totalPosts / postsPerPage);
   
@@ -13,7 +13,6 @@ export const ArticlesPaginate = ({ postsPerPage, totalPosts, paginate, currentPa
 
   const togglePrevOrNext = (n) => {
     currentPage === totalPages ? 1 : setCurrentPage(currentPage + n);
-    transition = setTransition(!transition);
   };
 
   for (let i = 1; i <= totalPages; i++) {
@@ -32,7 +31,6 @@ export const ArticlesPaginate = ({ postsPerPage, totalPosts, paginate, currentPa
   //className={cx('toggler', {
   //  'toggler--active': transition,
 //})}
-console.log(transition)
 
   return (
     <div className="row d-flex justify-content-center">

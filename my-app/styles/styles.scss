@@ -9,11 +9,27 @@
 @import "SortButtons.scss";
 @import "BlogStyles.scss";
 @import "CatBackgrounds.scss";
-@import "Fonts.scss";
 @import "Map.scss";
 @import "AllArticles.scss";
 @import "CategoryCards.scss";
-//// themes ///
+
+//// fonts: theme ////
+
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"); // head
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"); // text
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap"); // head
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap"); //text
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+//// colors: theme ///
 
 $nature-darkgreen: #687864;
 $nature-darkblue: #31708e;
@@ -65,7 +81,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(to bottom, rgb(36, 30, 30), rgb(137, 138, 130), rgb(52, 49, 42));
+  background-image: linear-gradient(to bottom, #8fc1e3, #659dbd, #45a29e);
   width: 100%;
 }
 
@@ -84,8 +100,11 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #45a29e;
+  color: #f78888;
   opacity: 0.8;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f78888;
+  text-shadow: 0px 4px 4px #282828;
 }
 
 .btn:focus,

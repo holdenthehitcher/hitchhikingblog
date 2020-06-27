@@ -25,7 +25,7 @@
         position: absolute;
         top: 100%;
         left: 51%;
-        transform: translate(-50%, 100%);
+        transform: translate(-50%, 140%);
         font-size: 20px;
         color: rgb(51, 153, 111);
         -webkit-text-stroke-width: 1px;
@@ -77,11 +77,11 @@
     .row {
       .background-text {
         h2 {
-          font-size: 100px;
+          font-size: 90px;
         }
         p {
           font-size: 25px;
-          width: 80%;
+          width: 75%;
         }
       }
     }
@@ -94,7 +94,7 @@
       .background-text {
         p {
           font-size: 25px;
-          width: 70%;
+          width: 65%;
         }
       }
     }

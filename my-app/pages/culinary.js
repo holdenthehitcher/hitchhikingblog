@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import CategoryBackground from "../components/CategoryBackground";
 import CategoryCards from "../components/CategoryCards";
+
 import { CULINARYPOSTS } from "../shared/CULINARYPOSTS";
 
 export default class Culinary extends Component {

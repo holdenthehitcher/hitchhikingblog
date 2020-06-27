@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import CardColumns from "react-bootstrap/CardColumns";
 import Button from "react-bootstrap/Button";
 
+import {useSpring, animated} from 'react-spring'
+
+
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";

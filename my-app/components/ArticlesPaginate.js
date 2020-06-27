@@ -1,5 +1,7 @@
 import React from "react";
 import Pagination from "react-bootstrap/Pagination";
+import {useSpring, animated} from 'react-spring'
+
 
 export const ArticlesPaginate = ({ postsPerPage, totalPosts, paginate, currentPage, setCurrentPage}) => {
   const pageNumbers = [];

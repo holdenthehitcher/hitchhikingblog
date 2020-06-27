@@ -125,7 +125,7 @@ export default function Articles() {
             </Button>
           </div>
           <CardColumns>
-            <AllArticlesCards blogposts={currentPosts} />
+            <AllArticlesCards blogposts={currentPosts} currentPage={currentPage} />
           </CardColumns>
           <ArticlesPaginate
             postsPerPage={postsPerPage}

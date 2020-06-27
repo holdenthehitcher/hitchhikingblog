@@ -1,21 +1,17 @@
 import React from "react";
 import Pagination from "react-bootstrap/Pagination";
-import {useSpring, animated} from 'react-spring'
 
-
-export const ArticlesPaginate = ({ postsPerPage, totalPosts, paginate, currentPage, setCurrentPage}) => {
+export const ArticlesPaginate = ({
+  postsPerPage,
+  totalPosts,
+  paginate,
+  currentPage,
+  setCurrentPage,
+  transition,
+  setTransition,
+}) => {
   const pageNumbers = [];
   const totalPages = Math.ceil(totalPosts / postsPerPage);
-  
-  /*<button 
-  className={cx('toggler', {
-    'toggler--active': transition,
-  })}
-  onClick={setTransition(!transition)}>Show</button>*/
-
-  const togglePrevOrNext = (n) => {
-    currentPage === totalPages ? 1 : setCurrentPage(currentPage + n);
-  };
 
   for (let i = 1; i <= totalPages; i++) {
     pageNumbers.push(
@@ -32,19 +28,19 @@ export const ArticlesPaginate = ({ postsPerPage, totalPosts, paginate, currentPa
 
   //className={cx('toggler', {
   //  'toggler--active': transition,
-//})}
+  //})}
 
   return (
-    <div className="row d-flex justify-content-center">
+    <div className="row d-flex justify-content-center paginationRow">
       <Pagination size="lg">
         <Pagination.First onClick={() => paginate(1)} href="#" />
-        <Pagination.Prev onClick={() => togglePrevOrNext(-1)} href="#" />
+        <Pagination.Prev onClick={() => (currentPage === 1 ? 1 : setCurrentPage(currentPage - 1))} href="#" />
         {pageNumbers}
-        <Pagination.Next onClick={() => togglePrevOrNext(1)} href="#" />S
+        <Pagination.Next onClick={() => (currentPage === totalPages ? 1 : setCurrentPage(currentPage + 1))} href="#" />
         <Pagination.Last onClick={() => paginate(totalPages)} href="#" />
       </Pagination>
     </div>
-  )
+  );
 };
 
 export default ArticlesPaginate;

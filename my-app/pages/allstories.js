@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import CardColumns from "react-bootstrap/CardColumns";
 import Button from "react-bootstrap/Button";
 
-import {useSpring, animated} from 'react-spring'
-
+import { useSpring, animated } from "react-spring";
 
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
@@ -51,7 +49,7 @@ export default function Articles() {
   //// PAGINATION /////
   const [currentPage, setCurrentPage] = useState(1);
   ///state sets how many posts on each page
-  const [postsPerPage] = useState(3);
+  const [postsPerPage] = useState(8);
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -124,9 +122,7 @@ export default function Articles() {
               Sort by Location <i className={`fa ${arrowLocation}`}></i>
             </Button>
           </div>
-          <CardColumns>
-            <AllArticlesCards blogposts={currentPosts} currentPage={currentPage} />
-          </CardColumns>
+          <AllArticlesCards blogposts={currentPosts} currentPage={currentPage} />
           <ArticlesPaginate
             postsPerPage={postsPerPage}
             totalPosts={blogposts.length}

@@ -29,6 +29,15 @@
   font-size: 18px;
 }
 
+.cardColumn {
+  @include media-breakpoint-up(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(sm) {
+    column-count: 2;
+  }
+}
+
 .slide-up-appear {
   opacity: 0;
   transform: translateY(100px);

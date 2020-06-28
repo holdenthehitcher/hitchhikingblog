@@ -1,7 +1,21 @@
+.storiesCategoryHeading {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  font-family: "Itim", cursive;
+  font-size: 56px;
+  color: #687864;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #747474;
+  text-shadow: 1px 4px 4px #272727;
+}
+
+.featuredCatDeck {
+}
+
 .featuredCardHeader {
   text-align: center;
-  font-size: 50px;
-  font-family: "Marko One", serif;
+  font-size: 35px;
+  font-family: "Sriracha", serif;
 }
 
 .allCard {
@@ -71,14 +85,41 @@
   margin-top: 70px;
 }
 
-@media (min-width: 992px) {
+////////
+
+@media (min-width: 576px) and (max-width: 768px){
+  .storiesCategoryHeading {
+    font-size: 80px;
+  }
+  .featuredCatDeck {
+    display: block;
+  }
   .featuredCardHeader {
-    font-size: 33px;
+    font-size: 50px;
   }
 }
+
+@media (min-width: 768px) {
+  .storiesCategoryHeading {
+    font-size: 80px;
+  }
+  .featuredCardHeader {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .storiesCategoryHeading {
+    font-size: 90px;
+  }
+  .featuredCardHeader {
+    font-size: 31px;
+  }
+}
+
 @media (min-width: 1200px) {
   .featuredCardHeader {
-    font-size: 39px;
+    font-size: 36px;
   }
 }
 

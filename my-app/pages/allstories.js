@@ -65,8 +65,8 @@ export default function Articles() {
       <main>
         <Navigation />
         <div className="container">
-          <h1 className="carouselCaptionHeading" style={{ textAlign: "center" }}>
-            Featured Stories
+          <h1 className="storiesCategoryHeading" style={{ textAlign: "center" }}>
+            Stories by Category
           </h1>
           <ArticlesFeatured />
           <RandomArticle />

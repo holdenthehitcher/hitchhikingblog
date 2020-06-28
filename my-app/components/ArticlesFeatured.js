@@ -21,23 +21,26 @@ export default function ArticlesFeatured() {
       image: "blogmaterials/categories/culinary_category.JPG",
       link: "/culinary",
     },
+    {
+      header: "Gear",
+      image: "/blogmaterials/gear/gear_category.JPG",
+      link: "/gear",
+    },
   ];
 
   return (
     <div className="row">
-      <CardDeck>
+      <CardDeck className="featuredCatDeck">
         {articles.map(({ header, image, link }, i) => (
-          <div className="col-lg-4 mb-2" key={i}>
-            <Card>
-              <Link href={link}>
-                <a>
-                  <Card.Header className="featuredCardHeader">{header}</Card.Header>
-                  <Card.Img src={image} />
-                  <Card.Body></Card.Body>
-                </a>
-              </Link>
-            </Card>
-          </div>
+          <Card className="featuredCat" key={i}>
+            <Link href={link}>
+              <a>
+                <Card.Header className="featuredCardHeader">{header}</Card.Header>
+                <Card.Img src={image} />
+                <Card.Body></Card.Body>
+              </a>
+            </Link>
+          </Card>
         ))}
       </CardDeck>
     </div>

@@ -1,6 +1,6 @@
 .popularHeading {
-  font-size: 80px;
-  color: rgb(0, 204, 255);
+  font-size: 45px;
+  color: #485dcb;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(247, 226, 211);
   text-shadow: 0px 4px 4px #282828;
@@ -8,29 +8,81 @@
 }
 
 #popularCarousel {
-  width: 650px;
-  height: 510px;
+  width: 377px;
+  height: 282px;
+  border-style: solid;
+  border-color: #e7717d;
 }
 
 .carouselImg {
-  width: 648px;
-  height: 508px;
+  width: 375px;
+  height: 279px;
 }
 
 .carouselCaptionHeading {
   font-family: "Acme", sans-serif;
-  font-size: 60px;
-  color: rgba(216, 52, 52, 0.795);
+  font-size: 35px;
+  color: #daad86;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   text-shadow: 0px 4px 4px #282828;
 }
 
 .carouselCaptionText {
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 16px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(248, 245, 242);
+  -webkit-text-stroke-color: #4056a1;
   text-shadow: 0px 2px 2px #282828;
-  color: rgb(206, 176, 6);
+  color: #116466;
+  background-color: #fbefc28c;
+  background-blend-mode: screen;
+}
+
+@media (min-width: 500px) {
+  .popularHeading {
+    font-size: 60px;
+  }
+  #popularCarousel {
+    width: 500px;
+    height: 400px;
+  }
+  .carouselImg {
+    width: 498px;
+    height: 397px;
+  }
+  .carouselCaptionHeading {
+    font-size: 45px;
+  }
+  .carouselCaptionText {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 500px) {
+}
+
+@media (min-width: 768px) {
+  .popularHeading {
+    font-size: 80px;
+  }
+  #popularCarousel {
+    width: 650px;
+    height: 510px;
+  }
+  .carouselImg {
+    width: 648px;
+    height: 507px;
+  }
+  .carouselCaptionHeading {
+    font-size: 60px;
+  }
+  .carouselCaptionText {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }

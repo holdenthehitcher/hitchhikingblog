@@ -10,7 +10,7 @@ export default function HomeGearReviews() {
 
   return (
     <>
-      <div className="row d-flex justify-content-center my-5">
+      <div className="row d-flex justify-content-center my-5 mt-0">
         <div className="col-lg-10">
           <Card id="homeGearBody">
             <Media style={boxSize}>

@@ -1,17 +1,18 @@
 .popularHeading {
   font-size: 45px;
-  color: #485dcb;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(247, 226, 211);
-  text-shadow: 0px 4px 4px #282828;
+  color: #daad86;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #272727;
+  text-shadow: 0px 4px 4px #8860d0;
   text-align: center;
+  font-family: "Acme", sans-serif;
 }
 
 #popularCarousel {
   width: 377px;
   height: 282px;
   border-style: solid;
-  border-color: #e7717d;
+  border-color: #f7f9fb;
 }
 
 .carouselImg {
@@ -20,22 +21,20 @@
 }
 
 .carouselCaptionHeading {
-  font-family: "Acme", sans-serif;
-  font-size: 35px;
-  color: #daad86;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  text-shadow: 0px 4px 4px #282828;
+  font-family: "Gochi Hand", sans-serif;
+  font-size: 39px;
+  color: #ffcb9a;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #272727;
+  text-shadow: 1px 3px 4px #9a3334;
 }
 
 .carouselCaptionText {
   font-size: 16px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #4056a1;
-  text-shadow: 0px 2px 2px #282828;
-  color: #116466;
-  background-color: #fbefc28c;
-  background-blend-mode: screen;
+  font-family: "Chelsea Market", cursive;
+  text-shadow: 0px 2px 2px #d1e8e2;
+  color: #8860d0;
+  background-color: #f7f9fbd0;
 }
 
 @media (min-width: 500px) {
@@ -63,7 +62,7 @@
 
 @media (min-width: 768px) {
   .popularHeading {
-    font-size: 80px;
+    font-size: 90px;
   }
   #popularCarousel {
     width: 650px;
@@ -74,7 +73,7 @@
     height: 507px;
   }
   .carouselCaptionHeading {
-    font-size: 60px;
+    font-size: 65px;
   }
   .carouselCaptionText {
     font-size: 26px;

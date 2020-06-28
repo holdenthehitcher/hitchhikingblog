@@ -4,24 +4,15 @@ import Media from "react-bootstrap/Media";
 export default function InspirationalQuote() {
   return (
     <div className="quoteDiv row d-flex justify-content-center">
-      <Media>
+      <Media className="ml-1">
         <Media.Body>
-          <h5 className="quoteHeading">Inspirational Quote</h5>
+          <h5 className="quoteHeading">Daily Quote</h5>
           <p className="quoteText">"If you Love what you do, You'll never work a day in your life."</p>
-          <span className="quoteAuthor">
+          <p className="quoteAuthor">
             <strong>- Mark Anthony</strong>
-          </span>
+          </p>
         </Media.Body>
-      </Media>
-      <Media>
-        <Media.Body>
-          <img
-            width={210}
-            height={170}
-            className="ml-4 quoteImage rounded"
-            src="/blogmaterials/firsthitchhike/inspiration.JPG"
-          />
-        </Media.Body>
+        <img className="quoteImage rounded ml-3 mt-2" src="/blogmaterials/firsthitchhike/inspiration.JPG" />
       </Media>
     </div>
   );

@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #41b3a3;
+  background-color: #379683;
   width: 100%;
   max-width: 100%;
   padding: 0;
@@ -9,8 +9,14 @@
 
 .navbar-collapse {
   justify-content: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
+
+.navbar-toggler, .collapsed {
+  margin-bottom: 10px;
+
+}
+
 .navbar-brand {
   justify-content: center;
   color: #fbefc2;

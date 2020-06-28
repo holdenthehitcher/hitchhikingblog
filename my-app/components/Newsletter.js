@@ -19,8 +19,8 @@ const Newsletter = () => {
       email: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string().max(20, "Must be 20 characters or less").required("Required"),
-      email: Yup.string().email("Invalid email address").required("Required"),
+      name: Yup.string().max(20, "Must be 20 characters or less*").required("Name required*"),
+      email: Yup.string().email("Invalid email address*").required("Email required*"),
     }),
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
@@ -36,16 +36,23 @@ const Newsletter = () => {
       </div>
 
       <Modal show={show} onHide={handleClose} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Get Email Updates</Modal.Title>
+        <Modal.Header className="newsletterHeader" closeButton>
+          <Modal.Title className="newsletterTitle">Get the latest updates in your email</Modal.Title>
         </Modal.Header>
-        <Modal.Body></Modal.Body>
-
+        <Modal.Body className="newsletterBody">
+        <div className="row justify-content-center centered">
+          <div className="col background-text">
+            <h2>Join Holden the Hitcher</h2>
+          </div>
+        </div>
+        </Modal.Body>
         <Modal.Footer>
           <Form.Row>
             <Col>
               <Form.Group controlId="validationFormik01">
-                <Form.Label htmlFor="name">Name</Form.Label>
+                <Form.Label className="contactLabel" htmlFor="name">
+                  Name
+                </Form.Label>
                 <Form.Control
                   size="lg"
                   id="name"
@@ -54,15 +61,19 @@ const Newsletter = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.name}
-                  placeholder="Your Name Here"
+                  placeholder="Your Name Here:"
                 />
 
-                {formik.touched.name && formik.errors.name ? <div>{formik.errors.name}</div> : null}
+                {formik.touched.name && formik.errors.name ? (
+                  <div className="validatedText">{formik.errors.name}</div>
+                ) : null}
               </Form.Group>
             </Col>
             <Col>
               <Form.Group controlId="validationFormik02">
-                <Form.Label htmlFor="email">E-mail</Form.Label>
+                <Form.Label className="contactLabel" htmlFor="email">
+                  E-mail
+                </Form.Label>
                 <Form.Control
                   size="lg"
                   id="email"
@@ -71,12 +82,22 @@ const Newsletter = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.email}
-                  placeholder="ex: holdenthehitcher@gmail.com"
+                  placeholder="ex: hth@gmail.com"
                 />
-                {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
+                {formik.touched.email && formik.errors.email ? (
+                  <div className="validatedText">{formik.errors.email}</div>
+                ) : null}
               </Form.Group>
-              <Button className="submitButton" type="submit" variant="primary" onClick={handleClose} onSubmit={formik.handleSubmit}>
-                Submit
+            </Col>
+            <Col>
+              <Button
+                className="submitButton mt-5 ml-3 btn btn-lg"
+                type="submit"
+                variant="success"
+                onClick={handleClose}
+                onSubmit={formik.handleSubmit}
+              >
+                Register
               </Button>
             </Col>
           </Form.Row>

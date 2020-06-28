@@ -1,12 +1,38 @@
 #homeGearBody {
-  background-image: linear-gradient(to top right, rgb(168, 100, 100), rgb(123, 207, 54), rgb(165, 163, 158));
+  background-image: linear-gradient(to bottom right, #f78888, #5da25d, #d1e8e2);
 }
 
 #homeGearHead {
   font-family: "Yellowtail", cursive;
-  font-size: 50px;
+  font-size: 32px;
 }
 
 .homeGearText {
-  font-size: 21px;
+  font-size: 15px;
+}
+
+#gearCatImg {
+  width: 170px;
+  height: 135px;
+  margin-left: 10px;
+  margin-top: 90px;
+  border: solid;
+  border-color: #bc986a;
+}
+
+@media (min-width: 576px) {
+  #homeGearHead {
+    font-size: 50px;
+  }
+
+  .homeGearText {
+    font-size: 21px;
+  }
+
+  #gearCatImg {
+    width: 250px;
+    height: 200px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
 }

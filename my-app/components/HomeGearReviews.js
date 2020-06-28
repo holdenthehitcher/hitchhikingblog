@@ -14,11 +14,6 @@ export default function HomeGearReviews() {
         <div className="col-lg-10">
           <Card id="homeGearBody">
             <Media style={boxSize}>
-              <Link href="/gear">
-                <a>
-                  <img width={250} height={200} className="mr-4" src="/blogmaterials/gear/gear_category.JPG" />
-                </a>
-              </Link>
               <Media.Body>
                 <h3 id="homeGearHead">Gear Reviews</h3>
                 <span className="homeGearText">
@@ -29,6 +24,11 @@ export default function HomeGearReviews() {
                   Here are some of the sleeping, cooking, and recreational tools I used daily throughout my journey.
                 </span>
               </Media.Body>
+              <Link href="/gear">
+                <a>
+                  <img id="gearCatImg" className="mr-4" src="/blogmaterials/gear/gear_category.JPG" />
+                </a>
+              </Link>
             </Media>
           </Card>
         </div>

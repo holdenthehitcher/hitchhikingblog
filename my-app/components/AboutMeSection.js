@@ -12,7 +12,7 @@ export default function AboutMeSecton() {
             <h3 className="styled-heading">About Holden the Hitcher</h3>
           </div>
           <div className="col d-flex justify-content-center">
-            <p className="textWhite">
+            <p className="aboutText">
               Three years following my return to the States… I spent time making blog posts about my travels{" "}
               <Link href="/hitchhiking">
                 <a>hitchhiking</a>
@@ -30,7 +30,7 @@ export default function AboutMeSecton() {
               <Link href="/gear">
                 <a>gear</a>
               </Link>{" "}
-              I can carry.
+              that fit on my shoulders.
             </p>
           </div>
         </div>

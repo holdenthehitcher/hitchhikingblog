@@ -1,7 +1,11 @@
 .styled-heading {
-  font-family: "Yellowtail", cursive;
-  color: rgb(221, 221, 216);
+  font-family: "Permanent Marker", cursive;
+  color: #e7717d;
   font-size: 45px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0px 4px 4px #282828;
+  text-align: center;
 }
 
 #aboutImg {
@@ -12,9 +16,55 @@
   border-width: medium;
 }
 
-.textWhite {
-  color: white;
-  font-size: 18px;
+.aboutText {
+  font-family: "Nunito", sans-serif;
+  color: #f7f9fb;
+  font-size: 16px;
   text-align: center;
   padding-top: 10px;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0px 1px 1px #282828;
+}
+
+@media (min-width: 576px) {
+  #aboutImg {
+    margin-top: 110px;
+    height: 230px;
+    width: auto;
+  }
+  .aboutText {
+    font-size: 18px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #aboutImg {
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+  }
+  .aboutText {
+    font-size: 20px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .styled-heading {
+    font-size: 60px;
+  }
+  #aboutImg {
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+  }
+  .aboutText {
+    font-size: 26px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }

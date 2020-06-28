@@ -24,11 +24,11 @@ const ContactModal = () => {
     },
 
     validationSchema: Yup.object({
-      firstName: Yup.string().max(15, "Must be 15 characters or less").required("Required"),
-      lastName: Yup.string().max(20, "Must be 20 characters or less").required("Required"),
-      email: Yup.string().email("Invalid email address").required("Required"),
+      firstName: Yup.string().max(15, "Must be 15 characters or less").required("Name Required"),
+      lastName: Yup.string().max(20, "Must be 20 characters or less").required("Last Name Needed"),
+      email: Yup.string().email("Invalid email address").required("Please enter a valid email"),
       phone: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
-      text: Yup.string().min(10, "Must be 10 characters or more").required("Required"),
+      text: Yup.string().min(10, "Must be 10 characters or more").required("Enter Your Comments Above"),
     }),
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
@@ -38,7 +38,7 @@ const ContactModal = () => {
   return (
     <>
       <div className="d-flex justify-content-center mt-2">
-        <Button type="submit" onClick={handleShow}>
+        <Button type="submit" onClick={handleShow} className="btn btn-lg btn-outline-secondary contactModalBtn">
           Contact
         </Button>
       </div>
@@ -140,7 +140,7 @@ const ContactModal = () => {
         </Modal.Body>
 
         <Modal.Footer>
-          <Button type="submit" variant="primary" onClick={handleClose} onSubmit={formik.handleSubmit}>
+          <Button className="submitButton" type="submit" variant="primary" onClick={handleClose} onSubmit={formik.handleSubmit}>
             Submit
           </Button>
         </Modal.Footer>

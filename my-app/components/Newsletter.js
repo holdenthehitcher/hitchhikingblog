@@ -30,7 +30,7 @@ const Newsletter = () => {
   return (
     <>
       <div className="d-flex justify-content-center mt-2">
-        <Button type="submit" onClick={handleShow}>
+        <Button type="submit" onClick={handleShow} className="btn btn-outline-success letterModalBtn">
           Sign-up
         </Button>
       </div>
@@ -74,10 +74,10 @@ const Newsletter = () => {
                   placeholder="ex: holdenthehitcher@gmail.com"
                 />
                 {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
-                </Form.Group>
-                <Button type="submit" variant="primary" onClick={handleClose} onSubmit={formik.handleSubmit}>
-                  Submit
-                </Button>
+              </Form.Group>
+              <Button className="submitButton" type="submit" variant="primary" onClick={handleClose} onSubmit={formik.handleSubmit}>
+                Submit
+              </Button>
             </Col>
           </Form.Row>
         </Modal.Footer>

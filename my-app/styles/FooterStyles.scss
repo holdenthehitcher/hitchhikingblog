@@ -1,6 +1,6 @@
 .site-footer {
   width: 80%;
-  padding-top: 22px;
+  padding-top: 60px;
 }
 
 .footerHeaders {
@@ -16,9 +16,12 @@
 
 .footerLinks {
   font-size: 20px;
-  color: white;
+  font-family: "Bellota", cursive;
+  color: #f7f9fb;
   text-align: center;
 }
+
+/// social
 
 .socialAlignCenter {
   justify-content: center;
@@ -41,14 +44,23 @@
   display: block;
 }
 
-/////sm viewp.
+//// modals
+.contactModalBtn,
+.letterModalBtn,
+.submitButton {
+  background-color: #485dcb;
+  color: #e7e3d4;
+}
+
+////contact form
+
 @media (min-width: 576px) {
   .footerWrapCenter {
     text-align: center;
   }
 
   .footerLinks {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .socialSize {
@@ -67,7 +79,7 @@
 /////md and up viewp.
 @media (min-width: 768px) {
   .footerHeaders {
-    font-size: 38px;
+    font-size: 44px;
   }
 
   .footerWrapCenter {
@@ -75,7 +87,7 @@
   }
 
   .footerLinks {
-    font-size: 20px;
+    font-size: 27px;
   }
 
   .socialAlignCenter {

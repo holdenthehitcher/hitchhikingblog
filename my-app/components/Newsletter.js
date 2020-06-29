@@ -40,16 +40,16 @@ const Newsletter = () => {
           <Modal.Title className="newsletterTitle">Get the latest updates in your email</Modal.Title>
         </Modal.Header>
         <Modal.Body className="newsletterBody">
-        <div className="row justify-content-center centered">
-          <div className="col background-text">
-            <h2>Join Holden the Hitcher</h2>
+          <div className="row justify-content-center centered">
+            <div className="col background-text">
+              <h2>Join Holden the Hitcher</h2>
+            </div>
           </div>
-        </div>
         </Modal.Body>
         <Modal.Footer>
           <Form.Row>
             <Col>
-              <Form.Group controlId="validationFormik01">
+              <Form.Group>
                 <Form.Label className="contactLabel" htmlFor="name">
                   Name
                 </Form.Label>
@@ -70,7 +70,7 @@ const Newsletter = () => {
               </Form.Group>
             </Col>
             <Col>
-              <Form.Group controlId="validationFormik02">
+              <Form.Group>
                 <Form.Label className="contactLabel" htmlFor="email">
                   E-mail
                 </Form.Label>

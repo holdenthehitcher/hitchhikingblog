@@ -50,13 +50,15 @@ const ContactModal = () => {
         <Modal.Body>
           <Form.Row>
             <Col>
-              <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Label className="contactLabel">Leave your Comments Below</Form.Label>
+              <Form.Group>
+                <Form.Label className="contactLabel" htmlFor="contactLabel">
+                  Leave your Comments Below
+                </Form.Label>
                 <Form.Control
                   as="textarea"
                   size="md"
                   rows="6"
-                  id="text"
+                  id="contactLabel"
                   name="text"
                   type="text"
                   onChange={formik.handleChange}
@@ -72,7 +74,7 @@ const ContactModal = () => {
           </Form.Row>
           <Form.Row>
             <Col>
-              <Form.Group controlId="validationFormik01">
+              <Form.Group >
                 <Form.Label className="contactLabel" htmlFor="firstName">
                   First Name
                 </Form.Label>
@@ -92,7 +94,7 @@ const ContactModal = () => {
               </Form.Group>
             </Col>
             <Col>
-              <Form.Group controlId="validationFormik01">
+              <Form.Group>
                 <Form.Label className="contactLabel" htmlFor="lastName">
                   Last Name
                 </Form.Label>
@@ -114,7 +116,7 @@ const ContactModal = () => {
           </Form.Row>
           <Form.Row>
             <Col>
-              <Form.Group controlId="validationFormik02">
+              <Form.Group>
                 <Form.Label className="contactLabel" htmlFor="email">
                   E-mail
                 </Form.Label>
@@ -135,7 +137,7 @@ const ContactModal = () => {
             </Col>
 
             <Col>
-              <Form.Group controlId="validationFormik02">
+              <Form.Group>
                 <Form.Label className="contactLabel" htmlFor="phone">
                   Phone Number
                 </Form.Label>

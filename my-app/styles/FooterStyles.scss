@@ -141,8 +141,8 @@
     .row {
       .background-text {
         h2 {
-          transform: translate(-47%, 10%);
-          font-size: 60px;
+          transform: translate(-50%, 10%);
+          font-size: 55px;
         }
       }
     }
@@ -184,4 +184,15 @@
     display: flex;
     align-items: center;
   }
+  .newsletterBody {
+    .row {
+      .background-text {
+        h2 {
+          transform: translate(-50%, 0%);
+          font-size: 80px;
+        }
+      }
+    }
+  }
 }
+

@@ -60,9 +60,7 @@ export default function Articles() {
   //Transition
 
   /// to Local date string
-  
 
-  
   return (
     <>
       <TitleName />
@@ -73,8 +71,7 @@ export default function Articles() {
             Stories by Category
           </h1>
           <ArticlesFeatured />
-          <RandomArticle />
-          <h1 className="postHeader" style={{ textAlign: "center" }}>
+          <h1 className="allStoriesHeader" style={{ textAlign: "center" }}>
             All Stories
           </h1>
           <div className="row d-flex justify-content-center mb-2">
@@ -88,7 +85,7 @@ export default function Articles() {
                   setSortType("date");
                 }
               }}
-              className="sortButtons"
+              className="sortBtnDate btn btn-lg sortButtons btn-success"
               type="button"
             >
               Sort by Date <i className={`fa ${arrowDate}`}></i>
@@ -101,7 +98,7 @@ export default function Articles() {
                   setSortType("className");
                 }
               }}
-              className="sortButtons"
+              className="sortBtnCat btn btn-lg sortButtons btn-success"
               type="button"
             >
               Sort by Category
@@ -120,7 +117,7 @@ export default function Articles() {
                   // set sortType state to location
                 }
               }}
-              className="sortButtons"
+              className="sortBtnLocation btn btn-lg sortButtons btn-success"
               type="button"
             >
               Sort by Location <i className={`fa ${arrowLocation}`}></i>
@@ -135,6 +132,7 @@ export default function Articles() {
             setCurrentPage={setCurrentPage}
           />
         </div>
+        <RandomArticle />
         <Footer />
       </main>
     </>

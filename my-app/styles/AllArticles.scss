@@ -1,9 +1,9 @@
 .storiesCategoryHeading {
   margin-top: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-family: "Itim", cursive;
-  font-size: 56px;
-  color: #687864;
+  font-size: 60px;
+  color: #f0fff0;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #747474;
   text-shadow: 1px 4px 4px #272727;
@@ -26,6 +26,35 @@
 }
 .volunteerCard {
   background-color: #0080fe;
+}
+
+.allStoriesHeader {
+  font-family: "Chelsea Market", cursive;
+  color: #fff0f5;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #747474;
+  text-shadow: 1px 4px 4px #272727;
+  font-size: 53px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.sortButtons {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.sortBtnDate {
+  font-family: "Handlee", cursive;
+}
+
+.sortBtnCat {
+  font-family: "Sriracha", serif;
+}
+
+.sortBtnLocation {
+  font-family: "Courgette", cursive;
 }
 
 .allCard {
@@ -71,6 +100,7 @@
 }
 
 .cardColumn {
+  margin-top: 15px;
   @include media-breakpoint-up(lg) {
     column-count: 4;
   }
@@ -120,11 +150,20 @@
   }
   .featuredCatDeck {
     display: block;
+    .featuredCatCard {
+      margin-bottom: 15px;
+    }
   }
   .featuredCardHeader {
-    font-size: 50px;
+    font-size: 60px;
+    margin-top: 40px;
   }
-  ///////////////////////////////////////////////////////////////////////////////////////////
+  .allStoriesHeader {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
   .allCard {
     .allCardHeader {
       font-size: 35px;
@@ -151,6 +190,15 @@
   }
   .featuredCardHeader {
     font-size: 20px;
+  }
+  .featuredCatCard {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .allStoriesHeader {
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom: 28px;
   }
   .allCard {
     .allCardHeader {
@@ -191,6 +239,9 @@
   }
   .featuredCardHeader {
     font-size: 31px;
+  }
+  .allStoriesHeader {
+    font-size: 80px;
   }
   .allCard {
     a {

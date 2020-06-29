@@ -36,7 +36,7 @@ export default function ArticlesFeatured() {
     <div className="row">
       <CardDeck className="featuredCatDeck">
         {articles.map(({ header, image, link, catBgStyle }, i) => (
-          <Card className={`featuredCat ${catBgStyle}`} key={i}>
+          <Card className={`featuredCatCard ${catBgStyle}`} key={i}>
             <Link href={link}>
               <a>
                 <Card.Header className="featuredCardHeader">{header}</Card.Header>

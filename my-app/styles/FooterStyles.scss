@@ -6,7 +6,7 @@
 .footerHeaders {
   font-family: "Gochi Hand", cursive;
   color: white;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -15,10 +15,13 @@
 }
 
 .footerLinks {
-  font-size: 20px;
+  font-size: 17px;
   font-family: "Bellota", cursive;
   color: #f7f9fb;
   text-align: center;
+}
+.linksCol {
+  padding-right: 35px;
 }
 
 /// social
@@ -29,9 +32,9 @@
 }
 
 .socialSize {
-  font-size: 28px;
-  width: 60px;
-  height: 60px;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
 }
 
 .socialLogos {
@@ -116,9 +119,15 @@
   margin-left: 20px;
 }
 
+//////////////////
+
 @media (min-width: 576px) {
   .footerWrapCenter {
     text-align: center;
+  }
+
+  .footerHeaders {
+    font-size: 35px;
   }
 
   .footerLinks {
@@ -162,6 +171,9 @@
   .footerLinks {
     font-size: 27px;
   }
+  .linksCol {
+    padding-right: 5px;
+  }
 
   .socialAlignCenter {
     justify-content: center;
@@ -196,3 +208,11 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .socialSize {
+    font-size: 33px;
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+  }
+}

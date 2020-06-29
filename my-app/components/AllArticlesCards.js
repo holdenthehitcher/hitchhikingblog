@@ -18,12 +18,13 @@ const AllArticlesCards = ({ blogposts, currentPage }) => {
   return (
     <CardColumns className="cardColumn">
       <Stagger in>
-        {blogposts.map(({ thumbnail, pageLink = "/allstories", className, date }, i) => (
+        {blogposts.map(({ thumbnail, pageLink = "/allstories", className, date, location }, i) => (
           <Fade key={i}>
             <Card className={`${className}`}>
               <Card.Title className="allCardTitle" style={{ textAlign: "center" }}>
                 {thumbnail.title}
               </Card.Title>
+
               <Link href={pageLink}>
                 <a>
                   <Card.Img variant="top" className="allCardImage" src={thumbnail.image} />
@@ -33,7 +34,8 @@ const AllArticlesCards = ({ blogposts, currentPage }) => {
                 <Card.Text className="quoteText allCardText">{thumbnail.description}</Card.Text>
               </Card.Body>
               <Card.Body>
-                <Card.Text>{dateString(date)}</Card.Text>
+                <Card.Text className="allCardLocation">{location}</Card.Text>
+                <Card.Text className="allCardDate">{dateString(date)}</Card.Text>
               </Card.Body>
             </Card>
           </Fade>

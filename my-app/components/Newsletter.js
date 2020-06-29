@@ -41,7 +41,7 @@ const Newsletter = () => {
         </Modal.Header>
         <Modal.Body className="newsletterBody">
           <div className="row justify-content-center centered">
-            <div className="col background-text">
+            <div className="col background-text textScrim">
               <h2>Join Holden the Hitcher</h2>
             </div>
           </div>

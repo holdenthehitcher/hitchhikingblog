@@ -11,7 +11,7 @@ export default function AboutMeSecton() {
           <div className="col-12 d-flex justify-content-center">
             <h3 className="styled-heading">About Holden the Hitcher</h3>
           </div>
-          <div className="col d-flex justify-content-center">
+          <div className="col textScrim d-flex justify-content-center">
             <p className="aboutText">
               Three years following my return to the States… I spent time making blog posts about my travels{" "}
               <Link href="/hitchhiking">
@@ -37,7 +37,7 @@ export default function AboutMeSecton() {
         <div className="col col-sm-4">
           <Link href="/Stories/AboutHTH">
             <a>
-              <img src="blogmaterials/about/about.JPG" className="rounded" id="aboutImg"></img>
+              <img src="blogmaterials/about/about.JPG" className="rounded boxShadow" id="aboutImg"></img>
             </a>
           </Link>
         </div>
@@ -53,7 +53,7 @@ const Disclaimer = () => {
   return (
     <div className="row">
       <div className="col pt-4 d-flex justify-content-center">
-        <Alert show={show} variant="warning">
+        <Alert show={show} variant="warning" className="boxShadow">
           <Alert.Heading style={{ textAlign: "center" }}>
             Disclaimer: This is not your 'Average Travel Blog’!{" "}
           </Alert.Heading>

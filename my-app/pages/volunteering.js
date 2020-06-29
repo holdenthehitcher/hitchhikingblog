@@ -16,6 +16,7 @@ export default class Articles extends Component {
       heading: "Volunteering",
       description:
         "Exchanging a few hours a day for room and board working on farms, in homes and hostels provide real-world experience in understanding how others make a living",
+      catColor: "volunteerCard",
     };
   }
 
@@ -32,7 +33,7 @@ export default class Articles extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <CategoryCards blogposts={blogposts} heading={this.state.heading} />
+          <CategoryCards blogposts={blogposts} heading={this.state.heading} catColor={this.state.catColor} />
           <Footer />
         </main>
       </>

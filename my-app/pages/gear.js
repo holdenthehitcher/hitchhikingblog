@@ -16,6 +16,7 @@ export default class Articles extends Component {
       heading: "Gear",
       description:
         "Trekking, and camping in all-four seasons in rural and urban environments that highlight some of the tools and equipment I used during two years on foot",
+        catColor: "gearCard",
     };
   }
 
@@ -32,7 +33,7 @@ export default class Articles extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <CategoryCards blogposts={blogposts} heading={this.state.heading} />
+          <CategoryCards blogposts={blogposts} heading={this.state.heading} catColor={this.state.catColor}/>
           <Footer />
         </main>
       </>

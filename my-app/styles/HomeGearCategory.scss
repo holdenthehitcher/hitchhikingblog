@@ -1,5 +1,6 @@
 #homeGearBody {
   background-image: linear-gradient(to bottom right, #f78888, #5da25d, #d1e8e2);
+  border-radius: 5px;
 }
 
 #homeGearHead {
@@ -18,6 +19,7 @@
   margin-top: 90px;
   border: solid;
   border-color: #bc986a;
+  border-radius: 10px;
 }
 
 @media (min-width: 576px) {
@@ -32,7 +34,7 @@
   #gearCatImg {
     width: 250px;
     height: 200px;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 20px;
+    margin-top: 37px;
   }
 }

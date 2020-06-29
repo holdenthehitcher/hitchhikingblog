@@ -1,0 +1,167 @@
+.categoryBackground {
+  height: 87vh;
+  width: 97%;
+  opacity: 0.95;
+  padding: 0px;
+  margin: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.5em 0.5em 2em rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0px 4px 4px #282828;
+  font-family: "Permanent Marker", cursive;
+  .row {
+    .background-text {
+      position: relative;
+      ::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: auto;
+        background: inherit;
+        background-attachment: fixed;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        transform: scale(2) translateY(20px);
+      }
+      h2 {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 40%);
+        font-size: 57px;
+        color: white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+        text-shadow: 0px 4px 4px #282828;
+        font-family: "Permanent Marker", cursive;
+        z-index: 1;
+      }
+      p {
+        position: absolute;
+        top: 100%;
+        left: 51%;
+        color: #ececec;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        text-shadow: 2px 4px 3px black;
+        font-family: "Itim", sans-serif;
+        text-align: center;
+        transform: translate(-50%, 120%);
+        font-size: 22px;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+@media (min-width: 447px) {
+  .categoryBackground {
+    .row {
+      .background-text {
+        h2 {
+          font-size: 60px;
+        }
+        p {
+          text-align: center;
+          transform: translate(-50%, 130%);
+          font-size: 24px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .categoryBackground {
+    .row {
+      .background-text {
+        h2 {
+          font-size: 65px;
+        }
+        p {
+          text-align: justify;
+
+          transform: translate(-50%, 135%);
+          font-size: 26px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .categoryBackground {
+    .row {
+      .background-text {
+        h2 {
+          font-size: 90px;
+        }
+        p {
+          transform: translate(-50%, 140%);
+          font-size: 28px;
+          width: 75%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .categoryBackground {
+    .row {
+      .background-text {
+        h2 {
+          font-size: 120px;
+        }
+        p {
+          transform: translate(-50%, 160%);
+          font-size: 32px;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .categoryBackground {
+    .row {
+      .background-text {
+        h2 {
+          font-size: 120px;
+        }
+        p {
+          transform: translate(-50%, 95%);
+          font-size: 37px;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+#gearBackground {
+  background-image: url("/blogmaterials/gear/gear_category.JPG");
+}
+
+#hitchhikingBackground {
+  background-image: url("/blogmaterials/hitching/stawful.JPG");
+}
+
+#volunteerBackground {
+  background-image: url("/blogmaterials/volunteering/foodtruck.JPG");
+}
+
+#culinaryBackground {
+  background-image: url("/blogmaterials/culinary/chocolatemountain.JPG");
+}

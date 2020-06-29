@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import ContactModal from "./ContactModal";
 import Newsletter from "./Newsletter";
+import Button from "react-bootstrap/Button";
 
 const navLinks = [
   {
@@ -69,7 +70,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div className="col footerWrapCenter" >
+        <div className="col footerWrapCenter">
           <h5 className="footerHeaders">Social</h5>
           <ul className="list-unstyled socialAlignCenter">
             {socialLinks.map(({ href, linkClass, iconClass }, i) => (
@@ -79,13 +80,14 @@ export default function Footer() {
                 </a>
               </li>
             ))}
+            
           </ul>
-        </div>
+          </div>
         <div className="col-5 col-sm-4">
           <div className="col">
             <h5 className="footerHeaders">Message</h5>
             <ContactModal />
-            <div className="col mt-4" style={{padding: 0}}>
+            <div className="col mt-4" style={{ padding: 0 }}>
               <h5 className="footerHeaders">Letters</h5>
               <Newsletter />
             </div>

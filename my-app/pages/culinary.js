@@ -16,6 +16,7 @@ export default class Culinary extends Component {
       heading: "Culinary",
       description:
         "Embarking on a journey of food culture begins with a single bite. From seed to plate, the food displays the pride people have of their ingredients and preparation methods passed down from past generations",
+      catColor: "culinaryCard"
     };
   }
 
@@ -32,7 +33,7 @@ export default class Culinary extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <CategoryCards blogposts={blogposts} heading={this.state.heading} />
+          <CategoryCards blogposts={blogposts} heading={this.state.heading} catColor={this.state.catColor}/>
           <Footer />
         </main>
       </>

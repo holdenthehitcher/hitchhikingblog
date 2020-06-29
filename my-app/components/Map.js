@@ -12,6 +12,7 @@ export default function Map() {
           width="640"
           height="480"
           id="googleMap"
+          className="boxShadow"
         ></iframe>
       </div>
     </>

@@ -14,26 +14,26 @@
 
 //// fonts: theme ////
 
-@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");// 
-@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");// handwritten , cursive
-@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");// 
-@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");// title , sans-serif
-@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");// 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");// title , sans-serif
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");// handwritten , cursive
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"); //
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap"); // handwritten , cursive
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"); //
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap"); // title , sans-serif
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap"); //
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"); // title , sans-serif
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"); // handwritten , cursive
 @import url("https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap"); // link , cursive
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"); // head
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"); // text
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap"); // head
 @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap"); //text
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap"); //head
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); //text , sans-serif 
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap'); //handwritten, cursive 
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap'); //text , sans-serif
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); //head , cursive
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');// link, cursive
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap');// text , sans-serif
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap'); //head or handwritten , cursive
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); //text , sans-serif
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap"); //handwritten, cursive
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap"); //text , sans-serif
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"); //head , cursive
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap"); // link, cursive
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap"); // text , sans-serif
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap"); //head or handwritten , cursive
 
 //// colors: theme ///
 
@@ -66,7 +66,7 @@ $artsy-blue: #4056a1;
 $artsy-lightblue: #c5cbe3;
 $sleek-gold: #ffcb9a;
 $sleek-tan: #d9b08c;
-$sleek-burgundy: #9A3334;
+$sleek-burgundy: #9a3334;
 $sleek-lightblue: #d1e8e2;
 $sleek-darkgreen: #116466;
 $innovate-black: #272727;
@@ -117,6 +117,15 @@ a:hover {
 .btn:active {
   outline: none !important;
   box-shadow: none !important;
+}
+
+.boxShadow {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.5em 0.5em 2em rgba(0, 0, 0, 0.3);
+}
+.textShadow {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.5em 0.5em 2em rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 ////// Media Queries ////////

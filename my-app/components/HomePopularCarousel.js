@@ -39,7 +39,7 @@ export default function HomePopularCarousel() {
       </div>
       <div className="row d-flex justify-content-center my-4">
         <Carousel
-          className="carouselFade carousel-fade"
+          className="carouselFade carousel-fade boxShadow"
           id="popularCarousel"
           interval="8000"
           activeIndex={index}
@@ -48,7 +48,7 @@ export default function HomePopularCarousel() {
           {carouselSlides.map(({ image, alt, heading, text }, i) => (
             <Carousel.Item className="carouselItem" key={i}>
               <Card.Img className="carouselImg" src={image} alt={alt} />
-              <Carousel.Caption>
+              <Carousel.Caption className="carouselTextScrim">
                 <h3 className="carouselCaptionHeading">{heading}</h3>
                 <p className="carouselCaptionText">{text}</p>
               </Carousel.Caption>

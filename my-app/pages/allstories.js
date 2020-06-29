@@ -132,7 +132,6 @@ export default function Articles() {
             setCurrentPage={setCurrentPage}
           />
         </div>
-        <RandomArticle />
         <Footer />
       </main>
     </>

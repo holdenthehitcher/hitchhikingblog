@@ -12,7 +12,7 @@ export default function InspirationalQuote() {
             <strong>- Mark Anthony</strong>
           </p>
         </Media.Body>
-        <img className="quoteImage rounded ml-3 mt-2" src="/blogmaterials/firsthitchhike/inspiration.JPG" />
+        <img className="quoteImage rounded ml-3 mt-2 boxShadow" src="/blogmaterials/firsthitchhike/inspiration.JPG" />
       </Media>
     </div>
   );

@@ -12,7 +12,7 @@ export default function HomeGearReviews() {
     <>
       <div className="row d-flex justify-content-center my-5 mt-0">
         <div className="col-lg-10">
-          <Card id="homeGearBody">
+          <Card id="homeGearBody" className="boxShadow">
             <Media style={boxSize}>
               <Media.Body>
                 <h3 id="homeGearHead">Gear Reviews</h3>
@@ -26,7 +26,7 @@ export default function HomeGearReviews() {
               </Media.Body>
               <Link href="/gear">
                 <a>
-                  <img id="gearCatImg" className="mr-4" src="/blogmaterials/gear/gear_category.JPG" />
+                  <img id="gearCatImg" className="mr-4 boxShadow" src="/blogmaterials/gear/gear_category.JPG" />
                 </a>
               </Link>
             </Media>

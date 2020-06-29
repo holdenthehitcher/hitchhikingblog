@@ -34,12 +34,12 @@ export default function HomeCategoryCards() {
       <div className="row mb-5">
         <CardDeck className="homeCategoryDeck">
           {articleCategories.map(({ heading, image, description, link }, i) => (
-            <Card key={i} className="homeCategoryCard mt-4">
+            <Card key={i} className="homeCategoryCard mt-4 ">
               <Card.Header className="d-flex justify-content-center catCardHeader">{heading}</Card.Header>
               <Card.Body className="catCardBody">
                 <Link href={link}>
                   <a>
-                    <Card.Img src={image} />
+                    <Card.Img className="boxShadow" src={image} />
                   </a>
                 </Link>
                 <Card.Text className="mt-1 catCardText">{description}</Card.Text>

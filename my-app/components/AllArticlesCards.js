@@ -9,23 +9,32 @@ const AllArticlesCards = ({ blogposts, currentPage }) => {
   useEffect(() => {
     console.log("rerendered");
   }, [currentPage]);
+
+  //// parsing .date into long format
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  const dateString = (date) => new Date(date).toLocaleDateString("en-US", options);
+
+  console.log(dateString(blogposts[0].date));
   return (
     <CardColumns className="cardColumn">
       <Stagger in>
-        {blogposts.map(({ thumbnail, pageLink = "/allstories", className }, i) => (
+        {blogposts.map(({ thumbnail, pageLink = "/allstories", className, date }, i) => (
           <Fade key={i}>
             <Card className={`${className}`}>
+              <Card.Title className="allCardTitle" style={{ textAlign: "center" }}>
+                {thumbnail.title}
+              </Card.Title>
               <Link href={pageLink}>
                 <a>
-                  <Card.Title className="allCardTitle" style={{ textAlign: "center" }}>
-                    {thumbnail.title}
-                  </Card.Title>
                   <Card.Img variant="top" className="allCardImage" src={thumbnail.image} />
-                  <Card.Body className="">
-                    <Card.Text className="quoteText allCardText">{thumbnail.description}</Card.Text>
-                  </Card.Body>
                 </a>
               </Link>
+              <Card.Body className="">
+                <Card.Text className="quoteText allCardText">{thumbnail.description}</Card.Text>
+              </Card.Body>
+              <Card.Body>
+                <Card.Text>{dateString(date)}</Card.Text>
+              </Card.Body>
             </Card>
           </Fade>
         ))}

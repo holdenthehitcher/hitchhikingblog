@@ -3,7 +3,7 @@ export const GEARPOSTS = [
     name: "Kelty two-person tent",
     type: "Standalone, two poles",
     location: "England",
-    date: "02 / 22 / 16",
+    date: "2016-02-22",
     thumbnail: {
       title: "Camping Tent",
       description: "A tent feels like a second home when it's set up and lived in correctly",
@@ -14,7 +14,7 @@ export const GEARPOSTS = [
     name: "Wine holder",
     type: "Fake skin",
     location: "Spain",
-    date: "01 / 10 / 16",
+    date: "2016-01-10",
     thumbnail: {
       title: "Wine Holder",
       description:
@@ -26,7 +26,7 @@ export const GEARPOSTS = [
     name: "Cooking Camping",
     type: "Burner stove, aluminum cup, wooden spoon",
     location: "England",
-    date: "04 / 30 / 16",
+    date: "2016-04-30",
     thumbnail: {
       title: "Cooking Setups",
       description:
@@ -38,7 +38,7 @@ export const GEARPOSTS = [
     name: "Hammock",
     type: "hammock",
     location: "Spain",
-    date: "02 / 01 / 16",
+    date: "2016-02-01",
     thumbnail: {
       title: "Hammocks",
       description:

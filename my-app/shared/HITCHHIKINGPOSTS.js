@@ -2,7 +2,7 @@ export const HITCHHIKINGPOSTS = [
   {
     name: "Portugal Gas",
     location: "Portugal",
-    date: "02 / 16 / 16",
+    date: "2016-02-16",
     thumbnail: {
       title: "Gas Checkers in Portugal",
       description:
@@ -21,7 +21,7 @@ export const HITCHHIKINGPOSTS = [
   {
     name: "Boatride",
     location: "England",
-    date: "03 / 30 / 16",
+    date: "2016-03-30",
     thumbnail: {
       title: "Catching a Boatride",
       description:
@@ -32,7 +32,7 @@ export const HITCHHIKINGPOSTS = [
   {
     name: "Coastal Trail",
     location: "England",
-    date: "04 / 24 / 16",
+    date: "2016-04-24",
     thumbnail: {
       title: "Hiking on Coastal Trails",
       description: "Hiking is in the name, and more of it is done than you might expect",
@@ -42,7 +42,7 @@ export const HITCHHIKINGPOSTS = [
   {
     name: "Cool Dad",
     location: "England",
-    date: "04 / 18 / 16",
+    date: "2016-04-18",
     thumbnail: {
       title: "When families offer rides",
       description: "Some parents might not pick up hitchhikers, but the ones that do are usually like this",

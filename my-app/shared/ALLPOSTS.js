@@ -8,7 +8,7 @@ export const ABOUTPOST = [
     className: "aboutPostCard",
     name: "The Beginning of a Journey",
     location: "England",
-    date: "03 / 30 / 16",
+    date: "2016-03-30",
     thumbnail: {
       title: "Why I started Hitchhiking",
       description: "Embarking on an adventure is a risk. Reflecting: a process",

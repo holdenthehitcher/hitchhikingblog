@@ -3,6 +3,8 @@ import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
 
+import { Fade, Transform } from "react-animation-components";
+
 export default function AboutMeSecton() {
   return (
     <>
@@ -37,7 +39,9 @@ export default function AboutMeSecton() {
         <div className="col col-sm-4">
           <Link href="/Stories/AboutHTH">
             <a>
-              <img src="blogmaterials/about/about.JPG" className="rounded boxShadow" id="aboutImg"></img>
+              <Fade in>
+                <img src="blogmaterials/about/about.JPG" className="rounded boxShadow" id="aboutImg"></img>
+              </Fade>
             </a>
           </Link>
         </div>
@@ -53,16 +57,18 @@ const Disclaimer = () => {
   return (
     <div className="row">
       <div className="col pt-4 d-flex justify-content-center">
-        <Alert show={show} variant="warning" className="boxShadow">
-          <Alert.Heading style={{ textAlign: "center" }}>
-            Disclaimer: This is not your 'Average Travel Blog’!{" "}
-          </Alert.Heading>
-          <div className="d-flex justify-content-center">
-            <Button onClick={() => setShow(false)} variant="success">
-              Understood!
-            </Button>
-          </div>
-        </Alert>
+        <Fade in>
+          <Alert show={show} variant="warning" className="boxShadow">
+            <Alert.Heading style={{ textAlign: "center" }}>
+              Disclaimer: This is not your 'Average Travel Blog’!{" "}
+            </Alert.Heading>
+            <div className="d-flex justify-content-center">
+              <Button onClick={() => setShow(false)} variant="success">
+                Understood!
+              </Button>
+            </div>
+          </Alert>
+        </Fade>
       </div>
     </div>
   );

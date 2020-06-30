@@ -150,9 +150,9 @@
   }
   .featuredCatDeck {
     display: block;
-    .featuredCatCard {
-      margin-bottom: 15px;
-    }
+  }
+  .featuredCatCard {
+    margin-bottom: 15px;
   }
   .featuredCardHeader {
     font-size: 60px;
@@ -257,40 +257,4 @@
   .featuredCardHeader {
     font-size: 36px;
   }
-}
-
-/////
-
-.display-enter,
-.display-appear {
-  top: var(--menu-starting-top);
-  width: var(--toggler-width);
-  max-height: var(--toggler-height);
-  color: var(--fade-from-color);
-  background-color: var(--toggler-bg-color);
-}
-.display-enter-active,
-.display-appear-active {
-  top: var(--menu-ending-top);
-  width: var(--menu-width);
-  max-height: var(--menu-max-height);
-  color: var(--fade-to-color);
-  background-color: var(--menu-bg-color);
-  transition: all var(--timeout);
-}
-.display-exit {
-  top: var(--menu-ending-top);
-  width: var(--menu-width);
-  max-height: var(--menu-max-height);
-  color: var(--fade-to-color);
-  background-color: var(--menu-bg-color);
-}
-
-.display-exit-active {
-  top: var(--menu-starting-top);
-  width: var(--toggler-width);
-  max-height: var(--toggler-height);
-  color: var(--fade-from-color);
-  background-color: var(--toggler-bg-color);
-  transition: all var(--timeout);
 }

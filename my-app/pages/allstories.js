@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 
-import { useSpring, animated } from "react-spring";
 
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import ArticlesFeatured from "../components/ArticlesFeatured";
-import RandomArticle from "../components/RandomArticle";
 import AllArticlesCards from "../components/AllArticlesCards";
 import ArticlesPaginate from "../components/ArticlesPaginate";
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
+import { CSSTransitionGroup } from "react-transition-group";
 
 import Link from "next/link";
 
@@ -32,21 +33,29 @@ export default function HomeCategoryCards() {
         <h1 id="homeCatHeader">Story Categories</h1>
       </div>
       <div className="row mb-5">
-        <CardDeck className="homeCategoryDeck">
-          {articleCategories.map(({ heading, image, description, link }, i) => (
-            <Card key={i} className="homeCategoryCard mt-4 ">
-              <Card.Header className="d-flex justify-content-center catCardHeader">{heading}</Card.Header>
-              <Card.Body className="catCardBody">
-                <Link href={link}>
-                  <a>
-                    <Card.Img className="boxShadow" src={image} />
-                  </a>
-                </Link>
-                <Card.Text className="mt-1 catCardText">{description}</Card.Text>
-              </Card.Body>
-            </Card>
-          ))}
-        </CardDeck>
+        <CSSTransitionGroup
+          transitionName="example"
+          transitionAppear={true}
+          transitionAppearTimeout={500}
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}
+        >
+          <CardDeck className="homeCategoryDeck">
+            {articleCategories.map(({ heading, image, description, link }, i) => (
+              <Card key={i} className="homeCategoryCard mt-4 ">
+                <Card.Header className="d-flex justify-content-center catCardHeader">{heading}</Card.Header>
+                <Card.Body className="catCardBody">
+                  <Link href={link}>
+                    <a>
+                      <Card.Img className="boxShadow" src={image} />
+                    </a>
+                  </Link>
+                  <Card.Text className="mt-1 catCardText">{description}</Card.Text>
+                </Card.Body>
+              </Card>
+            ))}
+          </CardDeck>
+        </CSSTransitionGroup>
       </div>
     </>
   );

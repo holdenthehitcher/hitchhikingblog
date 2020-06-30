@@ -7,8 +7,6 @@ export const ArticlesPaginate = ({
   paginate,
   currentPage,
   setCurrentPage,
-  transition,
-  setTransition,
 }) => {
   const pageNumbers = [];
   const totalPages = Math.ceil(totalPosts / postsPerPage);

@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 
 import Link from "next/link";
+import { CSSTransitionGroup } from "react-transition-group";
 
 export default function ArticlesFeatured() {
   const articles = [
@@ -34,19 +35,27 @@ export default function ArticlesFeatured() {
 
   return (
     <div className="row">
-      <CardDeck className="featuredCatDeck">
-        {articles.map(({ header, image, link, catBgStyle }, i) => (
-          <Card className={`featuredCatCard ${catBgStyle}`} key={i}>
-            <Link href={link}>
-              <a>
-                <Card.Header className="featuredCardHeader">{header}</Card.Header>
-                <Card.Img src={image} />
-                <Card.Body></Card.Body>
-              </a>
-            </Link>
-          </Card>
-        ))}
-      </CardDeck>
+      <CSSTransitionGroup
+        transitionName="example"
+        transitionAppear={true}
+        transitionAppearTimeout={500}
+        transitionEnter={false}
+        transitionLeave={false}
+      >
+        <CardDeck className="featuredCatDeck">
+          {articles.map(({ header, image, link, catBgStyle }, i) => (
+            <Card className={`featuredCatCard ${catBgStyle}`} key={i}>
+              <Link href={link}>
+                <a>
+                  <Card.Header className="featuredCardHeader">{header}</Card.Header>
+                  <Card.Img src={image} />
+                  <Card.Body></Card.Body>
+                </a>
+              </Link>
+            </Card>
+          ))}
+        </CardDeck>
+      </CSSTransitionGroup>
     </div>
   );
 }

@@ -4,6 +4,24 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Navigation = () => {
+  const navCats = [
+    {
+      link: "/hitchhiking",
+      title: "Hitchhiking",
+    },
+    {
+      link: "/volunteering",
+      title: "Volunteering",
+    },
+    {
+      link: "/culinary",
+      title: "Culinary",
+    },
+    {
+      link: "/gear",
+      title: "Gear",
+    },
+  ];
   return (
     <Navbar sticky="top" expand="md">
       <Navbar.Brand>
@@ -21,26 +39,15 @@ const Navigation = () => {
             <a className="navLinkStyled">Stories</a>
           </Link>
           <NavDropdown title="Categories" id="basic-nav-dropdown" className="navLinkStyled">
-            <NavDropdown.Item>
-              <Link href="/hitchhiking">
-                <a className="dropdownLinkStyled">Hitchhiking</a>
-              </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <Link href="/volunteering">
-                <a className="dropdownLinkStyled">Volunteering</a>
-              </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <Link href="/culinary">
-                <a className="dropdownLinkStyled">Culinary</a>
-              </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <Link href="/gear" passHref>
-                <a className="dropdownLinkStyled">Gear</a>
-              </Link>
-            </NavDropdown.Item>
+            <ul className="list-unstyled navCatCenter">
+              {navCats.map(({ link, title }, i) => (
+                <li key={i}>
+                  <Link href={link}>
+                    <a className="dropdownLinkStyled">{title}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

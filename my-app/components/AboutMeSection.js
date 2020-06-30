@@ -10,12 +10,24 @@ export default function AboutMeSecton() {
     <>
       <div className="row py-4 d-flex justify-content-center">
         <div className="col-12 col-sm-8">
-          <CSSTransitionGroup transitionName="example" transitionAppear={true} transitionAppearTimeout={500}>
+          <CSSTransitionGroup
+            transitionName="example"
+            transitionAppear={true}
+            transitionAppearTimeout={500}
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}
+          >
             <div className="col-12 d-flex justify-content-center">
               <h3 className="styled-heading">About Holden the Hitcher</h3>
             </div>
           </CSSTransitionGroup>
-          <CSSTransitionGroup transitionName="example" transitionAppear={true} transitionAppearTimeout={500}>
+          <CSSTransitionGroup
+            transitionName="example"
+            transitionAppear={true}
+            transitionAppearTimeout={500}
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}
+          >
             <div className="col textScrim d-flex justify-content-center">
               <p className="aboutText">
                 Three years following my return to the States… I spent time making blog posts about my travels{" "}
@@ -49,7 +61,7 @@ export default function AboutMeSecton() {
           </Link>
         </div>
       </div>
-        <Disclaimer />
+      <Disclaimer />
     </>
   );
 }

@@ -23,7 +23,7 @@ const AllArticlesCards = ({ blogposts, currentPage }) => {
     >
       <CardColumns key="2" className="cardColumn">
         {blogposts.map(({ thumbnail, pageLink = "/allstories", className, date, location }, i) => (
-          <Card className={`${className} allCard`}>
+          <Card className={`${className} allCard`} key={i}>
             <Card.Title className="allCardHeader" style={{ textAlign: "center" }}>
               {thumbnail.title}
             </Card.Title>

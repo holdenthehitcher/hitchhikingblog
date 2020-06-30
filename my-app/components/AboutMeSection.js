@@ -3,16 +3,31 @@ import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
 
-import { Fade, Transform } from "react-animation-components";
+import { Fade } from "react-animation-components";
+import { ReactCSSTransitionGroup } from "react-transition-group";
 
 export default function AboutMeSecton() {
+  const [inProp] = useState(true);
+  const duration = 300;
+
+  const defaultStyle = {
+    transition: `opacity ${duration}ms ease-in-out`,
+    opacity: 0,
+  };
+  const transitionStyles = {
+    entering: { opacity: 0 },
+    entered: { opacity: 1 },
+  };
+
   return (
     <>
       <div className="row py-4 d-flex justify-content-center">
         <div className="col-12 col-sm-8">
-          <div className="col-12 d-flex justify-content-center">
-            <h3 className="styled-heading">About Holden the Hitcher</h3>
-          </div>
+          <ReactCSSTransitionGroup key="1" transitionName="page" transitionAppearTimeout={300} transitionAppear={true}>
+            <div className="col-12 d-flex justify-content-center">
+              <h3 className="styled-heading">About Holden the Hitcher</h3>
+            </div>
+          </ReactCSSTransitionGroup>
           <div className="col textScrim d-flex justify-content-center">
             <p className="aboutText">
               Three years following my return to the States… I spent time making blog posts about my travels{" "}

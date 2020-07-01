@@ -30,7 +30,7 @@ const Newsletter = () => {
   return (
     <>
       <div className="d-flex justify-content-center mt-2">
-        <Button type="submit" onClick={handleShow} className="btn btn-success letterModalBtn">
+        <Button type="submit" onClick={handleShow} className="btn btn-outline-success letterModalBtn">
           Sign-up
         </Button>
       </div>
@@ -46,7 +46,7 @@ const Newsletter = () => {
             </div>
           </div>
         </Modal.Body>
-        <Modal.FooterNav>
+        <Modal.Footer>
           <Form.Row>
             <Col>
               <Form.Group>
@@ -101,7 +101,7 @@ const Newsletter = () => {
               </Button>
             </Col>
           </Form.Row>
-        </Modal.FooterNav>
+        </Modal.Footer>
       </Modal>
     </>
   );

@@ -159,7 +159,7 @@ const ContactModal = () => {
           </Form.Row>
         </Modal.Body>
 
-        <Modal.FooterNav className="contactFooter">
+        <Modal.Footer className="contactFooter">
           <Button
             className="submitButton btn btn-lg"
             type="submit"
@@ -169,7 +169,7 @@ const ContactModal = () => {
           >
             Send <i className="fa fa-paper-plane" />
           </Button>
-        </Modal.FooterNav>
+        </Modal.Footer>
       </Modal>
     </>
   );

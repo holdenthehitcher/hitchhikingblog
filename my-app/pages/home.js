@@ -1,6 +1,6 @@
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import FooterNav from "../components/FooterNav";
 
 import AboutMeSection from "../components/AboutMeSection";
 import HomePopularCarousel from "../components/HomePopularCarousel";
@@ -24,7 +24,7 @@ export default function Home() {
           <HomeGearReviews />
           <Map />
         </div>
-        <Footer />
+        <FooterNav />
       </main>
     </>
   );

@@ -33,6 +33,18 @@ export default function ArticlesFeatured() {
     },
   ];
 
+  const featuredCards = articles.map(({ header, image, link, catColor }, i) => (
+      <Card className={`featuredCatCard ${catColor}`} key={i}>
+        <Link href={link}>
+          <a>
+            <Card.Header className="featuredCardHeader">{header}</Card.Header>
+            <Card.Img src={image} />
+            <Card.Body></Card.Body>
+          </a>
+        </Link>
+      </Card>
+    ))
+
   return (
     <div className="row">
       <CSSTransitionGroup
@@ -43,17 +55,7 @@ export default function ArticlesFeatured() {
         transitionLeave={false}
       >
         <CardDeck className="featuredCatDeck">
-          {articles.map(({ header, image, link, catColor }, i) => (
-            <Card className={`featuredCatCard ${catColor}`} key={i}>
-              <Link href={link}>
-                <a>
-                  <Card.Header className="featuredCardHeader">{header}</Card.Header>
-                  <Card.Img src={image} />
-                  <Card.Body></Card.Body>
-                </a>
-              </Link>
-            </Card>
-          ))}
+          {featuredCards}
         </CardDeck>
       </CSSTransitionGroup>
     </div>

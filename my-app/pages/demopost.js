@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import FooterNav from "../components/FooterNav";
 import PostImageTemplate from "../components/PostImageTemplate";
 import PostVideoTemplate from "../components/PostVideoTemplate";
 import PostParagraphTemplate from "../components/PostParagraphTemplate";
@@ -32,7 +32,7 @@ export class templatePost extends Component {
           <PostParagraphTemplate paragraph={paragraphs[0]} />
           {/*  */}
 
-          <Footer />
+          <FooterNav />
         </main>
       </>
     );

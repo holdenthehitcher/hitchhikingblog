@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import FooterNav from "../components/FooterNav";
 import CategoryBackground from "../components/CategoryBackground";
 import CategoryCards from "../components/CategoryCards";
 
@@ -16,7 +16,7 @@ export default class Articles extends Component {
       heading: "Gear",
       description:
         "Trekking, and camping in all-four seasons in rural and urban environments that highlight some of the tools and equipment I used during two years on foot",
-        catColor: "gearCard",
+      catColor: "gearCard",
     };
   }
 
@@ -33,8 +33,8 @@ export default class Articles extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <CategoryCards blogposts={blogposts} heading={this.state.heading} catColor={this.state.catColor}/>
-          <Footer />
+          <CategoryCards blogposts={blogposts} heading={this.state.heading} catColor={this.state.catColor} />
+          <FooterNav />
         </main>
       </>
     );

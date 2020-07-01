@@ -46,7 +46,7 @@ const Newsletter = () => {
             </div>
           </div>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.FooterNav>
           <Form.Row>
             <Col>
               <Form.Group>
@@ -101,7 +101,7 @@ const Newsletter = () => {
               </Button>
             </Col>
           </Form.Row>
-        </Modal.Footer>
+        </Modal.FooterNav>
       </Modal>
     </>
   );

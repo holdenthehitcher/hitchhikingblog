@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import FooterNav from "../components/FooterNav";
 import CategoryBackground from "../components/CategoryBackground";
 import CategoryCards from "../components/CategoryCards";
 
@@ -16,7 +16,7 @@ export default class Culinary extends Component {
       heading: "Culinary",
       description:
         "Embarking on a journey of food culture begins with a single bite. From seed to plate, the food displays the pride people have of their ingredients and preparation methods passed down from past generations",
-      catColor: "culinaryCard"
+      catColor: "culinaryCard",
     };
   }
 
@@ -33,8 +33,8 @@ export default class Culinary extends Component {
             description={this.state.description}
             backgroundId={this.state.backgroundId}
           />
-          <CategoryCards blogposts={blogposts} heading={this.state.heading} catColor={this.state.catColor}/>
-          <Footer />
+          <CategoryCards blogposts={blogposts} heading={this.state.heading} catColor={this.state.catColor} />
+          <FooterNav />
         </main>
       </>
     );

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 
-
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import FooterNav from "../components/FooterNav";
 import ArticlesFeatured from "../components/ArticlesFeatured";
 import AllArticlesCards from "../components/AllArticlesCards";
 import ArticlesPaginate from "../components/ArticlesPaginate";
@@ -130,7 +129,7 @@ export default function Articles() {
             setCurrentPage={setCurrentPage}
           />
         </div>
-        <Footer />
+        <FooterNav />
       </main>
     </>
   );

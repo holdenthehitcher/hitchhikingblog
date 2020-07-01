@@ -54,7 +54,7 @@ const socialLinks = [
   },
 ];
 
-export default function Footer() {
+export default function FooterNav() {
   return (
     <footer className="site-footer">
       <div className="row">
@@ -80,9 +80,8 @@ export default function Footer() {
                 </a>
               </li>
             ))}
-            
           </ul>
-          </div>
+        </div>
         <div className="col-5 col-sm-4">
           <div className="col">
             <h5 className="footerHeaders">Message</h5>

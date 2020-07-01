@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TitleName from "../components/TitleName";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import FooterNav from "../components/FooterNav";
 import CategoryBackground from "../components/CategoryBackground";
 import CategoryCards from "../components/CategoryCards";
 
@@ -34,7 +34,7 @@ export default class Articles extends Component {
             backgroundId={this.state.backgroundId}
           />
           <CategoryCards blogposts={blogposts} heading={this.state.heading} catColor={this.state.catColor} />
-          <Footer />
+          <FooterNav />
         </main>
       </>
     );

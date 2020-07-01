@@ -30,7 +30,7 @@ const Newsletter = () => {
   return (
     <>
       <div className="d-flex justify-content-center mt-2">
-        <Button type="submit" onClick={handleShow} className="btn btn-outline-success letterModalBtn">
+        <Button type="submit" onClick={handleShow} className="btn btn-success letterModalBtn">
           Sign-up
         </Button>
       </div>

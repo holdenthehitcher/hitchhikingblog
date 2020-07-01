@@ -11,25 +11,25 @@ export default function ArticlesFeatured() {
       header: "Hitchhiking",
       image: "blogmaterials/categories/hitchhiking_category.JPG",
       link: "/hitchhiking",
-      catBgStyle: "hitchhikingCard",
+      catColor: "hitchhikingCard",
     },
     {
       header: "Volunteering",
       image: "blogmaterials/categories/volunteering_category.JPG",
       link: "/volunteering",
-      catBgStyle: "volunteerCard",
+      catColor: "volunteerCard",
     },
     {
       header: "Culinary",
       image: "blogmaterials/categories/culinary_category.JPG",
       link: "/culinary",
-      catBgStyle: "culinaryCard",
+      catColor: "culinaryCard",
     },
     {
       header: "Gear",
       image: "/blogmaterials/gear/gear_category.JPG",
       link: "/gear",
-      catBgStyle: "gearCard",
+      catColor: "gearCard",
     },
   ];
 
@@ -43,8 +43,8 @@ export default function ArticlesFeatured() {
         transitionLeave={false}
       >
         <CardDeck className="featuredCatDeck">
-          {articles.map(({ header, image, link, catBgStyle }, i) => (
-            <Card className={`featuredCatCard ${catBgStyle}`} key={i}>
+          {articles.map(({ header, image, link, catColor }, i) => (
+            <Card className={`featuredCatCard ${catColor}`} key={i}>
               <Link href={link}>
                 <a>
                   <Card.Header className="featuredCardHeader">{header}</Card.Header>

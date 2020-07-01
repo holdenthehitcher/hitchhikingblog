@@ -78,9 +78,9 @@ export const ABOUTPOST = [
   },
 ];
 
-const culinaryPosts = CULINARYPOSTS.map((post) => ({ ...post, className: "culinaryCard" }));
-const gearPosts = GEARPOSTS.map((post) => ({ ...post, className: "gearCard" }));
-const hitchhikingPosts = HITCHHIKINGPOSTS.map((post) => ({ ...post, className: "hitchhikingCard" }));
-const volunteerPosts = VOLUNTEERPOSTS.map((post) => ({ ...post, className: "volunteerCard" }));
+const culinaryPosts = CULINARYPOSTS.map((post) => ({ ...post, catColor: "culinaryCard" }));
+const gearPosts = GEARPOSTS.map((post) => ({ ...post, catColor: "gearCard" }));
+const hitchhikingPosts = HITCHHIKINGPOSTS.map((post) => ({ ...post, catColor: "hitchhikingCard" }));
+const volunteerPosts = VOLUNTEERPOSTS.map((post) => ({ ...post, catColor: "volunteerCard" }));
 
 export const ALLPOSTS = [...ABOUTPOST, ...culinaryPosts, ...gearPosts, ...hitchhikingPosts, ...volunteerPosts];

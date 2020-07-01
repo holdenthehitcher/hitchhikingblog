@@ -1,5 +1,5 @@
 .site-footer {
-  width: 80%;
+  width: 100%;
   padding-top: 60px;
 }
 
@@ -52,8 +52,9 @@
 .contactModalBtn,
 .letterModalBtn,
 .submitButton {
-  background-color: #485dcb;
-  color: #e7e3d4;
+  background-color: #f78888;
+  color: #ececec;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.5em 0.5em 2em rgba(0, 0, 0, 0.3);
 }
 
 ////contact form

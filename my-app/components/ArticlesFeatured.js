@@ -1,3 +1,6 @@
+import "./AllArticles.scss";
+
+
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";

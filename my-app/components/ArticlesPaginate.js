@@ -1,13 +1,9 @@
+import "./AllArticles.scss";
+
 import React from "react";
 import Pagination from "react-bootstrap/Pagination";
 
-export const ArticlesPaginate = ({
-  postsPerPage,
-  totalPosts,
-  paginate,
-  currentPage,
-  setCurrentPage,
-}) => {
+export const ArticlesPaginate = ({ postsPerPage, totalPosts, paginate, currentPage, setCurrentPage }) => {
   const pageNumbers = [];
   const totalPages = Math.ceil(totalPosts / postsPerPage);
 

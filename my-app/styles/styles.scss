@@ -1,14 +1,3 @@
-@import "~bootstrap/scss/bootstrap";
-@import "AboutMe.scss";
-@import "HomePopularCarousel.scss";
-@import "InspirationalQuote.scss";
-@import "HomeCategoryCards.scss";
-@import "HomeGearCategory.scss";
-@import "BlogStyles.scss";
-@import "CatBackgrounds.scss";
-@import "Map.scss";
-@import "Transitions.scss";
-
 //// fonts: theme ////
 
 @import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"); //
@@ -200,6 +189,13 @@ a:hover {
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.5em 0.5em 2em rgba(0, 0, 0, 0.3);
 }
 
+
+.letterModalBtn {
+  background-color: #f78888;
+  color: #ececec;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.5em 0.5em 2em rgba(0, 0, 0, 0.3);
+}
+
 ////contact form
 .contactHeader {
   background-color: #5ab9ea;
@@ -377,7 +373,6 @@ a:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #e7717d;
   text-shadow: 0px 4px 4px #282828;
-
 }
 
 .navCatCenter {
@@ -390,8 +385,21 @@ a:hover {
   font-family: "Bellota", cursive;
   font-size: 20px;
   text-align: center;
+}
 
-
+.navbar-brand {
+  justify-content: center;
+  color: #fbefc2;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 1px 2px 2px #282828;
+}
+.brandLogo {
+  font-family: "Indie Flower", cursive;
+  font-size: 35px;
+  margin-right: 5px;
+  margin-left: 25px;
+  color: white;
 }
 
 ///somewhere in the middle viewport////
@@ -402,6 +410,8 @@ a:hover {
 
   .navLinkStyled {
     font-size: 28px;
+    margin-left: 9px;
+    margin-right: 10px;
   }
 
   #basic-nav-dropdown {
@@ -441,8 +451,7 @@ a:hover {
 
   .navLinkStyled {
     font-size: 35px;
-    margin-left: 9px;
-    margin-right: 10px;
+
   }
 
   #basic-nav-dropdown {

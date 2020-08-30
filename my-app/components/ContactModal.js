@@ -40,7 +40,7 @@ const ContactModal = () => {
   return (
     <>
       <div className="d-flex justify-content-center mt-2">
-        <Button type="submit" onClick={handleShow} className="btn btn-lg btn-secondary contactModalBtn">
+        <Button type="submit" onClick={handleShow} className="btn btn-lg contactModalBtn">
           Contact
         </Button>
       </div>

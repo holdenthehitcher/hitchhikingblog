@@ -104,18 +104,18 @@
   }
 }
 
-.cardColumn {
-  margin-top: 15px;
-  @include media-breakpoint-only(sm) {
-    column-count: 2;
-  }
-  @include media-breakpoint-up(lg) {
-    column-count: 4;
-  }
-  @include media-breakpoint-up(xl) {
-    column-count: 5;
-  }
-}
+// .cardColumn {
+//   margin-top: 15px;
+//   @include media-breakpoint-up(sm) {
+//     column-count: 2;
+//   }
+//   @include media-breakpoint-up(lg) {
+//     column-count: 4;
+//   }
+//   @include media-breakpoint-up(xl) {
+//     column-count: 5;
+//   }
+// }
 
 .slide-up-appear {
   opacity: 0;

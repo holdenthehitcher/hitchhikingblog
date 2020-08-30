@@ -30,7 +30,7 @@ export default function AboutMeSecton() {
           >
             <div className="col textScrim d-flex justify-content-center">
               <p className="aboutText">
-                hree years following my return to the States… I spent time making blog posts about my travels{" "}
+                Three years following my return to the States… I spent time making blog posts about my travels{" "}
                 <Link href="/hitchhiking">
                   <a>hitchhiking</a>
                 </Link>

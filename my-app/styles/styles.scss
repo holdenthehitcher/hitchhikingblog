@@ -135,6 +135,9 @@ a:hover {
 .site-footer {
   width: 100%;
   padding-top: 60px;
+  .footer-row {
+    margin: 0;
+  }
 }
 
 .footerHeaders {
@@ -188,7 +191,6 @@ a:hover {
   color: #ececec;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.5em 0.5em 2em rgba(0, 0, 0, 0.3);
 }
-
 
 .letterModalBtn {
   background-color: #f78888;
@@ -363,7 +365,6 @@ a:hover {
   font-size: 23px;
   color: white;
   position: relative;
-  top: -7px;
 }
 
 #basic-nav-dropdown:hover {
@@ -451,7 +452,6 @@ a:hover {
 
   .navLinkStyled {
     font-size: 35px;
-
   }
 
   #basic-nav-dropdown {

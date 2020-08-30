@@ -58,7 +58,7 @@ const socialLinks = [
 export default function FooterNav() {
   return (
     <footer className="site-footer">
-      <div className="row">
+      <div className="row footer-row">
         <div className="col linksCol">
           <h5 className="footerHeaders">Links</h5>
           <ul className="list-unstyled footerWrapCenter">

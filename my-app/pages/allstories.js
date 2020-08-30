@@ -87,7 +87,7 @@ export default function Articles() {
             >
               Sort by Date <i className={`fa ${arrowDate}`}></i>
             </Button>
-            <Button
+            {/* <Button
               onClick={() => {
                 if (sortType === "className") {
                   setSortDir(sortDir === "asc" ? "dsc" : "asc");
@@ -100,7 +100,7 @@ export default function Articles() {
             >
               Sort by Category
               <i className="fa fa-fw fa-sort"></i>
-            </Button>
+            </Button> */}
             <Button
               onClick={() => {
                 // when the button is clicked

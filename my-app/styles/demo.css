@@ -1,0 +1,19 @@
+.demo-background {
+  width: 100% !important;
+  height: 100vh !important;
+  max-height: 100% !important;
+  margin: 0;
+  padding: 0;
+  background-size: 100% 100% !important;
+  background-color: white !important;
+}
+
+.demo-spacing {
+  margin: auto;
+  padding: 10em;
+}
+
+.demo-bigNumber {
+    font-size: 20vh;
+    margin: auto;
+}
